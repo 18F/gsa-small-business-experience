@@ -41,8 +41,28 @@ site.
 
 npm test will run the following scanners:
 
+- [woke](https://github.com/get-woke/woke): identifies non-inclusive language ([CI action](https://github.com/marketplace/actions/run-woke))
 - [htmlproofer](https://github.com/gjtorikian/html-proofer): checks for valid HTML, broken links, etc
 - [pa11y-ci](https://github.com/pa11y/pa11y-ci): accessibility (config `.pa11yci`)
+
+`woke` will not scan anything appearing in your `.gitignore` file by default.
+You may also configure `woke` to ignore additional paths by modifying the
+`.wokeignore` file.
+
+`pa11y-ci` may be configured with `.pa11yci`
+
+#### Github actions
+
+When opening a pull request, the above actions will run automatically.
+__Currently, the Federalist USWDS template is
+[experiencing an issue](https://github.com/18F/federalist-uswds-jekyll/issues/223)
+with builds intermittently failing__.  This means that either the scans or the
+deployment to Federalist may fail unexpectedly. We recommend running `npm test`
+locally before pushing, as well as `npm run build` in order to confirm that
+your branch is working since the scanners and deployment may not get a chance
+to run in GitHub when the building step fails.
+
+You may adjust the functionality of
 
 
 ## Key Functionality
