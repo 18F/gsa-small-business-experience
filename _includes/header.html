@@ -1,70 +1,44 @@
-{% comment %}
-This appears at the top of the page letting the user know it's an
-official government website
-{% endcomment %}
-
-<div class="page-landing-page layout-demo ">
-  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-  <div class="usa-banner">
-    <div class="usa-accordion">
-      <section
-        id="gov-banner-header-section"
-        aria-label="USA Gov banner section header"
-        class="usa-banner__header"
-      >
-        <div class="usa-banner__inner">
-          <div class="grid-col-auto">
-            {% asset img/us_flag_small.png class="usa-banner__header-flag"
-            alt="U.S. flag" %}
-          </div>
-          <div class="grid-col-fill tablet:grid-col-auto">
-            <p class="usa-banner__header-text">
-              An official website of the United States government
-            </p>
-            <p class="usa-banner__header-action" aria-hidden="true">
-              Here’s how you know
-            </p>
-          </div>
-          <button
-            class="usa-accordion__button usa-banner__button"
-            aria-expanded="false"
-            aria-controls="gov-banner"
-          >
-            <span class="usa-banner__button-text">Here's how you know</span>
-          </button>
-        </div>
-      </section>
-      <div class="usa-banner__content usa-accordion__content" id="gov-banner">
-        <div class="grid-row grid-gap-lg">
-          <div class="usa-banner__guidance tablet:grid-col-6">
-            {% asset img/icon-dot-gov.svg class="usa-banner__icon
-            usa-media-block__img" alt="Dot gov" %}
-            <div class="usa-media-block__body">
-              <p>
-                <strong>The .gov means it’s official.</strong>
-                <br />
-                Federal government websites often end in .gov or .mil. Before
-                sharing sensitive information, make sure you’re on a federal
-                government site.
-              </p>
-            </div>
-          </div>
-          <div class="usa-banner__guidance tablet:grid-col-6">
-            {% asset img/icon-https.svg class="usa-banner__icon
-            usa-media-block__img" alt="Https" %}
-            <div class="usa-media-block__body">
-              <p>
-                <strong>The site is secure.</strong>
-                <br />
-                The <strong>https://</strong> ensures that you are connecting to
-                the official website and that any information you provide is
-                encrypted and transmitted securely.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="usa-navbar">
+  <div class="usa-logo" id="extended-mega-logo">
+    <a title="GSA Home" class="navbar-brand" href="/" id="anch_1">
+        {% asset gsa-nav-logo.png class="not-responsive float-left logo" alt="GSA Logo" width="56" %}
+        <!-- TODO width: 56 -->
+        <em class="usa-logo__text text-base-darkest">{{site.title}}</em>
+    </a>
   </div>
-  <div class="usa-overlay"></div>
+  <button class="usa-menu-btn">Menu</button>
 </div>
+
+{% comment %} TODO come back to do mobile {% endcomment %}
+<!-- <nav role="navigation" class="usa-nav site-nav sidenav-mobile" aria-labelledby="mobile-side-navigation"> -->
+    <!-- Close Button -->
+    <!-- <button class="gsa-nav__close" id="mobile-side-navigation">
+        <div class="sr-only">close menu</div>
+    </button>
+    <div class="usa-nav__secondary">
+        <div class="usa-nav__secondary-links">
+            <a href="/travel-resources#perdiem-swiper" id="perdiem-button">
+                <span>Per Diem Lookup</span>
+            </a>
+
+        </div> -->
+        <!-- Mobile Search -->
+<!--         <div id="mobile-search"></div>
+    </div> -->
+
+{% comment %} TODO figure out how to include these icons from USWDS {% endcomment %}
+<nav id="menu-navigation" aria-label="Menu navigation" role="navigation" class="usa-nav gsa-nav width-full">
+  <div class="usa-nav__inner">
+    {% include menu.html %}
+  </div>
+
+  <div class="usa-nav__secondary visible-lg">
+    <div class="usa-nav__secondary-links">
+      <!-- NOTE this does not include behavior in the original website -->
+      <a title="Perdiem Lookup" id="perdiem-button" href="/">
+        <span>Per Diem Lookup</span>
+      </a>
+    </div>
+    {% include searchgov/form.html searchgov=site.searchgov %}
+  </div>
+</nav>

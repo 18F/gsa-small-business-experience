@@ -1,69 +1,66 @@
 {% comment %}
-To modify the menu system, you are welcome to edit this HTML
-directly or you can look inside _config.yml where we provide an easy way to
-manage your navigation system
+To modify the menu system, you are welcome to edit this HTML directly or you can look inside _config.yml
+where we provide an easy way to manage your navigation system
 {% endcomment %}
 
-<header class="usa-header usa-header--extended" role="banner">
-  <div class="usa-navbar">
-    {% include logo.html %}
-    <button class="usa-menu-btn">Menu</button>
-  </div>
-  <nav
-    id="menu-navigation"
-    aria-label="Menu navigation"
-    role="navigation"
-    class="usa-nav"
-  >
-    <div class="usa-nav__inner">
-      <button class="usa-nav__close">
-        {% asset img/close.svg alt="close" %}
-      </button>
-      <ul class="usa-nav__primary usa-accordion">
-        {% for nav_item in include.primary_navigation %} {% unless
-        nav_item.children %} {% assign basedir = page.url | remove_first: '/' |
-        split: '/' | first | lstrip %} {% assign linkdir = nav_item.url |
-        replace: "/", "" | lstrip %}
-        <li class="usa-nav__primary-item">
-          <a
-            class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
-            href="{{ nav_item.url | prepend: site.baseurl}}"
-            ><span>{{ nav_item.name | escape }}</span></a
-          >
-        </li>
-        {% else %} {% assign nav_id = 'primary-nav-' | append: forloop.index %}
-        <li class="usa-nav__primary-item">
-          <button
-            class="usa-accordion__button usa-nav__link"
-            aria-expanded="false"
-            aria-controls="{{ nav_id }}"
-          >
-            <span>{{ nav_item.name | escape }}</span>
-          </button>
-          <ul id="{{ nav_id }}" class="usa-nav__submenu">
-            {% for subnav_item in nav_item.children %}
-            <li class="usa-nav__submenu-item">
-              <a href="{{ subnav_item.url | prepend: site.baseurl }}"
-                >{{ subnav_item.name | escape }}</a
-              >
-            </li>
+{% assign baseurl = "https://gsa.gov" %}
+
+<!-- TODO check out gsa-nav class -->
+
+
+  <!-- TODO differs from GSA implementation of ul -->
+
+    <button class="usa-nav__close">{% asset img/close.svg alt="close" %}</button>
+
+    {% comment %} primary nav elements {% endcomment %}
+    <ul class="usa-nav__primary usa-accordion">
+      {% for main_heading in site.data.gsa_nav %}
+      {% assign nav_id = 'primary-nav-' | append: forloop.index %}
+      <li class="usa-nav__primary-item">
+        <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
+          aria-controls="{{ nav_id }}">
+          <span>{{ main_heading.name | escape }}</span>
+        </button>
+      </li>
+
+      {% endfor %}
+    </ul>
+
+
+    {% comment %} build dropdowns {% endcomment %}
+    {% for main_heading in site.data.gsa_nav %}
+      {% assign nav_id = 'primary-nav-' | append: forloop.index %}
+      {% comment %} secondary nav elements {% endcomment %}
+      <div id="{{ nav_id }}" class="usa-nav__submenu submenu-container">
+        <!-- initial subnavigation -->
+        <div class="submenu-component">
+          <ul class="submenu_link_list">
+            {% for subnav_item in main_heading.children %}
+              {% assign subnav_id = 'secondary-nav-' | append: forloop.index %}
+              <li class="usa-nav__submenu-item">
+                <a href="{{ subnav_item.url }}" class="submenu-item-link">{{ subnav_item.name | escape }}</a>
+              </li>
             {% endfor %}
           </ul>
-        </li>
-        {% endunless %} {% endfor %}
-      </ul>
-      <div class="usa-nav__secondary">
-        <ul class="usa-nav__secondary-links">
-          {% for nav_item in include.secondary_navigation %}
-          <li class="usa-nav__secondary-item">
-            <a href="{{ nav_item.url | prepend: site.baseurl }}"
-              >{{ nav_item.name | escape }}</a
-            >
-          </li>
+        </div>
+        <!-- tertiary navigation -->
+        <div class="submenu-component">
+          {% for subnav_item in main_heading.children %}
+
           {% endfor %}
-        </ul>
-        {% include searchgov/form.html searchgov=site.searchgov %}
+        </div>
+        <!-- featured items -->
+        <div class="submenu-component featured-navigation-content">
+          <span class="featured-label">Featured Topics</span>
+          <ul class="submenu_link_list">
+            {% for subnav_item in main_heading.featured %}
+              <li class="usa-nav__submenu-item">
+                <a href="{{ subnav_item.url }}" class="submenu-item-link">{{ subnav_item.name | escape }}</a>
+                <p>{{ subnav_item.desc }}</p>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
+    {% endfor %}
+  </div>

@@ -10,9 +10,11 @@ The home page uses wide.html layout, since it extends full width of page
 {% include meta.html %}
 
 <body>
-  {% include header.html %}
+  {% include header_gov_website.html %}
 
-  {% include menu.html primary_navigation=site.primary_navigation  secondary_navigation=site.secondary_navigation %}
+  <header class="usa-header usa-header--extended" role="banner">
+    {% include header.html %}
+  </header>
 
   {{ content }}
 
