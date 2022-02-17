@@ -1,49 +1,73 @@
-<!--
-  Federalist recommends you use Continuous Integration to automatically test
-  and validate any new changes to your site. CircleCI is free for open source
-  projcets. You should replace this badge with your own.
+# GSA Small Business Experience
 
-  https://circleci.com/
--->
-[![CircleCI](https://circleci.com/gh/18F/federalist-uswds-jekyll.svg?style=svg)](https://circleci.com/gh/18F/federalist-uswds-jekyll)
+The GSA Small Business Experience project seeks to improve the experience of
+small and disadvantaged businesses working with the General Services
+Administration. Our process may serve as a model for improving the user
+experience of further resources in GSA.gov.
 
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=18F/federalist-uswds-jekyll)](https://dependabot.com)
+## Information about this repository
 
-# Federalist + U.S. Web Design System + Jekyll
+This code uses the [Jekyll](https://jekyllrb.com) site engine and built with Ruby, and is based off of the [Federalist](https://federalist.18f.gov/) template [federalist-uswds-jekyll](https://github.com/18F/federalist-uswds-jekyll). It incorporates the [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov).
 
-This [Jekyll theme](https://jekyllrb.com/docs/themes/) is developed using the [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) and is focused on providing developers a starter kit and reference implementation for Federalist websites.
+This repository uses GitHub Actions to deploy via Federalist.
 
-This code uses the [Jekyll](https://jekyllrb.com) site engine and built with Ruby. If you prefer to use Javascript, check out [federalist-uswds-gatsby](https://github.com/18F/federalist-uswds-gatsby), which uses [Gatsby](https://gatsbyjs.org) site engine.
+As we did not need blog functionality, posts / drafts / etc were removed from this code base.
 
-This project strives to be compliant with requirements set by [21st Century IDEA Act](https://www.meritalk.com/articles/senate-passes-idea-act/). The standards require that a website or digital service:
+## Development
 
-- is accessible to individuals with disabilities;
-- has a consistent appearance;
-- does not duplicate any legacy websites (the legislation also requires agencies to ensure that legacy websites are regularly reviewed, removed, and consolidated);
-- has a search function;
-- uses an industry standard secure connection;
-- “is designed around user needs with data-driven analysis influencing management and development decisions, using qualitative and quantitative data to determine user goals, needs, and behaviors, and continually test the website, web-based form, web-based application, or digital service to ensure that user needs are addressed;”
-- allows for user customization; and
-- is mobile-friendly.
+### Installation for development
+    $ git clone https://github.com/18F/gsa-small-business-experience
+    $ cd gsa-small-business-experience
 
-## Comparison with [uswds-jekyll](https://github.com/18F/uswds-jekyll)
+In order to run tests you will also need to install [pa11y-ci](https://github.com/pa11y/pa11y-ci).
 
-Both start off looking very similar, but differ in what use cases they are best for. Are you:
 
-- Wanting to have a starter template that you can highly customize?
-- Comfortable editing HTML and CSS source code?
+### Running the application
 
-use federalist-uswds-jekyll (this repository). If you:
+You will need to install Ruby (version in `.ruby-version`) and node + npm
 
-- Want to use a theme that you can set and forget
-- Are ok with sticking with the general look and feel provided
+    $ npm install
+    $ bundle install
+    $ npm start (same as bundle exec jekyll serve)
 
-use uswds-jekyll.
+To build but not serve the site, run `npm run build` or `bundle exec jekyll build`.
+
+Open your web browser to [localhost:4000](http://localhost:4000/) to view your
+site.
+
+### Tests and code scanning
+
+    $ npm test
+
+npm test will run the following scanners:
+
+- [woke](https://github.com/get-woke/woke): identifies non-inclusive language ([CI action](https://github.com/marketplace/actions/run-woke))
+- [htmlproofer](https://github.com/gjtorikian/html-proofer): checks for valid HTML, broken links, etc
+- [pa11y-ci](https://github.com/pa11y/pa11y-ci): accessibility (config `.pa11yci`)
+
+`woke` will not scan anything appearing in your `.gitignore` file by default.
+You may also configure `woke` to ignore additional paths by modifying the
+`.wokeignore` file.
+
+`pa11y-ci` may be configured with `.pa11yci`
+
+#### Github actions
+
+When opening a pull request, the above actions will run automatically.
+__Currently, the Federalist USWDS template is
+[experiencing an issue](https://github.com/18F/federalist-uswds-jekyll/issues/223)
+with builds intermittently failing__.  This means that either the scans or the
+deployment to Federalist may fail unexpectedly. We recommend running `npm test`
+locally before pushing, as well as `npm run build` in order to confirm that
+your branch is working since the scanners and deployment may not get a chance
+to run in GitHub when the building step fails.
+
+You may adjust the functionality of
+
 
 ## Key Functionality
-This repository contains the following examples and functionality:
- 
-✅  Publish blog posts, press releases, announcements, etc. To modify this code, check out `blog/index.html`, which manages how the posts are listed. You should then check out `_layouts/post.html` to see how individual posts are structured.
+
+The following has been copied from the [federalist-uswds-jekyll](https://github.com/18F/federalist-uswds-jekyll) documentation for quick reference:
 
 ✅ Publish single one-off pages. Instead of creating lots of folders throughout the root directory, you should put single pages in `_pages` folder and change the `permalink` at the top of each page. Use sub-folders only when you really need to.
 
@@ -113,14 +137,18 @@ ga:
   # ua: your-ua
 ```
 
+## Technologies you should be familiarize yourself with
+
+- [Jekyll](https://jekyllrb.com/docs/) - The primary site engine that builds your code and content.
+- [Front Matter](https://jekyllrb.com/docs/frontmatter) - The top of each page/post includes keywords within `--` tags. This is meta data that helps Jekyll build the site, but you can also use it to pass custom variables.
+- [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov)
+
 ## How to edit
-- Non-developers should focus on editing markdown content in the `_posts` and `_pages` folder
+- Non-developers should focus on editing markdown content in the `_pages` folder
 
 - We try to keep configuration options to a minimum so you can easily change functionality. You should review `_config.yml` to see the options that are available to you. There are a few values on top that you **need** to change. They refer to the agency name and contact information. The rest of `_config.yml` has a range of more advanced options.
 
 - The contents inside `assets/` folder store your Javascript, SCSS/CSS, images, and other media assets are managed by  [jekyll-assets](https://github.com/envygeeks/jekyll-assets).  Assets are combined, compressed, and automatically available in your theme
-
-- If you look at `package.json` you will see that the `npm run federalist` command that will run when running on the Federalist platform.
 
 - Do not edit files in the `_site/` folder. These files are auto-generated, and any change you make in the folder will be overwritten.
 
@@ -130,98 +158,8 @@ ga:
 
 - `_layouts/` may require the least amount of editing of all the files since they are primarily responsible for printing the content.
 
-- `blog/index.html` can be edited, but be careful. It will impact the pagination system for the posts. If you do edit the file, be prepared to edit `_config.yml`.  For example, you may need go change configurations for [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2)
-
 - `search/index.html` is used by search.gov.
 
-## Getting Started
-
-### Easy mode
-
-#### From Federalist
-This will create a copy of this repo in a Github repository of your choice and add it to your Federalist dashboard.
-
-- From [Federalist](https://federalistapp.18f.gov/sites) click the "+ Add Site" button.
-- Click the "Use this template" button for the appropriate template
-- Follow the instructions
-
-#### From Github
-This will create a copy of this repo in a Github repository of your choice but you will need to add it your [Federalist dashboard](https://federalistapp.18f.gov/sites/new).
-
-- Click the "Use this template" button above or [here](https://github.com/18F/federalist-uswds-jekyll/generate).
-- Follow the instructions
-- Return to [Federalist](https://federalistapp.18f.gov/sites/new) and add the repository.
-
-### Hard mode
-
-#### With `npx` (requires node)
-    $ npx degit https://github.com/18F/federalist-uswds-jekyll#main <destination-folder>
-    $ cd <destination-folder>
-
-#### Push to your Github repository
-- [Create a new Github repository](https://help.github.com/en/github/getting-started-with-github/create-a-repo).
-- Follow the instructions form Github or
-```
-    $ git init
-    $ git symbolic-ref HEAD refs/heads/main
-    $ git add . && git commit -m 'Initial commit'
-    $ git remote add origin git@github.com:<your-org>/<your-repo>.git
-    (Make sure to replace `<your-org>` and `<your-repo>` above with the correct values)
-    $ git push -u origin main
-```
-
-### Installation for development
-    $ git clone https://github.com/18F/federalist-uswds-jekyll
-    $ cd federalist-uswds-jekyll
-
-### Running the application
-
-#### With locally installed `node` and `ruby`
-    $ npm install
-    $ bundle install
-    $ npm start 
-    OR
-    $ bundle exec jekyll serve
-
-To build but not serve the site, run `npm run build` or `bundle exec jekyll build`.
-
-#### With Docker
-    $ docker-compose run node npm install
-    $ docker-compose build
-    $ docker-compose up
-
-To build but not serve the site, run:
-```
-docker-compose run ruby bundle exec jekyll build
-```
-.
-
-Note that when built by Federalist, `npm run federalist` is used instead of
-`npm run build`.
-
-Open your web browser to [localhost:4000](http://localhost:4000/) to view your
-site.
-
-### Testing
-
-#### With locally installed `node` and `ruby`
-    $ npm test
-    OR
-    $ bundle exec htmlproofer _site; npx a11y '_site/**/*.html'
-
-#### With Docker
-    $ docker-compose run ruby bundle exec htmlproofer _site; npx a11y '_site/**/*.html'
-
-## Technologies you should be familiarize yourself with
-
-- [Jekyll](https://jekyllrb.com/docs/) - The primary site engine that builds your code and content.
-- [Front Matter](https://jekyllrb.com/docs/frontmatter) - The top of each page/post includes keywords within `--` tags. This is meta data that helps Jekyll build the site, but you can also use it to pass custom variables.
-- [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) 
-
-
-## Contributing
-
-See [CONTRIBUTING](CONTRIBUTING.md) for additional information.
 
 ## Public domain
 

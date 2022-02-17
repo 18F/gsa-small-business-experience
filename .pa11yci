@@ -2,6 +2,6 @@
   "defaults": {
     "concurrency": 4,
     "standard": "WCAG2AA",
-    "runners": ["axe"]
+    "runners": ["htmlcs"]
   }
 }
