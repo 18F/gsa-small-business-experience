@@ -5,33 +5,18 @@ where we provide an easy way to manage your navigation system
 
 {% assign baseurl = "https://gsa.gov" %}
 
-<!-- TODO check out gsa-nav class -->
+{% comment %} primary nav elements {% endcomment %}
+<ul class="usa-nav__primary usa-accordion">
+  {% for main_heading in site.data.gsa_nav %}
+  {% assign nav_id = 'primary-nav-' | append: forloop.index %}
+  <li class="usa-nav__primary-item">
+    <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
+      aria-controls="{{ nav_id }}">
+      <span>{{ main_heading.name | escape }}</span>
+    </button>
 
-
-  <!-- TODO differs from GSA implementation of ul -->
-
-    <button class="usa-nav__close">{% asset img/close.svg alt="close" %}</button>
-
-    {% comment %} primary nav elements {% endcomment %}
-    <ul class="usa-nav__primary usa-accordion">
-      {% for main_heading in site.data.gsa_nav %}
-      {% assign nav_id = 'primary-nav-' | append: forloop.index %}
-      <li class="usa-nav__primary-item">
-        <button class="usa-accordion__button usa-nav__link" aria-expanded="false"
-          aria-controls="{{ nav_id }}">
-          <span>{{ main_heading.name | escape }}</span>
-        </button>
-      </li>
-
-      {% endfor %}
-    </ul>
-
-
-    {% comment %} build dropdowns {% endcomment %}
-    {% for main_heading in site.data.gsa_nav %}
-      {% assign nav_id = 'primary-nav-' | append: forloop.index %}
-      {% comment %} secondary nav elements {% endcomment %}
-      <div id="{{ nav_id }}" class="usa-nav__submenu submenu-container">
+    <!-- expanded navigation -->
+    <div id="{{ nav_id }}" class="usa-nav__submenu submenu-container">
         <!-- initial subnavigation -->
         <div class="submenu-component">
           <ul class="submenu_link_list">
@@ -44,7 +29,7 @@ where we provide an easy way to manage your navigation system
           </ul>
         </div>
         <!-- tertiary navigation -->
-        <div class="submenu-component">
+        <div class="submenu-component submenu-tertiary">
           {% for subnav_item in main_heading.children %}
 
           {% endfor %}
@@ -62,5 +47,7 @@ where we provide an easy way to manage your navigation system
           </ul>
         </div>
       </div>
-    {% endfor %}
-  </div>
+  </li>
+
+  {% endfor %}
+</ul>

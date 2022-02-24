@@ -1,18 +1,23 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
 /*
 ////////////////////////
 HEADING & PRIMARY NAVBAR
 ////////////////////////
 */
 
-.usa-logo a {
-  color: #1b1b1b;
-  font-size: 23px;
-
-  .usa-logo__text {
-    font-weight: 500;
-    padding-left: 77px;
-    padding-top: 20px;
-  }
+.gsa-nav {
+  background-color: rgb(224, 230, 235);
+  line-height: .9;
 }
 
 .navbar-brand {
@@ -25,11 +30,6 @@ HEADING & PRIMARY NAVBAR
   }
 }
 
-.gsa-nav {
-  background-color: rgb(224, 230, 235);
-  line-height: .9;
-}
-
 .usa-header--extended {
   .usa-navbar {
     margin-left: 0;
@@ -39,13 +39,25 @@ HEADING & PRIMARY NAVBAR
   }
 }
 
+.usa-logo a {
+  color: #1b1b1b;
+  font-size: 23px;
+
+  .usa-logo__text {
+    font-weight: 500;
+    padding-left: 77px;
+    padding-top: 20px;
+  }
+}
+
 .usa-nav__primary button span {
   font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
-  font-size: 1.06rem;
+  font-size: 15px;
+  padding-right: 15px;
 }
 
 .usa-nav__primary-item .usa-nav__link {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 // PER DIEM AND SEARCH
@@ -75,26 +87,14 @@ HEADING & PRIMARY NAVBAR
   }
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
-}
-
-
 // SECONDARY / TERTIARY NAV ITEMS
-
-.usa-nav__primary-item, ul .usa-nav__submenu-item {
-  list-style-type: none;
-}
 
 .submenu_link_list {
   padding-inline-start: 0px;
+}
+
+.usa-nav__primary-item, ul .usa-nav__submenu-item {
+  list-style-type: none;
 }
 
 .usa-nav__submenu {
@@ -111,14 +111,10 @@ HEADING & PRIMARY NAVBAR
 // put after hidden or it will be overridden
 .submenu-container {
   display: flex;
+  left: 16px;
   flex-direction: row;
-}
-
-// on mobile display subnav as column
-@media screen and ( max-width: 500px ) {
-  .submenu-container {
-    flex-direction: column;
-  }
+  margin-top: .25em;
+  width: 98%;
 }
 
 .submenu-component {
@@ -145,7 +141,6 @@ HEADING & PRIMARY NAVBAR
   position: absolute;
   width: 40%;
 
-  // TODO revisit all this for mobile
   .usa-nav__secondary-links {
     width: 100%;
   }
@@ -155,15 +150,6 @@ HEADING & PRIMARY NAVBAR
 
 .featured-navigation-content {
   color: #fff;
-
-  .featured-label {
-    top: 0;
-    left: 0;
-    padding: 0 10px;
-    font-size: 12px;
-    background: #af3639;
-    text-transform: uppercase;
-  }
 
   a {
     font-size: 1.1em;
@@ -175,4 +161,67 @@ HEADING & PRIMARY NAVBAR
     padding-left: 1rem;
   }
 
+  .featured-label {
+    top: 0;
+    left: 0;
+    padding: 0 10px;
+    font-size: 12px;
+    background: #af3639;
+    text-transform: uppercase;
+  }
+}
+
+/*
+//////////////////////
+MOBILE / SMALL SCREENS
+//////////////////////
+*/
+
+@media only screen and (max-width: 1023px) {
+  #menu-navigation {
+    background-color: white;
+    flex-direction: column;
+    width: 60%;
+  }
+
+  #perdiem-button {
+    float: left;
+  }
+
+  .submenu-component {
+    line-height: 1.5em;
+    padding-left: 1em;
+  }
+
+  .submenu-tertiary, .featured-navigation-content {
+    display: none;
+  }
+
+  // on smaller screens, display the search, per diem,
+  // and menu close in the same flex container
+  .usa-nav__secondary {
+    align-items: end;
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: 100%;
+  }
+
+  .usa-nav__close {
+    margin: 0 0 0 1em;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  #perdiem-button {
+    float: right;
+  }
+
+  .usa-nav__secondary {
+    flex-direction: column-reverse;
+  }
+
+  .usa-nav__secondary-links {
+    margin-top: 0;
+  }
 }
