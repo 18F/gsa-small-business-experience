@@ -1,0 +1,43 @@
+@use "uswds-theme-color.scss";
+
+// HOME PAGE
+
+.usa-hero {
+  background-color: #e0e0e0;
+  color: black;
+  display: flex;
+  padding-left: 1em;
+  padding-bottom: .5em;
+
+  .usa-button {
+    background-color: #00bde3;
+    font-weight: 500;
+    float: right;
+  }
+
+  .usa-hero__callout {
+    background-color: inherit;
+    flex-grow: 2;
+    max-width: none;
+    padding: 0;
+  }
+
+  .usa-hero__heading {
+    color: inherit;
+  }
+
+  // TODO
+  .image-placeholder {
+    width: 400px;
+  }
+
+  span.underline {
+    text-decoration: underline;
+  }
+}
+
+// ALL PAGES
+
+.usa-section {
+  padding-left: 2rem;
+}

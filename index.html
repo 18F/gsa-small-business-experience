@@ -1,21 +1,96 @@
 ---
 permalink: /
 layout: wide
-title: Home
+title: Small Business
 ---
 
-{% comment %} 
-Welcome to official Federalist Jekyll template for the U.S Web Design System 2.0
-
-You'll notice that this page only makes reference to two other html files: hero.html and highlights.html
-
-To the edit the home page, you can edit those files directly, create new ones or add content directly to
-this page. 
-
-We recommend splitting apart your site's components into their own smaller section so that its easier to 
-manage in the long term.
-{% endcomment %}
+<h1>{{ page.title }}</h1>
 
 {% include hero.html %}
-{% include tagline.html %}
-{% include highlights.html %}
+
+<section class="usa-section">
+  <h2 class="font-heading-l margin-top-0 tablet:margin-bottom-0">Vendor Spotlight</h2>
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      <div class="tablet:grid-col-4">
+        <p>Vendor spotlight video</p>
+      </div>
+      <div class="tablet:grid-col-4">
+        <p>Vendor spotlight video</p>
+      </div>
+      <div class="tablet:grid-col-4">
+        <p>Why work with the GSA section</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="usa-section">
+  <h2 class="font-heading-l margin-top-0 tablet:margin-bottom-0">Getting on schedule - Is it right for you?</h2>
+  <p>About schedules - what does it mean? Some text here</p>
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      <div class="tablet:grid-col-4">
+        <p>Do you qualify?</p>
+      </div>
+      <div class="tablet:grid-col-4">
+        <p>Explore opportunities</p>
+      </div>
+      <div class="tablet:grid-col-4">
+        <p>Understand the market</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TODO there is a line across the page in the design here -->
+
+<section class="usa-section">
+  <h2 class="font-heading-l margin-top-0 tablet:margin-bottom-0">Applying for a contract - what to expect</h2>
+  <p>While there are many benefits to continued opportunities, making an offer for a contract in GSA Schedules Program will require hours of market research and learning systems to market your product and services effectively.</p>
+  <p>See if GSA Schedules Program is the right fit for you before applying for a contract.</p>
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      <div class="tablet:grid-col-4">
+        <p>Get Ready</p>
+      </div>
+      <div class="tablet:grid-col-4">
+        <p>Assemble your offer</p>
+      </div>
+      <div class="tablet:grid-col-4">
+        <p>Finalize your offer</p>
+      </div>
+    </div>
+
+    <div class="grid-row grid-gap">
+      <div class="tablet:grid-col-5">
+        <p>Image here</p>
+      </div>
+      <div class="tablet:grid-col-7">
+        <p>If you're ready, use our tool TODO</p>
+        <a class="usa-button" href="javascript:void(0)">Get started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="usa-section">
+  <h2 class="font-heading-l margin-top-0 tablet:margin-bottom-0">Training & Resources</h2>
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      <div class="tablet:grid-col-4">
+        <p>Video here</p>
+      </div>
+      <div class="tablet:grid-col-4">
+        <p>Video here</p>
+      </div>
+      <div class="tablet:grid-col-4">
+        <p>List of stuff here</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="usa-section">
+  <h2 class="font-heading-l margin-top-0 tablet:margin-bottom-0">Upcoming Events</h2>
+</section>
