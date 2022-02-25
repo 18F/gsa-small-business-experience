@@ -160,6 +160,13 @@ ga:
 
 - `search/index.html` is used by search.gov.
 
+## For developers
+
+Add SVGs from USWDS with:
+
+```
+{% asset img/material-icons/[name].svg %}
+```
 
 ## Public domain
 

@@ -8,36 +8,72 @@ title: Small Business
 
 {% include hero.html %}
 
-<section class="usa-section">
-  <h2 class="font-heading-l margin-top-0 tablet:margin-bottom-0">Vendor Spotlight</h2>
+<section class="usa-section tablet:padding-bottom-0">
+  <h2 class="font-heading-l margin-top-0">Vendor spotlight</h2>
   <div class="grid-container">
     <div class="grid-row grid-gap">
       <div class="tablet:grid-col-4">
-        <p>Vendor spotlight video</p>
+        <div class="image-placeholder">
+          {% asset img/material-icons/image.svg %}
+        </div>
       </div>
       <div class="tablet:grid-col-4">
-        <p>Vendor spotlight video</p>
+        <div class=" image-placeholder">
+          {% asset img/material-icons/image.svg %}
+        </div>
       </div>
       <div class="tablet:grid-col-4">
-        <p>Why work with the GSA section</p>
+        <h3 class="font-heading-xs margin-top-0">Why work with GSA?</h3>
+        <ul>
+          <li>Increased opportunities to reach federal buyers</li>
+          <li>Increased opportunities for socioeconomic set-asides</li>
+          <li>Opportunity for a 20-year contract, if all options are exercised</li>
+        </ul>
+
+        <h3 class="font-heading-xs margin-top-0">Find your local small business advocate</h3>
+        <a class="usa-button usa-button--base" href="javascript:void(0)">State</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="usa-section">
-  <h2 class="font-heading-l margin-top-0 tablet:margin-bottom-0">Getting on schedule - Is it right for you?</h2>
+<section class="usa-section tablet:padding-bottom-0">
+  <h2 class="font-heading-l margin-top-0">Getting on schedule - Is it right for you?</h2>
   <p>About schedules - what does it mean? Some text here</p>
   <div class="grid-container">
     <div class="grid-row grid-gap">
       <div class="tablet:grid-col-4">
-        <p>Do you qualify?</p>
+        {% asset img/circle-124.png class="usa-media-block__img" aria-hidden="true" %}
+        <div class="usa-media-block__body">
+          <h3 class="font-heading-xs margin-top-0">Do you qualify?</h3>
+          <ul>
+            <li>A small business (click to see qualification and how to certify)</li>
+            <li>2 years in business (exception for IT solutions)</li>
+            <li>Healthy financials</li>
+            <li>Products or services that fit under a GSA schedule category</li>
+            <li>TAA compliance if offering products</li>
+            <li>Past performance if offering services</li>
+          </ul>
+        </div>
       </div>
       <div class="tablet:grid-col-4">
-        <p>Explore opportunities</p>
+        {% asset img/circle-124.png class="usa-media-block__img" aria-hidden="true" %}
+        <div class="usa-media-block__body">
+          <h3 class="font-heading-xs margin-top-0">Explore opportunities</h3>
+          <p>Explore contracts and opportunities for small business</p>
+          <a href="javascript:void(0)">Opportunity Explorer</a>
+        </div>
       </div>
       <div class="tablet:grid-col-4">
-        <p>Understand the market</p>
+        {% asset img/circle-124.png class="usa-media-block__img" aria-hidden="true" %}
+        <div class="usa-media-block__body">
+          <h3 class="font-heading-xs margin-top-0">Understand the market</h3>
+          <ul>
+            <li>Is there demand for your product/services?</li>
+            <li>Is your business competitive?</li>
+          </ul>
+          <a href="javascript:void(0)">Guided market analysis</a>
+        </div>
       </div>
     </div>
   </div>
@@ -45,44 +81,90 @@ title: Small Business
 
 <!-- TODO there is a line across the page in the design here -->
 
-<section class="usa-section">
-  <h2 class="font-heading-l margin-top-0 tablet:margin-bottom-0">Applying for a contract - what to expect</h2>
+<section class="usa-section tablet:padding-bottom-0">
+  <h2 class="font-heading-l margin-top-0">Applying for a contract - what to expect</h2>
   <p>While there are many benefits to continued opportunities, making an offer for a contract in GSA Schedules Program will require hours of market research and learning systems to market your product and services effectively.</p>
   <p>See if GSA Schedules Program is the right fit for you before applying for a contract.</p>
   <div class="grid-container">
-    <div class="grid-row grid-gap">
+    <div class="grid-row grid-gap margin-bottom-4">
       <div class="tablet:grid-col-4">
-        <p>Get Ready</p>
+        <div class="usa-accordion">
+          <h3 class="usa-accordion__heading font-heading-xs">
+            <button
+              class="usa-accordion__button"
+              aria-expanded="false"
+              aria-controls="get-ready">
+              Get ready
+            </button>
+          </h3>
+          <div id="get-ready" class="usa-accordion__content usa-prose">
+            <p>TODO placeholder</p>
+          </div>
+        </div>
       </div>
       <div class="tablet:grid-col-4">
-        <p>Assemble your offer</p>
+        <div class="usa-accordion">
+          <h3 class="usa-accordion__heading font-heading-xs">
+            <button
+              class="usa-accordion__button"
+              aria-expanded="false"
+              aria-controls="assemble-offer">
+              Assemble your offer
+            </button>
+          </h3>
+          <div id="assemble-offer" class="usa-accordion__content usa-prose">
+            <p>TODO placeholder</p>
+          </div>
+        </div>
       </div>
       <div class="tablet:grid-col-4">
-        <p>Finalize your offer</p>
+        <div class="usa-accordion">
+          <h3 class="usa-accordion__heading font-heading-xs">
+            <button
+              class="usa-accordion__button"
+              aria-expanded="false"
+              aria-controls="finalize-offer">
+              Finalize your offer
+            </button>
+          </h3>
+          <div id="finalize-offer" class="usa-accordion__content usa-prose">
+            <p>TODO placeholder</p>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="grid-row grid-gap">
       <div class="tablet:grid-col-5">
-        <p>Image here</p>
+        <div class="image-placeholder">
+          {% asset img/material-icons/image.svg %}
+        </div>
       </div>
       <div class="tablet:grid-col-7">
-        <p>If you're ready, use our tool TODO</p>
-        <a class="usa-button" href="javascript:void(0)">Get started</a>
+        <p>If you're ready, use our tool to walk you through your first contract. <strong>Before getting started you must have:</strong></p>
+        <ul>
+          <li>Have a DUNS Number (<a href="javascript:void(0)">apply here</a>)</li>
+          <li>Registration with SAM.gov</li>
+        </ul>
+        <a class="usa-button usa-button--accent-cool" href="javascript:void(0)">Get started</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="usa-section">
-  <h2 class="font-heading-l margin-top-0 tablet:margin-bottom-0">Training & Resources</h2>
+<section class="usa-section tablet:padding-bottom-0">
+  <h2 class="font-heading-l margin-top-0">Training & Resources</h2>
   <div class="grid-container">
     <div class="grid-row grid-gap">
       <div class="tablet:grid-col-4">
-        <p>Video here</p>
+        <div class="image-placeholder">
+          {% asset img/material-icons/video_library.svg %}
+        </div>
       </div>
       <div class="tablet:grid-col-4">
-        <p>Video here</p>
+        <div class="image-placeholder">
+          {% asset img/material-icons/video_library.svg %}
+        </div>
       </div>
       <div class="tablet:grid-col-4">
         <p>List of stuff here</p>
@@ -91,6 +173,6 @@ title: Small Business
   </div>
 </section>
 
-<section class="usa-section">
-  <h2 class="font-heading-l margin-top-0 tablet:margin-bottom-0">Upcoming Events</h2>
+<section class="usa-section tablet:padding-bottom-0">
+  <h2 class="font-heading-l margin-top-0">Upcoming Events</h2>
 </section>

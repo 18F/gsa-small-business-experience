@@ -3,32 +3,31 @@
 // HOME PAGE
 
 .usa-hero {
-  background-color: #e0e0e0;
+  background-color: #dfe1e2;
   color: black;
   display: flex;
-  padding-left: 1em;
-  padding-bottom: .5em;
+  padding: 0 0 0 1em;
+
+  .image-placeholder {
+    height: unset;
+    // TODO what do we want to do for a small screen?
+    max-width: 33%;
+  }
 
   .usa-button {
-    background-color: #00bde3;
-    font-weight: 500;
     float: right;
   }
 
   .usa-hero__callout {
     background-color: inherit;
-    flex-grow: 2;
+    flex-grow: 1.5;
     max-width: none;
+    margin: 1em;
     padding: 0;
   }
 
   .usa-hero__heading {
     color: inherit;
-  }
-
-  // TODO
-  .image-placeholder {
-    width: 400px;
   }
 
   span.underline {
@@ -37,6 +36,22 @@
 }
 
 // ALL PAGES
+
+.image-placeholder {
+  background-color: #f0f0f0;
+  height: 200px;
+  text-align: center;
+  width: 100%;
+
+  img {
+    position: relative;
+    top: 40%;
+  }
+}
+
+.usa-media-block__img {
+  width: 30px;
+}
 
 .usa-section {
   padding-left: 2rem;
