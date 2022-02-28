@@ -9,6 +9,11 @@
   border: 0;
 }
 
+.usa-banner__button-text {
+  // changes for WCAG AAA
+  color: #00538e;
+}
+
 /*
 ////////////////////////
 HEADING & PRIMARY NAVBAR
@@ -51,6 +56,7 @@ HEADING & PRIMARY NAVBAR
 }
 
 .usa-nav__primary button span {
+  color: black;
   font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
   font-size: 15px;
   padding-right: 15px;
@@ -254,10 +260,6 @@ FOOTER
   padding-top: 20px;
   padding-bottom: 10px;
   margin: 0;
-  a {
-    color: #059;
-    text-decoration: none;
-  }
 }
 
 ul.list-unstyled {
@@ -273,8 +275,10 @@ ul.list-unstyled {
   font-family: Source Sans Pro Web,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
   font-size: .87rem;
   line-height: 1.3;
-  a {
-    color: #059;
-    text-decoration: none;
-  }
+}
+
+#footer-links a {
+  // changing from GSA.gov settings for WCAGAAA
+  color: #003E70;
+  text-decoration: none;
 }

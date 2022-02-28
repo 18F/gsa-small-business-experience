@@ -3,8 +3,7 @@
 // HOME PAGE
 
 .usa-hero {
-  background-color: #dfe1e2;
-  color: black;
+  background-color: color($theme-color-base-lighter);
   display: flex;
   padding: 0 0 0 1em;
 
@@ -14,31 +13,21 @@
     max-width: 33%;
   }
 
-  .usa-button {
-    float: right;
-  }
-
   .usa-hero__callout {
     background-color: inherit;
     flex-grow: 1.5;
     max-width: none;
-    margin: 1em;
-    padding: 0;
   }
 
   .usa-hero__heading {
     color: inherit;
-  }
-
-  span.underline {
-    text-decoration: underline;
   }
 }
 
 // ALL PAGES
 
 .image-placeholder {
-  background-color: #f0f0f0;
+  background-color: color($theme-color-base-lightest);
   height: 200px;
   text-align: center;
   width: 100%;
@@ -49,10 +38,7 @@
   }
 }
 
-.usa-media-block__img {
-  width: 30px;
-}
-
-.usa-section {
-  padding-left: 2rem;
+.usa-button--base {
+  // overridding for WCAG AAA
+  background-color: color($theme-color-primary-dark);
 }
