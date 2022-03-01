@@ -14,7 +14,7 @@
     "woke": "woke"
   },
   "dependencies": {
-    "netlify-cms": "^2.10.179",
+    "netlify-cms": "^2.10.187",
     "uswds": "^2.13.1"
   },
   "devDependencies": {
