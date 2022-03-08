@@ -84,14 +84,13 @@ datafile: collections
 
 The reference to `datafile` referers to the name of the file in `_data/collections.yml` and loops through the values. Feel free to modify this as needed.
 
-✅  There are two different kinds of `pages`, one does not have a side bar navigation, and the other uses `_includes/sidenav.html`. You can enable this option by adding `sidenav: true` to your page front matter.
+✅  You may use `pages` which use the page layout.
 
 ```
 ---
-title: Document with Sidenav
+title: Document
 layout: page
-sidenav: true
-permalink: /document-with-sidenav
+permalink: /document-url
 ---
 ```
 
@@ -160,6 +159,13 @@ ga:
 
 - `search/index.html` is used by search.gov.
 
+## For developers
+
+Add SVGs from USWDS with:
+
+```
+{% asset img/material-icons/[name].svg %}
+```
 
 ## Public domain
 

@@ -1,0 +1,44 @@
+@use "uswds-theme-color.scss";
+
+// HOME PAGE
+
+.usa-hero {
+  background-color: color($theme-color-base-lighter);
+  display: flex;
+  padding: 0 0 0 1em;
+
+  .image-placeholder {
+    height: unset;
+    // TODO what do we want to do for a small screen?
+    max-width: 33%;
+  }
+
+  .usa-hero__callout {
+    background-color: inherit;
+    flex-grow: 1.5;
+    max-width: none;
+  }
+
+  .usa-hero__heading {
+    color: inherit;
+  }
+}
+
+// ALL PAGES
+
+.image-placeholder {
+  background-color: color($theme-color-base-lightest);
+  height: 200px;
+  text-align: center;
+  width: 100%;
+
+  img {
+    position: relative;
+    top: 40%;
+  }
+}
+
+.usa-button--base {
+  // overridding for WCAG AAA
+  background-color: color($theme-color-primary-dark);
+}

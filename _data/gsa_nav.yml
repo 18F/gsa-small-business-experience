@@ -3,62 +3,62 @@
 ####################
 
 - name: Buying & Selling
-  url: "https://gsa.gov/buying-selling"
+  url: "https://www.gsa.gov/buying-selling"
   children:
     - name: Government Property for Sale or Disposal
-      url: "https://gsa.gov/buying-selling/government-property-for-sale-or-disposal"
+      url: "https://www.gsa.gov/buying-selling/government-property-for-sale-or-disposal"
       children:
         - name: Personal Property (Tangible Goods)
-          url: "https://gsa.gov/buying-selling/government-property-for-sale-or-disposal/personal-property-for-reuse-and-sale"
+          url: "https://www.gsa.gov/buying-selling/government-property-for-sale-or-disposal/personal-property-for-reuse-and-sale"
         - name: Real Property (Real Estate and Buildings)
-          url: "https://gsa.gov/real-estate/real-estate-services/real-property-utilization-disposal"
+          url: "https://www.gsa.gov/real-estate/real-estate-services/real-property-utilization-disposal"
     - name: New to GSA Acquisitions?
-      url: "https://gsa.gov/buying-selling/getting-started-with-gsa-purchasing-programs"
+      url: "https://www.gsa.gov/buying-selling/getting-started-with-gsa-purchasing-programs"
     - name: Products & Services
-      url: "https://gsa.gov/buying-selling/products-services"
+      url: "https://www.gsa.gov/buying-selling/products-services"
       children:
         - name: Facilities & Construction
-          url: "https://gsa.gov/buying-selling/products-services/facilities-construction"
+          url: "https://www.gsa.gov/buying-selling/products-services/facilities-construction"
         - name: Human Capital
-          url: "https://gsa.gov/buying-selling/products-services/human-capital"
+          url: "https://www.gsa.gov/buying-selling/products-services/human-capital"
         - name: Industrial Products & Services
-          url: "https://gsa.gov/buying-selling/products-services/industrial-products-services"
+          url: "https://www.gsa.gov/buying-selling/products-services/industrial-products-services"
         - name: Information Technology
-          url: "https://gsa.gov/technology/information-technology-category"
+          url: "https://www.gsa.gov/technology/information-technology-category"
         - name: Office Management
-          url: "https://gsa.gov/buying-selling/products-services/office-management"
+          url: "https://www.gsa.gov/buying-selling/products-services/office-management"
         - name: Professional Services
-          url: "https://gsa.gov/buying-selling/products-services/professional-services"
+          url: "https://www.gsa.gov/buying-selling/products-services/professional-services"
         - name: Security & Protection
-          url: "https://gsa.gov/buying-selling/products-services/security-protection"
+          url: "https://www.gsa.gov/buying-selling/products-services/security-protection"
         - name: Transportation & Logistics Services
-          url: "https://gsa.gov/buying-selling/products-services/transportation-logistics-services"
+          url: "https://www.gsa.gov/buying-selling/products-services/transportation-logistics-services"
         - name: Travel & Lodging
-          url: "https://gsa.gov/travel/services-for-agency-travel-managers"
+          url: "https://www.gsa.gov/travel/services-for-agency-travel-managers"
     - name: Purchasing Programs
-      url: "https://gsa.gov/buying-selling/purchasing-programs"
+      url: "https://www.gsa.gov/buying-selling/purchasing-programs"
       children:
         - name: Assisted Acquisition
-          url: "https://gsa.gov/buying-selling/purchasing-programs/assisted-acquisition-services"
+          url: "https://www.gsa.gov/buying-selling/purchasing-programs/assisted-acquisition-services"
         - name: GSA Fleet Management
-          url: "https://gsa.gov/buying-selling/products-services/transportation-logistics-services/fleet-management"
+          url: "https://www.gsa.gov/buying-selling/products-services/transportation-logistics-services/fleet-management"
         - name: GSA Global Supply
-          url: "https://gsa.gov/buying-selling/purchasing-programs/requisition-programs/gsa-global-supply"
+          url: "https://www.gsa.gov/buying-selling/purchasing-programs/requisition-programs/gsa-global-supply"
         - name: GSA Schedules
-          url: "https://gsa.gov/buying-selling/purchasing-programs/gsa-schedule"
+          url: "https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedule"
         - name: OASIS & OASIS SB
-          url: "https://gsa.gov/buying-selling/products-services/professional-services/buy-services/one-acquisition-solution-for-integrated-services-oasis"
+          url: "https://www.gsa.gov/buying-selling/products-services/professional-services/buy-services/one-acquisition-solution-for-integrated-services-oasis"
         - name: Requisition Programs
-          url: "https://gsa.gov/buying-selling/purchasing-programs/requisition-programs-overview"
+          url: "https://www.gsa.gov/buying-selling/purchasing-programs/requisition-programs-overview"
         - name: SmartPay (Charge Card Services)
           url: "http://smartpay.gsa.gov/"
         - name: Technology Programs
-          url: "https://gsa.gov/technology/technology-programs"
+          url: "https://www.gsa.gov/technology/technology-programs"
     - name: Acquisition Policy
-      url: "https://gsa.gov/policy-regulations/policy/acquisition-policy-overview"
+      url: "https://www.gsa.gov/policy-regulations/policy/acquisition-policy-overview"
   featured:
     - name: GSA Schedules and GSAAdvantage
-      url: "https://gsa.gov/acquisition/purchasing-programs/gsa-schedules"
+      url: "https://www.gsa.gov/acquisition/purchasing-programs/gsa-schedules"
       desc: Governmentwide contracts for products and services at volume discount pricing.
     - name: GSA Auctions
       url: "http://www.gsaauctions.gov"
@@ -67,7 +67,7 @@
       url: "https://hallways.cap.gsa.gov/app/?utm_source=gsaag&utm_medium=link&utm_campaign=gsacapstie%20"
       desc: Online community for acquisition professionals.
     - name: Forecast of Contracting Opportunities
-      url: "https://gsa.gov/smallbizforecast"
+      url: "https://www.gsa.gov/smallbizforecast"
       desc: Anticipated contracts offered by GSA.
 
 ####################
@@ -75,109 +75,109 @@
 ####################
 
 - name: Real Estate
-  url: "https://gsa.gov/real-estate"
+  url: "https://www.gsa.gov/real-estate"
   children:
     - name: Design & Construction
-      url: "https://gsa.gov/real-estate/design-and-construction-overview"
+      url: "https://www.gsa.gov/real-estate/design-and-construction-overview"
       children:
         - name: 3D-4D Building Information Modeling
-          url: "https://gsa.gov/real-estate/design-construction/3d4d-building-information-modeling"
+          url: "https://www.gsa.gov/real-estate/design-construction/3d4d-building-information-modeling"
         - name: Engineering & Architecture
-          url: "https://gsa.gov/real-estate/design-construction/engineering-and-architecture"
+          url: "https://www.gsa.gov/real-estate/design-construction/engineering-and-architecture"
         - name: Art in Architecture & Fine Arts
-          url: "https://gsa.gov/real-estate/design-construction/art-in-architecture-fine-arts"
+          url: "https://www.gsa.gov/real-estate/design-construction/art-in-architecture-fine-arts"
         - name: CAD Standards
-          url: "https://gsa.gov/real-estate/design-construction/cad-standards"
+          url: "https://www.gsa.gov/real-estate/design-construction/cad-standards"
         - name: Commissioning
-          url: "https://gsa.gov/real-estate/design-construction/commissioning"
+          url: "https://www.gsa.gov/real-estate/design-construction/commissioning"
         - name: Design Excellence
-          url: "https://gsa.gov/real-estate/design-construction/design-excellence-overview"
+          url: "https://www.gsa.gov/real-estate/design-construction/design-excellence-overview"
         - name: Electronic Project Management (ePM)
-          url: "https://gsa.gov/real-estate/design-construction/electronic-project-management-epm"
+          url: "https://www.gsa.gov/real-estate/design-construction/electronic-project-management-epm"
         - name: Spatial Data Management
-          url: "https://gsa.gov/real-estate/design-construction/spatial-data-management-overview"
+          url: "https://www.gsa.gov/real-estate/design-construction/spatial-data-management-overview"
         - name: All Design & Construction Topics
-          url: "https://gsa.gov/real-estate/design-and-construction-overview"
+          url: "https://www.gsa.gov/real-estate/design-and-construction-overview"
     - name: Environmental Programs
-      url: "https://gsa.gov/real-estate/environmental-programs-overview"
+      url: "https://www.gsa.gov/real-estate/environmental-programs-overview"
       children:
         - name: Energy & Water Conservation
-          url: "https://gsa.gov/real-estate/environmental-programs/energy-and-water-conservation-overview"
+          url: "https://www.gsa.gov/real-estate/environmental-programs/energy-and-water-conservation-overview"
         - name: Waste Minimization
-          url: "https://gsa.gov/real-estate/environmental-programs/waste-minimization"
+          url: "https://www.gsa.gov/real-estate/environmental-programs/waste-minimization"
         - name: All Environmental Programs
-          url: "https://gsa.gov/real-estate/environmental-programs-overview"
+          url: "https://www.gsa.gov/real-estate/environmental-programs-overview"
     - name: Facilities Management
-      url: "https://gsa.gov/real-estate/facilities-management-overview"
+      url: "https://www.gsa.gov/real-estate/facilities-management-overview"
       children:
         - name: Facilities Operations
-          url: "https://gsa.gov/real-estate/facilities-management/facilities-operations"
+          url: "https://www.gsa.gov/real-estate/facilities-management/facilities-operations"
         - name: GSA Smart Buildings
-          url: "https://gsa.gov/real-estate/facilities-management/gsa-smart-buildings"
+          url: "https://www.gsa.gov/real-estate/facilities-management/gsa-smart-buildings"
         - name: Tenant Services
-          url: "https://gsa.gov/real-estate/facilities-management/amenities"
+          url: "https://www.gsa.gov/real-estate/facilities-management/amenities"
         - name: Security
-          url: "https://gsa.gov/real-estate/facilities-management/security-overview"
+          url: "https://www.gsa.gov/real-estate/facilities-management/security-overview"
         - name: All Facilities Management Topics
-          url: "https://gsa.gov/real-estate/facilities-management-overview"
+          url: "https://www.gsa.gov/real-estate/facilities-management-overview"
     - name: GSA Properties
-      url: "https://gsa.gov/real-estate/gsa-properties"
+      url: "https://www.gsa.gov/real-estate/gsa-properties"
       children:
         - name: Courthouse Program
-          url: "https://gsa.gov/real-estate/gsa-properties/courthouse-program"
+          url: "https://www.gsa.gov/real-estate/gsa-properties/courthouse-program"
         - name: Land Ports of Entry
-          url: "https://gsa.gov/real-estate/gsa-properties/land-ports-of-entry-overview"
+          url: "https://www.gsa.gov/real-estate/gsa-properties/land-ports-of-entry-overview"
         - name: Prospectus Library
-          url: "https://gsa.gov/real-estate/gsa-properties/capital-investment-and-leasing-program-prospectus-library"
+          url: "https://www.gsa.gov/real-estate/gsa-properties/capital-investment-and-leasing-program-prospectus-library"
         - name: Regional Buildings
-          url: "https://gsa.gov/real-estate/gsa-properties/regional-buildings-overview"
+          url: "https://www.gsa.gov/real-estate/gsa-properties/regional-buildings-overview"
         - name: Renting GSA Property
-          url: "https://gsa.gov/real-estate/gsa-properties/renting-gsa-property"
+          url: "https://www.gsa.gov/real-estate/gsa-properties/renting-gsa-property"
         - name: Visiting Public Buildings
-          url: "https://gsa.gov/real-estate/gsa-properties/visiting-public-buildings"
+          url: "https://www.gsa.gov/real-estate/gsa-properties/visiting-public-buildings"
     - name: Historic Preservation
-      url: "https://gsa.gov/real-estate/historic-preservation"
+      url: "https://www.gsa.gov/real-estate/historic-preservation"
       children:
         - name: Explore Historic Buildings
-          url: "https://gsa.gov/real-estate/historic-preservation/explore-historic-buildings"
+          url: "https://www.gsa.gov/real-estate/historic-preservation/explore-historic-buildings"
         - name: Historic Building Stewardship
-          url: "https://gsa.gov/real-estate/historic-preservation/historic-building-stewardship"
+          url: "https://www.gsa.gov/real-estate/historic-preservation/historic-building-stewardship"
         - name: Heritage Tourism
-          url: "https://gsa.gov/real-estate/historic-preservation/explore-historic-buildings/heritage-tourism"
+          url: "https://www.gsa.gov/real-estate/historic-preservation/explore-historic-buildings/heritage-tourism"
         - name: Videos, Pictures, Posters & More
-          url: "https://gsa.gov/real-estate/historic-preservation/celebrate-american-architecture"
+          url: "https://www.gsa.gov/real-estate/historic-preservation/celebrate-american-architecture"
         - name: Historic Preservation Policy, Tools & Resources
-          url: "https://gsa.gov/real-estate/historic-preservation/historic-preservation-policy-tools-resources"
+          url: "https://www.gsa.gov/real-estate/historic-preservation/historic-preservation-policy-tools-resources"
         - name: All Historic Preservation Topics
-          url: "https://gsa.gov/real-estate/historic-preservation"
+          url: "https://www.gsa.gov/real-estate/historic-preservation"
     - name: Real Estate Services
-      url: "https://gsa.gov/real-estate/realty-services-overview"
+      url: "https://www.gsa.gov/real-estate/realty-services-overview"
       children:
         - name: Leasing Policy & Procedures
-          url: "https://gsa.gov/real-estate/real-estate-services/leasing-overview"
+          url: "https://www.gsa.gov/real-estate/real-estate-services/leasing-overview"
         - name: Real Property Disposal
-          url: "https://gsa.gov/real-estate/real-estate-services/real-property-utilization-disposal"
+          url: "https://www.gsa.gov/real-estate/real-estate-services/real-property-utilization-disposal"
         - name: Reimbursable Services (RWA)
-          url: "https://gsa.gov/real-estate/real-estate-services/reimbursable-services-rs-program"
+          url: "https://www.gsa.gov/real-estate/real-estate-services/reimbursable-services-rs-program"
         - name: Rental Policy & Procedures
-          url: "https://gsa.gov/real-estate/real-estate-services/rent-overview"
+          url: "https://www.gsa.gov/real-estate/real-estate-services/rent-overview"
         - name: Site Selection & Relocation
-          url: "https://gsa.gov/real-estate/real-estate-services/real-estate-site-selection-and-relocation"
+          url: "https://www.gsa.gov/real-estate/real-estate-services/real-estate-site-selection-and-relocation"
         - name: For Businesses Seeking Opportunities
-          url: "https://gsa.gov/real-estate/real-estate-services/businesses-seeking-opportunities-in-real-estate"
+          url: "https://www.gsa.gov/real-estate/real-estate-services/businesses-seeking-opportunities-in-real-estate"
         - name: For Federal Customers
-          url: "https://gsa.gov/real-estate/real-estate-services/for-federal-customers-overview"
+          url: "https://www.gsa.gov/real-estate/real-estate-services/for-federal-customers-overview"
         - name: For Workers in Federal Buildings
-          url: "https://gsa.gov/real-estate/real-estate-services/for-workers-in-federal-buildings"
+          url: "https://www.gsa.gov/real-estate/real-estate-services/for-workers-in-federal-buildings"
     - name: Workplace Innovation
     - name: GSA NEPA Implementation
-      url: "https://gsa.gov/real-estate/environmental-programs/national-environmental-policy-act"
+      url: "https://www.gsa.gov/real-estate/environmental-programs/national-environmental-policy-act"
   featured:
     - name: Historic Preservation Technical Procedures
-      url: "https://gsa.gov/real-estate/historic-preservation/historic-preservation-policy-tools-re/preservation-tools-resources/technical-documents"
+      url: "https://www.gsa.gov/real-estate/historic-preservation/historic-preservation-policy-tools-re/preservation-tools-resources/technical-documents"
       desc: Procedures for maintaining and repairing historic buildings.
     - name: Real Property Disposal
-      url: "https://gsa.gov/real-estate/real-estate-services/real-property-utilization-disposal"
+      url: "https://www.gsa.gov/real-estate/real-estate-services/real-property-utilization-disposal"
       desc: Dispose or acquire excess federal real property including buildings or land.
 
 ######################
@@ -185,44 +185,44 @@
 ######################
 
 - name: Policy & Regulations
-  url: "https://gsa.gov/policy-regulations"
+  url: "https://www.gsa.gov/policy-regulations"
   children:
     - name: Policy
-      url: "https://gsa.gov/policy"
+      url: "https://www.gsa.gov/policy"
       children:
         - name: Acquisition Management Policy
-          url: "https://gsa.gov/policy-regulations/policy/acquisition-policy-overview"
+          url: "https://www.gsa.gov/policy-regulations/policy/acquisition-policy-overview"
         - name: Aviation Management Policy
-          url: "https://gsa.gov/aircraftpolicy"
+          url: "https://www.gsa.gov/aircraftpolicy"
         - name: Real Property Management Policy
-          url: "https://gsa.gov/realpropertypolicy"
+          url: "https://www.gsa.gov/realpropertypolicy"
         - name: Relocation Management Policy
-          url: "https://gsa.gov/relopolicy"
+          url: "https://www.gsa.gov/relopolicy"
         - name: Travel Management Policy
-          url: "https://gsa.gov/travelpolicy"
+          url: "https://www.gsa.gov/travelpolicy"
         - name: Vehicle Management Policy
-          url: "https://gsa.gov/vehiclepolicy"
+          url: "https://www.gsa.gov/vehiclepolicy"
         - name: All Policy Topics
-          url: "https://gsa.gov/policy"
+          url: "https://www.gsa.gov/policy"
     - name: Regulations
-      url: "https://gsa.gov/regulations"
+      url: "https://www.gsa.gov/regulations"
       children:
         - name: Federal Acquisition Regulations
-          url: "https://gsa.gov/far"
+          url: "https://www.gsa.gov/far"
         - name: Federal Managment Regulations
-          url: "https://gsa.gov/fmr"
+          url: "https://www.gsa.gov/fmr"
         - name: Federal Travel Regulations
-          url: "https://gsa.gov/ftr"
+          url: "https://www.gsa.gov/ftr"
         - name: GSA Acquisition Manual
-          url: "https://gsa.gov/gsam"
+          url: "https://www.gsa.gov/gsam"
         - name: Managing the Federal Rulemaking Process
-          url: "https://gsa.gov/erulemaking"
+          url: "https://www.gsa.gov/erulemaking"
   featured:
     - name: Forms
-      url: "https://gsa.gov/reference/forms"
+      url: "https://www.gsa.gov/reference/forms"
       desc: Search the database of GSA forms, standard (SF) and optional (OF) government forms.
     - name: Per Diem FAQs
-      url: "https://gsa.gov/travel/plan-book/per-diem-rates/frequently-asked-questions-per-diem"
+      url: "https://www.gsa.gov/travel/plan-book/per-diem-rates/frequently-asked-questions-per-diem"
       desc: Frequently asked questions about per diem rates and related topics.
 
 ####################
@@ -230,34 +230,34 @@
 ####################
 
 - name: Small Business
-  url: "https://gsa.gov/small-business"
+  url: "https://www.gsa.gov/small-business"
   children:
     - name: Register Your Business
-      url: "https://gsa.gov/small-business/register-your-business"
+      url: "https://www.gsa.gov/small-business/register-your-business"
       children:
         - name: Explore Business Models
-          url: "https://gsa.gov/small-business/register-your-business/-explore-business-models"
+          url: "https://www.gsa.gov/small-business/register-your-business/-explore-business-models"
         - name: Research the Federal Market
-          url: "https://gsa.gov/small-business/register-your-business/research-the-federal-market"
+          url: "https://www.gsa.gov/small-business/register-your-business/research-the-federal-market"
     - name: Compete for Contracts
-      url: "https://gsa.gov/small-business/-compete-for-contracts"
+      url: "https://www.gsa.gov/small-business/-compete-for-contracts"
     - name: Small Business Resources
-      url: "https://gsa.gov/small-business/small-business-resources"
+      url: "https://www.gsa.gov/small-business/small-business-resources"
       children:
         - name: Events and Contact Us
-          url: "https://gsa.gov/small-business/small-business-resources/osdbu-events-and-contacts"
+          url: "https://www.gsa.gov/small-business/small-business-resources/osdbu-events-and-contacts"
         - name: Training Resources
-          url: "https://gsa.gov/small-business/small-business-resources/training-resources"
+          url: "https://www.gsa.gov/small-business/small-business-resources/training-resources"
         - name: Video Resources
-          url: "https://gsa.gov/small-business/small-business-resources/doing-business-with-gsa-video-series"
+          url: "https://www.gsa.gov/small-business/small-business-resources/doing-business-with-gsa-video-series"
         - name: Policy and Regulations
-          url: "https://gsa.gov/small-business/small-business-resources/-policy-and-regulations"
+          url: "https://www.gsa.gov/small-business/small-business-resources/-policy-and-regulations"
   featured:
     - name: Training & Videos
-      url: "https://gsa.gov/acquisition/assistance-for-small-businesses/resources-and-training/training-for-small-businesses"
+      url: "https://www.gsa.gov/acquisition/assistance-for-small-businesses/resources-and-training/training-for-small-businesses"
       desc: Suggested training for doing business with GSA
     - name: Forecast Tool
-      url: "https://gsa.gov/acquisition/forecast-of-contracting-opportunities"
+      url: "https://www.gsa.gov/acquisition/forecast-of-contracting-opportunities"
       desc: Information on planned federal contracting opportunities.
     - name: Socio Economic Categories
       url: "https://www.sba.gov/federal-contracting/contracting-guide/types-contracts#section-header-6"
@@ -268,40 +268,40 @@
 ####################
 
 - name: Travel
-  url: "https://gsa.gov/travel-resources"
+  url: "https://www.gsa.gov/travel-resources"
   children:
     - name: Plan & Book
-      url: "https://gsa.gov/travelplan"
+      url: "https://www.gsa.gov/travelplan"
       children:
         - name: Per Diem Rates
-          url: "https://gsa.gov/perdiemmealsincidentals"
+          url: "https://www.gsa.gov/perdiemmealsincidentals"
         - name: Transportation (Airfare Rates, POV Rates, etc.)
-          url: "https://gsa.gov/passengertransportation"
+          url: "https://www.gsa.gov/passengertransportation"
         - name: Lodging
-          url: "https://gsa.gov/lodging"
+          url: "https://www.gsa.gov/lodging"
         - name: Conference/Meeting
-          url: "https://gsa.gov/planameeting"
+          url: "https://www.gsa.gov/planameeting"
         - name: Travel Charge Card
-          url: "https://gsa.gov/travelchargecard"
+          url: "https://www.gsa.gov/travelchargecard"
         - name: State Tax Exemption
-          url: "https://gsa.gov/statetaxforms"
+          url: "https://www.gsa.gov/statetaxforms"
     - name: Agency Services
-      url: "https://gsa.gov/agencytravelservices"
+      url: "https://www.gsa.gov/agencytravelservices"
       children:
         - name: Travel Services Solutions (TSS Schedule 599)
-          url: "https://gsa.gov/travel/agency-services/travel-category-schedule-category-l"
+          url: "https://www.gsa.gov/travel/agency-services/travel-category-schedule-category-l"
         - name: E-Gov Travel Service (ETS)
-          url: "https://gsa.gov/travel/agency-services/egov-travel-service-ets"
+          url: "https://www.gsa.gov/travel/agency-services/egov-travel-service-ets"
     - name: Federal Travel Regulation
-      url: "https://gsa.gov/ftr"
+      url: "https://www.gsa.gov/ftr"
     - name: Travel Policy
-      url: "https://gsa.gov/travelpolicy"
+      url: "https://www.gsa.gov/travelpolicy"
   featured:
     - name: Per Diem Rates Look-up
-      url: "https://gsa.gov/perdiem"
+      url: "https://www.gsa.gov/perdiem"
       desc: Allowances for lodging, meal and incidental costs while on official government travel.
     - name: Privately Owned Vehicle (POV) Mileage Reimbursement Rates
-      url: "https://gsa.gov/pov"
+      url: "https://www.gsa.gov/pov"
       desc: Reimbursement rates for the use of your own vehicle while on official government travel.
 
 ####################
@@ -309,24 +309,24 @@
 ####################
 
 - name: Shared Services
-  url: "https://gsa.gov/shared-services"
+  url: "https://www.gsa.gov/shared-services"
   children:
     - name: Assisted Acquisition
-      url: "https://gsa.gov/about-us/regions/welcome-to-the-greater-southwest-region-7/products-and-services/assisted-acquisition"
+      url: "https://www.gsa.gov/about-us/regions/welcome-to-the-greater-southwest-region-7/products-and-services/assisted-acquisition"
     - name: Charge Cards and Payments (SmartPay)
       url: "https://smartpay.gsa.gov"
     - name: Enterprise Infrastructure Solutions
-      url: "https://gsa.gov/technology/technology-purchasing-programs/telecommunications-and-network-services/enterprise-infrastructure-solutions"
+      url: "https://www.gsa.gov/technology/technology-purchasing-programs/telecommunications-and-network-services/enterprise-infrastructure-solutions"
     - name: Fleet
-      url: "https://gsa.gov/buying-selling/products-services/transportation-logistics-services/fleet-management"
+      url: "https://www.gsa.gov/buying-selling/products-services/transportation-logistics-services/fleet-management"
     - name: Interagency Invoicing (G-Invoicing)
-      url: "https://gsa.gov/shared-services/ginvoicing"
+      url: "https://www.gsa.gov/shared-services/ginvoicing"
     - name: Payroll
-      url: "https://gsa.gov/buying-selling/purchasing-programs/shared-services/payroll-shared-services"
+      url: "https://www.gsa.gov/buying-selling/purchasing-programs/shared-services/payroll-shared-services"
     - name: Quality Service Management Offices
       url: "https://ussm.gsa.gov"
     - name: Travel
-      url: "https://gsa.gov/travel/agency-services/travel-category-schedule-category-l"
+      url: "https://www.gsa.gov/travel/agency-services/travel-category-schedule-category-l"
     - name: Websites (Federalist)
       url: "https://federalist.18f.gov"
   featured:
@@ -342,68 +342,68 @@
 ####################
 
 - name: Technology
-  url: "https://gsa.gov/technology"
+  url: "https://www.gsa.gov/technology"
   children:
     - name: Products & Services
-      url: "https://gsa.gov/techproductsservices"
+      url: "https://www.gsa.gov/techproductsservices"
       children:
         - name: Cybersecurity Products & Services
-          url: "https://gsa.gov/technology/technology-products-services/it-security"
+          url: "https://www.gsa.gov/technology/technology-products-services/it-security"
         - name: Software Products & Services
-          url: "https://gsa.gov/technology/technology-products-services/it-software"
+          url: "https://www.gsa.gov/technology/technology-products-services/it-software"
         - name: Hardware Products & Services
-          url: "https://gsa.gov/technology/technology-products-services/it-hardware"
+          url: "https://www.gsa.gov/technology/technology-products-services/it-hardware"
         - name: Cloud Computing Services
-          url: "https://gsa.gov/cloudcomputing"
+          url: "https://www.gsa.gov/cloudcomputing"
         - name: Data Center Services
-          url: "https://gsa.gov/technology/technology-products-services/data-center-services"
+          url: "https://www.gsa.gov/technology/technology-products-services/data-center-services"
         - name: Telecommunications & Network Services
-          url: "https://gsa.gov/technology/technology-products-services/telecommunications"
+          url: "https://www.gsa.gov/technology/technology-products-services/telecommunications"
         - name: Professional IT Services
-          url: "https://gsa.gov/itservices"
+          url: "https://www.gsa.gov/itservices"
         - name: Work with Small Businesses
-          url: "https://gsa.gov/itsmallbusiness"
+          url: "https://www.gsa.gov/itsmallbusiness"
     - name: Purchasing Programs
-      url: "https://gsa.gov/techpurchasing"
+      url: "https://www.gsa.gov/techpurchasing"
       children:
         - name: Governmentwide Acquisition Contracts
-          url: "https://gsa.gov/gwacs"
+          url: "https://www.gsa.gov/gwacs"
         - name: Telecommunications & Network Services
-          url: "https://gsa.gov/technology/technology-purchasing-programs/telecommunications-and-network-services"
+          url: "https://www.gsa.gov/technology/technology-purchasing-programs/telecommunications-and-network-services"
         - name: MAS Information Technology
-          url: "https://gsa.gov/buying-selling/purchasing-programs/gsa-schedule/gsa-schedule-offerings/mas-categories/information-technology-category"
+          url: "https://www.gsa.gov/buying-selling/purchasing-programs/gsa-schedule/gsa-schedule-offerings/mas-categories/information-technology-category"
         - name: Software Purchase Agreements
-          url: "https://gsa.gov/technology/technology-purchasing-programs/smartbuy-blanket-purchase-agreements"
+          url: "https://www.gsa.gov/technology/technology-purchasing-programs/smartbuy-blanket-purchase-agreements"
         - name: USAccess
-          url: "https://gsa.gov/usaccess"
+          url: "https://www.gsa.gov/usaccess"
         - name: All Technology Purchasing Programs
-          url: "https://gsa.gov/techpurchasing"
+          url: "https://www.gsa.gov/techpurchasing"
     - name: Government Initiatives
-      url: "https://gsa.gov/itinitiatives"
+      url: "https://www.gsa.gov/itinitiatives"
       children:
         - name: 18F
           url: "https://18f.gsa.gov/"
         - name: Cybersecurity
-          url: "https://gsa.gov/technology/government-it-initiatives/cybersecurity"
+          url: "https://www.gsa.gov/technology/government-it-initiatives/cybersecurity"
         - name: Digital Strategy
-          url: "https://gsa.gov/digitalstrategy"
+          url: "https://www.gsa.gov/digitalstrategy"
         - name: Emerging Citizen Technology
-          url: "https://gsa.gov/technology/government-it-initiatives/emerging-citizen-technology"
+          url: "https://www.gsa.gov/technology/government-it-initiatives/emerging-citizen-technology"
         - name: FedRAMP
-          url: "https://gsa.gov/fedramp"
+          url: "https://www.gsa.gov/fedramp"
         - name: Identity, Credentials, & Access Management
-          url: "https://gsa.gov/technology/government-it-initiatives/identity-credentials-and-access-management"
+          url: "https://www.gsa.gov/technology/government-it-initiatives/identity-credentials-and-access-management"
         - name: Mobile Government
-          url: "https://gsa.gov/makingmobilegov"
+          url: "https://www.gsa.gov/makingmobilegov"
         - name: Technology Modernization Fund
-          url: "https://gsa.gov/technology/government-it-initiatives/technology-modernization-fund"
+          url: "https://www.gsa.gov/technology/government-it-initiatives/technology-modernization-fund"
     - name: Training
-      url: "https://gsa.gov/ittraining"
+      url: "https://www.gsa.gov/ittraining"
     - name: IT Policy
-      url: "https://gsa.gov/itpolicy"
+      url: "https://www.gsa.gov/itpolicy"
   featured:
     - name: Multiple Award Schedule IT Category
-      url: "https://gsa.gov/technology/technology-purchasing-programs/mas-information-technology"
+      url: "https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology"
       desc: Information technology products, services and solutions.
     - name: Data.gov
       url: "http://data.gov/"
@@ -418,100 +418,100 @@
 ####################
 
 - name: About Us
-  url: "https://gsa.gov/about-us"
+  url: "https://www.gsa.gov/about-us"
   children:
     - name: Annual Reports
-      url: "https://gsa.gov/reference/reports/budget-performance/annual-reports"
+      url: "https://www.gsa.gov/reference/reports/budget-performance/annual-reports"
     - name: Background & History
-      url: "https://gsa.gov/background"
+      url: "https://www.gsa.gov/background"
       children:
         - name: Overview
-          url: "https://gsa.gov/background"
+          url: "https://www.gsa.gov/background"
         - name: Mission & Strategic Goals
-          url: "https://gsa.gov/about-us/mission-and-background/background"
+          url: "https://www.gsa.gov/about-us/mission-and-background/background"
         - name: History
-          url: "https://gsa.gov/history"
+          url: "https://www.gsa.gov/history"
     - name: Careers
-      url: "https://gsa.gov/careers"
+      url: "https://www.gsa.gov/careers"
       children:
         - name: Why Work at GSA
-          url: "https://gsa.gov/about-us/careers-at-gsa/why-work-at-gsa"
+          url: "https://www.gsa.gov/about-us/careers-at-gsa/why-work-at-gsa"
         - name: Who Are We Seeking
-          url: "https://gsa.gov/about-us/careers-at-gsa/who-are-we-seeking"
+          url: "https://www.gsa.gov/about-us/careers-at-gsa/who-are-we-seeking"
         - name: Where Are Our Jobs
-          url: "https://gsa.gov/about-us/careers-at-gsa/where-are-our-jobs"
+          url: "https://www.gsa.gov/about-us/careers-at-gsa/where-are-our-jobs"
         - name: How Do I Apply
-          url: "https://gsa.gov/about-us/careers-at-gsa/how-do-i-apply"
+          url: "https://www.gsa.gov/about-us/careers-at-gsa/how-do-i-apply"
         - name: Hiring Process
-          url: "https://gsa.gov/about-us/careers-at-gsa/hiring-process"
+          url: "https://www.gsa.gov/about-us/careers-at-gsa/hiring-process"
     - name: Events and Training
-      url: "https://gsa.gov/about-us/events-and-training/gsa-events"
+      url: "https://www.gsa.gov/about-us/events-and-training/gsa-events"
     - name: Organization
-      url: "https://gsa.gov/about-us/gsa-organization"
+      url: "https://www.gsa.gov/about-us/gsa-organization"
       children:
         - name: Leadership Directory
-          url: "https://gsa.gov/leadershipdirectory"
+          url: "https://www.gsa.gov/leadershipdirectory"
         - name: Staff Directory
-          url: "https://gsa.gov/staff-directory"
+          url: "https://www.gsa.gov/staff-directory"
         - name: Office of the Administrator
-          url: "https://gsa.gov/about-us/organization/office-of-the-administrator-overview"
+          url: "https://www.gsa.gov/about-us/organization/office-of-the-administrator-overview"
         - name: Federal Acquisition Service
-          url: "https://gsa.gov/about-us/organization/federal-acquisition-service"
+          url: "https://www.gsa.gov/about-us/organization/federal-acquisition-service"
         - name: Public Buildings Service
-          url: "https://gsa.gov/about-us/organization/public-buildings-service"
+          url: "https://www.gsa.gov/about-us/organization/public-buildings-service"
         - name: Staff Offices
-          url: "https://gsa.gov/about-us/gsa-organization"
+          url: "https://www.gsa.gov/about-us/gsa-organization"
         - name: Board of Contract Appeals
-          url: "https://gsa.gov/sandbox/gsagov-archive/civilian-board-of-contract-appeals-overview"
+          url: "https://www.gsa.gov/sandbox/gsagov-archive/civilian-board-of-contract-appeals-overview"
         - name: Office of Inspector General
-          url: "https://gsa.gov/oig"
+          url: "https://www.gsa.gov/oig"
     - name: Newsroom
-      url: "https://gsa.gov/newsroom"
+      url: "https://www.gsa.gov/newsroom"
       children:
         - name: Agency Blog
-          url: "https://gsa.gov/gsablog"
+          url: "https://www.gsa.gov/gsablog"
         - name: Congressional Testimony
-          url: "https://gsa.gov/congressionaltestimony"
+          url: "https://www.gsa.gov/congressionaltestimony"
         - name: News Releases
-          url: "https://gsa.gov/about-us/newsroom/news-releases"
+          url: "https://www.gsa.gov/about-us/newsroom/news-releases"
         - name: Speeches
-          url: "https://gsa.gov/speeches"
+          url: "https://www.gsa.gov/speeches"
         - name: Videos
           url: "https://search.gsa.gov/search/news?affiliate=gsa.gov&channel=663&query="
     - name: Regions
-      url: "https://gsa.gov/about-us/gsa-regions"
+      url: "https://www.gsa.gov/about-us/gsa-regions"
       children:
         - name: Region 1 | New England
-          url: "https://gsa.gov/region1"
+          url: "https://www.gsa.gov/region1"
         - name: Region 2 | Northeast & Caribbean
-          url: "https://gsa.gov/region2"
+          url: "https://www.gsa.gov/region2"
         - name: Region 3 | Mid-Atlantic
-          url: "https://gsa.gov/region3"
+          url: "https://www.gsa.gov/region3"
         - name: Region 4 | Southeast Sunbelt
-          url: "https://gsa.gov/region4"
+          url: "https://www.gsa.gov/region4"
         - name: Region 5 | Great Lakes
-          url: "https://gsa.gov/region5"
+          url: "https://www.gsa.gov/region5"
         - name: Region 6 | Heartland
-          url: "https://gsa.gov/region6"
+          url: "https://www.gsa.gov/region6"
         - name: Region 7 | Greater Southwest
-          url: "https://gsa.gov/region7"
+          url: "https://www.gsa.gov/region7"
         - name: Region 8 | Rocky Mountain
-          url: "https://gsa.gov/region8"
+          url: "https://www.gsa.gov/region8"
         - name: Region 9 | Pacific Rim
-          url: "https://gsa.gov/region9"
+          url: "https://www.gsa.gov/region9"
         - name: Region 10 | Northwest/Arctic
-          url: "https://gsa.gov/about-us/regions/welcome-to-the-northwest-arctic-region-10"
+          url: "https://www.gsa.gov/about-us/regions/welcome-to-the-northwest-arctic-region-10"
         - name: Region 11 | National Capital Region
-          url: "https://gsa.gov/about-us/regions/welcome-to-the-national-capital-region-11"
+          url: "https://www.gsa.gov/about-us/regions/welcome-to-the-national-capital-region-11"
     - name: Contact Us
-      url: "https://gsa.gov/about-us/contact-us"
+      url: "https://www.gsa.gov/about-us/contact-us"
   featured:
     - name: GSA Blog
-      url: "https://gsa.gov/blog"
+      url: "https://www.gsa.gov/blog"
       desc: Read the latest GSA news, updates and analysis.
     - name: Careers at GSA
-      url: "https://gsa.gov/about-us/careers"
+      url: "https://www.gsa.gov/about-us/careers"
       desc: Learn what GSA has to offer to prospective employees.
     - name: Payroll Calendars
-      url: "https://gsa.gov/buying-selling/purchasing-programs/shared-services/payroll-shared-services/payroll-calendars"
+      url: "https://www.gsa.gov/buying-selling/purchasing-programs/shared-services/payroll-shared-services/payroll-calendars"
       desc: For employees of GSA and agencies using GSA's payroll services.
