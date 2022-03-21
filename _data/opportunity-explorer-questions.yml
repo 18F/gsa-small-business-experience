@@ -1,0 +1,62 @@
+- type: dropdown
+  question: |
+    How would you categorize the services
+    and/or product your business provides?
+  label: Industry category
+  id: industry
+  values:
+    - label: "IT: general"
+      value: it
+    - label: "IT: communications and satellite"
+      value: itsatcom
+    - label: "IT: emerging technology"
+      value: itemerging
+    - label: Building maintenance and operations
+      value: building
+    - label: Professional services
+      value: prof
+    - label: Human management and training
+      value: human
+    - label: Other
+      value: other
+    - label: All of the above
+      value: all
+
+- type: checklist
+  question: |
+    Do you qualify as any of these special
+    interest groups or set-aside categories?
+  # consider removing
+  label: ""
+  id: setasides
+  values:
+    - label: Women-Owned Small Business
+      id: wosb
+    - label: Small Disadvantaged Businesses and 8(a)
+      id: sdb8a
+    - label: Historically Underutilized Business Zones (HUBZone)
+      id: hubzone
+    - label: Service-Disabled Veteran-Owned Business
+      id: sdvob
+
+- type: radio
+  question: |
+    Has your business been in business for 2 years and can you
+    show revenue for over $25K per year?
+  label: ""
+  id: revenue
+  values:
+    - label: "Yes"
+      value: 1
+    - label: "No"
+      value: 0
+
+- type: radio
+  question: Will all your sales be less than $10K per purchase?
+  label: ""
+  id: purchase
+  values:
+    - label: "Yes"
+      value: 1
+    - label: "No"
+      value: 0

@@ -1,0 +1,49 @@
+---
+title: Small Business Opportunity Explorer Results
+layout: page
+permalink: /opportunity-explorer-results
+---
+
+<script>
+  var url_string = window.location.href;
+  var url = new URL(url_string);
+  var c = url.searchParams.get("q1-services");
+  console.log(c);
+</script>
+
+<h1>Your results</h1>
+
+<p>Based on the answers you provided here are a list of possible opportunities for you.</p>
+
+<section class="usa-section">
+  <div class="grid-row grid-gap">
+    <div class="tablet:grid-col-8">
+      <h2 class="font-heading-sm opp-exp-results">Programs</h2>
+
+      {% for program in site.data.opportunity-explorer-answers.programs %}
+        <h3>{{ program.name }}</h3>
+
+        <p>{{ program.desc }}</p>
+
+        <p><a class="usa-link" href="{{ program.link }}">Learn more about {{ program.name }}</a></p>
+
+      {% endfor %}
+    </div>
+    <div class="tablet:grid-col-4">
+      <h2 class="font-heading-sm opp-exp-results">Set-Aside Opportunities</h2>
+
+      {% for setaside in site.data.opportunity-explorer-answers.setasides %}
+        <h3>{{ setaside.name }}</h3>
+
+        <p>You may qualify as a small business if:</p>
+        <ul>
+          {% for item in setaside.qualifications %}
+            <li>{{ item }}</li>
+          {% endfor %}
+          <li>My business is "small" in its primary industry in accordance with Small Business Administration (SBA) size standards for that industry</li>
+        </ul>
+        <p><a class="usa-link" href="{{ setaside.link }}">Learn more about certification</a></p>
+      {% endfor %}
+    </div>
+  </div>
+</section>

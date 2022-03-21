@@ -1,0 +1,20 @@
+programs:
+  - name: Multiple Award Schedules (MAS)
+    desc: |-
+      Under the MAS Program, GSA issues long-term government-wide contracts
+      that provide federal, state, and local government buyers access to
+      commercial products, services, and solutions at pre-negotiated pricing.
+    link: "javascript:void(0)"
+  - name: Government-wide Acquisition Contracts (GWAC)
+    desc: |-
+      GWACS are part of GSA's Federal Acqusition Service's (FAS) Integrated
+      Technology Services (ITS), whose portfolio provides government agencies a
+      full range of acquisition solutions for information technology and
+      telecommunications goods and services.
+    link: "javascript:void(0)"
+setasides:
+  - name: Women-Owned Small Businesses (WOSB)
+    qualifications:
+      - 51% or more of my business is owned, controlled, and primarily managed by one or more woman who are U.S. citizens
+    link: "javascript:void(0)"
+

@@ -1,0 +1,82 @@
+---
+title: "Opportunity Explorer: Small Business"
+layout: page
+permalink: /opportunity-explorer
+---
+
+<h1>{{ page.title }}</h1>
+
+<p>Take this quiz to find possible opportunities unique for your small business to work with GSA.</p>
+
+<section class="usa-section padding-top-0 margin-bottom-9">
+  <form id="opportunity-explorer"
+    class="usa-form usa-form--large grid-container"
+    action="/opportunity-explorer-results"
+    method="GET"
+    >
+    {% for question in site.data.opportunity-explorer-questions %}
+      <div class="question grid-row grid-gap tablet:margin-bottom-9">
+        <div class="question-circle grid-col-1">
+          {{ forloop.index }}
+        </div>
+        <fieldset class="usa-fieldset grid-col-11 margin-top-1">
+
+          <legend class="usa-legend font-sans-lg">
+            {{ question.question }}
+          </legend>
+
+          {% if question.type == "dropdown" %}
+            <label class="usa-label" for="{{ question.id }}">
+              {{ question.label }}
+            </label>
+            <select class="usa-select" name="{{ question.id }}" id="{{ question.id }}">
+              <option value>- Select -</option>
+              {% for item in question.values %}
+                <option value="{{ item.value }}">{{ item.label }}</option>
+              {% endfor %}
+            </select>
+
+          {% elsif question.type == "checklist" %}
+            {% for item in question.values %}
+              <div class="usa-checkbox maxw-tablet">
+                <input
+                  class="usa-checkbox__input usa-checkbox__input--tile"
+                  id="{{ item.id }}"
+                  type="checkbox"
+                  name="{{ question.id }}"
+                  value="{{ item.id }}"
+                />
+                <label class="usa-checkbox__label" for="{{ item.id }}">
+                  {{ item.label }}
+                </label>
+              </div>
+            {% endfor %}
+
+          {% elsif question.type == "radio" %}
+            {% if question.label %}
+              <p>{{ question.label }}</p>
+            {% endif %}
+            {% for item in question.values %}
+              <div class="usa-radio">
+                <input
+                  class="usa-radio__input"
+                  id="{{ question.id }}-{{ item.value }}"
+                  type="radio"
+                  name="{{ question.id }}"
+                  value="{{ item.value }}"
+                />
+                <label class="usa-radio__label" for="{{ question.id }}-{{ item.value }}">
+                  {{ item.label }}
+                </label>
+              </div>
+            {% endfor %}
+          {% endif %}
+        </fieldset>
+      </div>
+    {% endfor %}
+
+    <div class="grid-row">
+      <input class="usa-button grid-col-auto" type="submit" value="Submit">
+    </div>
+  </form>
+</section>
