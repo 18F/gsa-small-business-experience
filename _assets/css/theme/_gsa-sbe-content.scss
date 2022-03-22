@@ -48,6 +48,10 @@ h3 {
     height: unset;
     // TODO what do we want to do for a small screen?
     max-width: 37%;
+
+    @media screen and (max-width: 800px) {
+      width: 0;
+    }
   }
 
   .usa-hero__callout {
@@ -64,6 +68,8 @@ h3 {
 .vendor-portal-link {
   font-weight: font-weight('bold');
   text-align: right;
+  @include u-padding-right(1);
+  @include u-padding-top(1);
 }
 
 .vendor-spotlight {
