@@ -1,16 +1,53 @@
 @use "uswds-theme-color.scss";
 
+// ALL PAGES
+
+body {
+  @include u-line-height("body", 5);
+}
+
+h2 {
+  @include u-font("sans", "xl");
+}
+
+h3 {
+  @include u-font("sans", "lg");
+}
+
+.usa-button--base {
+  // overridding for WCAG AAA
+  background-color: color($theme-color-primary-dark);
+}
+
+.usa-section {
+  @include u-padding-bottom(0);
+  @include u-padding-left(3);
+  @include u-padding-right(3);
+}
+
 // HOME PAGE
 
+.image-placeholder {
+  background-color: #F9F9F9;
+  height: 200px;
+  text-align: center;
+  width: 100%;
+
+  img {
+    position: relative;
+    top: 40%;
+  }
+}
+
 .usa-hero {
-  background-color: color($theme-color-base-lighter);
+  background-color: color($theme-color-base-lightest);
   display: flex;
   padding: 0 0 0 1em;
 
   .image-placeholder {
     height: unset;
     // TODO what do we want to do for a small screen?
-    max-width: 33%;
+    max-width: 37%;
   }
 
   .usa-hero__callout {
@@ -24,21 +61,22 @@
   }
 }
 
-// ALL PAGES
-
-.image-placeholder {
-  background-color: color($theme-color-base-lightest);
-  height: 200px;
-  text-align: center;
-  width: 100%;
-
-  img {
-    position: relative;
-    top: 40%;
-  }
+.vendor-portal-link {
+  font-weight: font-weight('bold');
+  text-align: right;
 }
 
-.usa-button--base {
-  // overridding for WCAG AAA
-  background-color: color($theme-color-primary-dark);
+.vendor-spotlight {
+  @include u-font("sans", "sm");
+  @include u-line-height("body", 2);
+  @include u-padding(2);
+  @include u-text("bold");
+
+  background-color: #F9F9F9;
+
+  ul {
+    list-style-type: none;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+  }
 }
