@@ -1,28 +1,9 @@
 <div class="usa-navbar">
   <div class="usa-logo" id="extended-mega-logo">
-    <a title="GSA Home" class="navbar-brand" href="/" id="anch_1">
-        {% asset gsa-nav-logo.png class="not-responsive float-left logo" alt="GSA Logo" width="56" %}
-        <em class="usa-logo__text text-base-darkest">{{site.title}}</em>
+    <a title="GSA Home" class="navbar-brand" href="/">
+      {% asset gsa-nav-logo.png class="not-responsive float-left logo" alt="GSA Logo" width="56" %}
+      <em class="usa-logo__text text-base-darkest">{{site.title}}</em>
     </a>
   </div>
-  <button class="usa-menu-btn">Menu</button>
 </div>
-
-<nav id="menu-navigation" aria-label="Menu navigation" role="navigation" class="usa-nav gsa-nav width-full">
-  <div class="usa-nav__secondary visible-lg">
-    <div class="usa-nav__secondary-links">
-      <!-- NOTE this does not include behavior in the original website -->
-      <a title="Perdiem Lookup" id="perdiem-button" href="/">
-        <span>Per Diem Lookup</span>
-      </a>
-    </div>
-    {% include searchgov/form.html searchgov=site.searchgov %}
-    <button class="usa-nav__close">{% asset img/close.svg alt="close" %}</button>
-  </div>
-
-  <div class="usa-nav__inner">
-    {% include menu.html %}
-  </div>
-
-
-</nav>
+<div class="navbar-divider" aria-hidden="true"/>
