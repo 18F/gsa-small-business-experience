@@ -44,12 +44,15 @@ npm test will run the following scanners:
 - [woke](https://github.com/get-woke/woke): identifies non-inclusive language ([CI action](https://github.com/marketplace/actions/run-woke))
 - [htmlproofer](https://github.com/gjtorikian/html-proofer): checks for valid HTML, broken links, etc
 - [pa11y-ci](https://github.com/pa11y/pa11y-ci): accessibility (config `.pa11yci`)
+- [rspec](https://rspec.info/) + [capybara](https://github.com/teamcapybara/capybara): checks content of HTML for presence of elements and behavior
 
 `woke` will not scan anything appearing in your `.gitignore` file by default.
 You may also configure `woke` to ignore additional paths by modifying the
 `.wokeignore` file.
 
 `pa11y-ci` may be configured with `.pa11yci`
+
+The `rspec` tests are available in the `/spec` directory
 
 #### Github actions
 

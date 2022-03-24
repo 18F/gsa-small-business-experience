@@ -9,8 +9,8 @@
     "start-detached": "bundle exec jekyll serve --detach",
     "htmlproofer": "bundle exec htmlproofer _site",
     "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude \"/*.pdf\"  --sitemap-exclude \"/admin\"",
-    "test": "npm run woke; npm run htmlproofer; npm run pa11y-ci:sitemap",
-    "test-build": "npm run htmlproofer; npm run pa11y-ci:sitemap",
+    "rspec": "bundle exec rspec",
+    "test": "npm run woke; npm run htmlproofer; npm run pa11y-ci:sitemap; npm run rspec",
     "woke": "woke"
   },
   "dependencies": {
