@@ -14,6 +14,12 @@ group :jekyll_plugins do
   gem 'jekyll-assets', git: "https://github.com/envygeeks/jekyll-assets"
 end
 
+group :development, :test do
+  gem "rack"
+  gem "capybara"
+  gem "rspec"
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 

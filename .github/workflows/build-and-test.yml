@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    name: Install, build and test site with pa11y-ci and htmlproofer.
+    name: Install, build and test site with rspec, pa11y-ci, and htmlproofer.
     runs-on: ubuntu-latest
     env:
       LANG: en_US.UTF-8
@@ -35,6 +35,11 @@ jobs:
 
       - name: Install NPM dependencies.
         run: npm install
+
+      # does not require the jekyll server step as rspec
+      # uses capybara
+      - name: Run rspec
+        run: npm run rspec
 
       - name: Build and start up jekyll server.
         run: npm run build && npm run start-detached
