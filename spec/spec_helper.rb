@@ -43,7 +43,7 @@ end.to_app
 
 Capybara.default_selector =  :css
 Capybara.default_driver   =  :rack_test
-Capybara.javascript_driver = :webkit
+Capybara.javascript_driver = :selenium
 
 RSpec.configure do |config|
   config.include Capybara::DSL
