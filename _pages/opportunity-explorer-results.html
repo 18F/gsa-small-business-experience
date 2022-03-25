@@ -1,7 +1,7 @@
 ---
 title: Small Business Opportunity Explorer Results
 layout: page
-permalink: /opportunity-explorer-results
+permalink: /opportunity-explorer-results/
 ---
 
 <h1>Your results</h1>
@@ -27,20 +27,22 @@ permalink: /opportunity-explorer-results
 
       <a href="javascript:void(0)" class="usa-link">See all set-aside opportunities</a>
 
-      {% for setaside in site.data.opportunity-explorer-answers.setasides %}
-        <div id="{{ setaside.id }}" class="setaside">
-          <h3>{{ setaside.name }}</h3>
+      <div id="setasides">
+        {% for setaside in site.data.opportunity-explorer-answers.setasides %}
+          <div id="{{ setaside.id }}" class="setaside">
+            <h3>{{ setaside.name }}</h3>
 
-          <p>You may qualify for this set-aside if:</p>
-          <ul>
-            {% for item in setaside.qualifications %}
-              <li>{{ item }}</li>
-            {% endfor %}
-            <li>My business is "small" in its primary industry in accordance with Small Business Administration (SBA) size standards for that industry</li>
-          </ul>
-          <p><a class="usa-link" href="{{ setaside.link }}">Learn more about certification</a></p>
-        </div>
-      {% endfor %}
+            <p>You may qualify for this set-aside if:</p>
+            <ul>
+              {% for item in setaside.qualifications %}
+                <li>{{ item }}</li>
+              {% endfor %}
+              <li>My business is "small" in its primary industry in accordance with Small Business Administration (SBA) size standards for that industry</li>
+            </ul>
+            <p><a class="usa-link" href="{{ setaside.link }}">Learn more about certification</a></p>
+          </div>
+        {% endfor %}
+      </div>
 
       <h2 class="font-heading-sm opp-exp-results margin-top-8">Other opportunities</h2>
       <p><a href="javascript:void(0)" class="usa-link">Subcontracting & Partnerships</a></p>
