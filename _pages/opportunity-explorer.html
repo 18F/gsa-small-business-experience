@@ -11,7 +11,7 @@ permalink: /opportunity-explorer/
 <section class="usa-section padding-top-0 margin-bottom-9">
   <form id="opportunity-explorer"
     class="usa-form usa-form--large grid-container"
-    action="/opportunity-explorer-results"
+    action="{% link _pages/opportunity-explorer-results.html %}"
     method="GET"
     >
     {% for question in site.data.opportunity-explorer-questions %}
