@@ -10,8 +10,8 @@ Capybara.register_driver :selenium do |app|
   Capybara::Selenium::Driver.new(
     app,
     :browser => :chrome,
-    # remove options hash if you want to run the tests in a browser
-    options: Selenium::WebDriver::Chrome::Options.new(args: %w[headless disable-gpu])
+    # remove capabilities hash if you want to run the tests in a browser
+    capabilities: Selenium::WebDriver::Chrome::Options.new(args: %w[headless disable-gpu])
   )
 end
 
