@@ -17,7 +17,7 @@ describe "/opportunity-explorer-results", type: :feature, js: true do
     end
 
     describe "set-asides" do
-      it "does have a seta-side block" do
+      it "does have a set-aside block" do
         expect(page).to have_content("See all set-aside opportunities")
       end
 
