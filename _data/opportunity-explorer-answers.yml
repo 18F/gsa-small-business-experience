@@ -1,17 +1,39 @@
 programs:
   - name: Multiple Award Schedules (MAS)
+    id: mas
     desc: |-
       Under the MAS Program, GSA issues long-term government-wide contracts
       that provide federal, state, and local government buyers access to
       commercial products, services, and solutions at pre-negotiated pricing.
-    link: "javascript:void(0)"
+  - name: Multiple Award Schedules IT (MAS IT)
+    id: masit
+    desc: |-
+      TODO
+  - name: FAStlane
+    id: fastlane
+    desc: |-
+      TODO
+  - name: Startup Springboard
+    id: springboard
+    desc: |-
+      TODO
   - name: Government-wide Acquisition Contracts (GWAC)
+    id: gwac
     desc: |-
       GWACS are part of GSA's Federal Acqusition Service's (FAS) Integrated
       Technology Services (ITS), whose portfolio provides government agencies a
       full range of acquisition solutions for information technology and
       telecommunications goods and services.
-    link: "javascript:void(0)"
+  - name: Construction and building maintenance
+    id: construction
+    desc: |-
+      TODO
+  - name: Telecommunications and network services
+    id: communications
+    desc: |-
+      TODO
+
+
 setasides:
   - name: Women-Owned Small Businesses (WOSB)
     id: wosb
@@ -19,7 +41,6 @@ setasides:
       - |-
         51% or more of my business is owned, controlled, and primarily
         managed by one or more woman who are U.S. citizens
-    link: "javascript:void(0)"
   - name: Small Disadvantaged Businesses 8(a)
     id: sdb8a
     qualifications:
@@ -34,7 +55,6 @@ setasides:
       - |-
         My business is currently participating in or has not previously
         participated in the 8(a) program
-    link: "javascript:void(0)"
   - name: Historically Underutilized Business Zones (HUBZone)
     id: hubzone
     qualifications:
@@ -45,7 +65,6 @@ setasides:
         tribe
       - My business's principal office is located in a HUBZone
       - At least 35% of my business's employees live in a HUBZone
-    link: "javascript:void(0)"
   - name: Service-Disabled Veteran-Owned Business
     id: sdvob
     qualifications:
@@ -54,4 +73,3 @@ setasides:
         51% or more of my business is owned, controlled, and primarily
         managed by one or more service-disabled veterans or caregivers
       - A service-disabled veteran holds the highest officer position in my business
-    link: "javascript:void(0)"
