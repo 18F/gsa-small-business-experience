@@ -16,6 +16,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
   for (let ele of setaside_divs) {
     if (!setasides.includes(ele.id)) {
-      ele.style.display = "none";
+      ele.classList.add("display-none");
     }
   }});
