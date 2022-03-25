@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    name: Install, build and test site with rspec, pa11y-ci, and htmlproofer.
+    name: Test site with rspec
     runs-on: ubuntu-latest
     env:
       LANG: en_US.UTF-8
@@ -41,9 +41,3 @@ jobs:
 
       - name: Run rspec
         run: npm run rspec
-
-      - name: Run pa11y-ci.
-        run: npm run pa11y-ci:sitemap
-
-      - name: Run htmlproofer.
-        run: npm run htmlproofer
