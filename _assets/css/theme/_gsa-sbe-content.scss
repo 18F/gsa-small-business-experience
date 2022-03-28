@@ -20,12 +20,33 @@ h3 {
 }
 
 .usa-section {
-  @include u-padding-bottom(0);
+  @include u-padding-bottom(2);
   @include u-padding-left(3);
   @include u-padding-right(3);
+  @include u-padding-top(2);
 }
 
 // HOME PAGE
+
+.section-arrow-down {
+  width: 100px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 40px solid #DCDEE0;
+}
+
+#explore-contracts {
+  a {
+    color: #1A4480;
+  }
+  .explore-logo {
+    max-width: 80%;
+  }
+  .link-icon {
+    max-height: 16px;
+    vertical-align: middle;
+  }
+}
 
 .image-placeholder {
   background-color: #F9F9F9;
@@ -36,6 +57,18 @@ h3 {
   img {
     position: relative;
     top: 40%;
+  }
+}
+
+.section-bg-gray {
+  background-color: #E5E5E5;
+}
+
+.upcoming-events {
+  th, td {
+    background-color: transparent;
+    border-top: none;
+    border-bottom: none;
   }
 }
 
@@ -65,18 +98,24 @@ h3 {
   }
 }
 
+#ways-to-work {
+  background-color: #DCDEE0;
+
+  // TODO make this look nicer on mobile
+  .btn-centered {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+}
+
 .vendor-spotlight {
-  @include u-font("sans", "sm");
-  @include u-line-height("body", 2);
-  @include u-padding(2);
-  @include u-text("bold");
-
   background-color: #F9F9F9;
+  height: 8em;
+  @include u-padding-left(2);
 
-  ul {
-    list-style-type: none;
-    margin-block-start: 0;
-    padding-inline-start: 0;
+  img {
+    width: 30px;
   }
 }
 
@@ -129,5 +168,5 @@ h2.opp-exp-results {
 
 .usa-link {
   // for WCAG AAA
-  color: #005b9e;
+  color: #004c85;
 }
