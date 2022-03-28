@@ -29,6 +29,29 @@ document.addEventListener("DOMContentLoaded", function(){
   const purchase = params.get("purchase") == "1";
 
   const rules = {
+    "construction" : {
+      "industry" : [
+        "all",
+        "architecture",
+        "construction",
+        "facilities",
+        "interior",
+      ],
+      "revenue" : null,
+      "purchase" : false,
+    },
+    "communications" : {
+      "industry" : ["all", "itsatcom"],
+      "revenue" : null,
+      "purchase" : false,
+    },
+    "gwac" : {
+      "industry" : ["all", "it", "itsatcom"],
+      // TODO does it matter how much revenue / past performance your business has
+      // to apply to a GWAC?
+      "revenue" : null,
+      "purchase" : false,
+    },
     "mas" : {
       // Note: this list drawn from the 12 MAS categories
       // https://www.gsa.gov/buying-selling/purchasing-programs/gsa-multiple-award-schedule/gsa-schedule-offerings/mas-categories
@@ -38,11 +61,12 @@ document.addEventListener("DOMContentLoaded", function(){
         "furniture",
         "human",
         "industrial",
+        "interior",
         "it",
         "itsatcom",
         "itemerging",
         "office",
-        "other", // "Miscellaneous" category
+        "other", // "Miscellaneous" MAS category
         "prof",
         "science",
         "security",
@@ -53,44 +77,19 @@ document.addEventListener("DOMContentLoaded", function(){
       "purchase" : false
     },
     "masit" : {
-      "industry" : ["all", "it", "itsatcom", "itemerging"],
+      "industry" : ["all", "it", "itsatcom"],
       "revenue" : true,
       "purchase" : false
     },
     "fastlane" : {
-      "industry" : ["all", "it", "itsatcom", "itemerging"],
-      // TODO does your past performance matter for FAStlane?
+      "industry" : ["all", "it", "itsatcom"],
+      // TODO is past performance required for FAStlane?
       "revenue" : null,
       "purchase" : false,
     },
     "springboard" : {
-      "industry" : ["all", "it", "itsatcom", "itemerging"],
+      "industry" : ["all", "it", "itsatcom"],
       "revenue" : false,
-      "purchase" : false,
-    },
-    "gwac" : {
-      "industry" : ["all", "it", "itsatcom", "itemerging"],
-      // TODO does it matter how much revenue / past performance your business has
-      // to apply to a GWAC?
-      "revenue" : null,
-      "purchase" : false,
-    },
-    "construction" : {
-      "industry" : [
-        "all",
-        "architecture",
-        "construction",
-        "facilities",
-        "furniture",
-        "interior",
-        "real estate"
-      ],
-      "revenue" : null,
-      "purchase" : false,
-    },
-    "communications" : {
-      "industry" : ["all", "itsatcom"],
-      "revenue" : null,
       "purchase" : false,
     }
   }

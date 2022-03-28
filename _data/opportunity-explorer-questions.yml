@@ -11,12 +11,10 @@
       value: architecture
     - label: Construction
       value: construction
-      # TODO is this the same thing as "building maintenance & operations?"
-    - label: Facility services
+    - label: Facility services, building maintenance & operations
       value: facilities
     - label: Furniture & furnishings
       value: furniture
-      # TODO is this the same thing as "Human resources?"
     - label: Human management and training
       value: human
     - label: Industrial products & services
@@ -27,8 +25,6 @@
       value: it
     - label: "IT: communications and satellite"
       value: itsatcom
-    - label: "IT: emerging technology"
-      value: itemerging
     - label: Office management
       value: office
     - label: Professional services
@@ -41,8 +37,8 @@
       value: security
     - label: Travel
       value: travel
-    - label: Real estate
-      value: realestate
+    # - label: Real estate
+    #   value: realestate
     - label: Other
       value: other
 

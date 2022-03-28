@@ -1,4 +1,12 @@
 programs:
+  - name: Construction and building maintenance
+    id: construction
+    desc: |-
+      TODO
+  - name: Telecommunications and network services
+    id: communications
+    desc: |-
+      TODO
   - name: Multiple Award Schedules (MAS)
     id: mas
     desc: |-
@@ -24,15 +32,6 @@ programs:
       Technology Services (ITS), whose portfolio provides government agencies a
       full range of acquisition solutions for information technology and
       telecommunications goods and services.
-  - name: Construction and building maintenance
-    id: construction
-    desc: |-
-      TODO
-  - name: Telecommunications and network services
-    id: communications
-    desc: |-
-      TODO
-
 
 setasides:
   - name: Women-Owned Small Businesses (WOSB)
