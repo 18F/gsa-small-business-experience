@@ -30,34 +30,46 @@ document.addEventListener("DOMContentLoaded", function(){
 
   const rules = {
     "mas" : {
+      // Note: this list drawn from the 12 MAS categories
+      // https://www.gsa.gov/buying-selling/purchasing-programs/gsa-multiple-award-schedule/gsa-schedule-offerings/mas-categories
       "industry" : [
+        "all",
+        "facilities",
+        "furniture",
         "human",
+        "industrial",
         "it",
         "itsatcom",
         "itemerging",
-        "prof"
+        "office",
+        "other", // "Miscellaneous" category
+        "prof",
+        "science",
+        "security",
+        "transport",
+        "travel"
       ],
       "revenue" : true,
       "purchase" : false
     },
     "masit" : {
-      "industry" : ["it", "itsatcom", "itemerging"],
+      "industry" : ["all", "it", "itsatcom", "itemerging"],
       "revenue" : true,
       "purchase" : false
     },
     "fastlane" : {
-      "industry" : ["it", "itsatcom", "itemerging"],
+      "industry" : ["all", "it", "itsatcom", "itemerging"],
       // TODO does your past performance matter for FAStlane?
       "revenue" : null,
       "purchase" : false,
     },
     "springboard" : {
-      "industry" : ["it", "itsatcom", "itemerging"],
+      "industry" : ["all", "it", "itsatcom", "itemerging"],
       "revenue" : false,
       "purchase" : false,
     },
     "gwac" : {
-      "industry" : ["it", "itsatcom", "itemerging"],
+      "industry" : ["all", "it", "itsatcom", "itemerging"],
       // TODO does it matter how much revenue / past performance your business has
       // to apply to a GWAC?
       "revenue" : null,
@@ -65,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function(){
     },
     "construction" : {
       "industry" : [
+        "all",
         "architecture",
         "construction",
         "facilities",
@@ -72,12 +85,12 @@ document.addEventListener("DOMContentLoaded", function(){
         "interior",
         "real estate"
       ],
-      "revenue" : false,
+      "revenue" : null,
       "purchase" : false,
     },
     "communications" : {
-      "industry" : ["itsatcom"],
-      "revenue" : false,
+      "industry" : ["all", "itsatcom"],
+      "revenue" : null,
       "purchase" : false,
     }
   }
