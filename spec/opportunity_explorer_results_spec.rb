@@ -139,7 +139,7 @@ describe "/opportunity-explorer-results", type: :feature, js: true do
         it "shows multiple available programs" do
           expect(page).to have_content("Multiple Award Schedules (MAS)")
           expect(page).to have_content("Multiple Award Schedules IT (MAS IT)")
-          expect(page).to have_content("FAStlane")
+          expect(page).to have_content("FASt Lane")
           expect(page).to have_content("Government-wide Acquisition Contracts (GWAC)")
           expect(page).to have_content("Construction and building maintenance")
           expect(page).to have_content("Telecommunications and network services")
@@ -147,11 +147,11 @@ describe "/opportunity-explorer-results", type: :feature, js: true do
       end
 
       context "when it is an IT company" do
-        it "shows MAS, MAS IT, FAStlane, and GWAC but not startup springboard programs" do
+        it "shows MAS, MAS IT, FASt Lane, and GWAC but not startup springboard programs" do
           visit "/opportunity-explorer-results/index.html?industry=it&revenue=1&purchase=0"
           expect(page).to have_content("Multiple Award Schedules (MAS)")
           expect(page).to have_content("Multiple Award Schedules IT (MAS IT)")
-          expect(page).to have_content("FAStlane")
+          expect(page).to have_content("FASt Lane")
           expect(page).to have_content("Government-wide Acquisition Contracts (GWAC)")
 
           expect(page).not_to have_content("Startup Springboard")
@@ -164,7 +164,7 @@ describe "/opportunity-explorer-results", type: :feature, js: true do
           expect(page).to have_content("Telecommunications and network services")
           expect(page).to have_content("Multiple Award Schedules (MAS)")
           expect(page).to have_content("Multiple Award Schedules IT (MAS IT)")
-          expect(page).to have_content("FAStlane")
+          expect(page).to have_content("FASt Lane")
           expect(page).to have_content("Government-wide Acquisition Contracts (GWAC)")
         end
       end
@@ -182,7 +182,7 @@ describe "/opportunity-explorer-results", type: :feature, js: true do
     context "when the company is not well-established" do
       it "shows springboard and GWAC programs" do
         visit "/opportunity-explorer-results/index.html?industry=it&revenue=0&purchase=0"
-        expect(page).to have_content("FAStlane")
+        expect(page).to have_content("FASt Lane")
         expect(page).to have_content("Startup Springboard")
         expect(page).to have_content("Government-wide Acquisition Contracts (GWAC)")
       end
@@ -196,7 +196,7 @@ describe "/opportunity-explorer-results", type: :feature, js: true do
           visit "/opportunity-explorer-results/index.html?industry=all&revenue=1&purchase=1"
           expect(page).not_to have_content("Multiple Award Schedules (MAS)")
           expect(page).not_to have_content("Multiple Award Schedules IT (MAS IT)")
-          expect(page).not_to have_content("FAStlane")
+          expect(page).not_to have_content("FASt Lane")
           expect(page).not_to have_content("Government-wide Acquisition Contracts (GWAC)")
           expect(page).not_to have_content("Construction and building maintenance")
           expect(page).not_to have_content("Telecommunications and network services")
@@ -207,7 +207,7 @@ describe "/opportunity-explorer-results", type: :feature, js: true do
           visit "/opportunity-explorer-results/index.html?industry=it&revenue=1&purchase=1"
           expect(page).not_to have_content("Multiple Award Schedules (MAS)")
           expect(page).not_to have_content("Multiple Award Schedules IT (MAS IT)")
-          expect(page).not_to have_content("FAStlane")
+          expect(page).not_to have_content("FASt Lane")
           expect(page).not_to have_content("Government-wide Acquisition Contracts (GWAC)")
           expect(page).not_to have_content("Construction and building maintenance")
           expect(page).not_to have_content("Telecommunications and network services")
@@ -219,7 +219,7 @@ describe "/opportunity-explorer-results", type: :feature, js: true do
         visit "/opportunity-explorer-results/index.html?industry=all&revenue=0&purchase=1"
         expect(page).not_to have_content("Multiple Award Schedules (MAS)")
         expect(page).not_to have_content("Multiple Award Schedules IT (MAS IT)")
-        expect(page).not_to have_content("FAStlane")
+        expect(page).not_to have_content("FASt Lane")
         expect(page).not_to have_content("Government-wide Acquisition Contracts (GWAC)")
         expect(page).not_to have_content("Construction and building maintenance")
         expect(page).not_to have_content("Telecommunications and network services")

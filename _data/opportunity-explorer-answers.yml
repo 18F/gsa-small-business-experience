@@ -2,33 +2,56 @@ programs:
   - name: Construction and building maintenance
     id: construction
     desc: |-
-      TODO
+      GSA provides workplaces to the government by constructing, managing, and
+      preserving federal biuldings and by leasing and managing commercial real
+      estate through its Public Buildings Service (PBS). GSA looks to the
+      private sector for construction, facilities maintenance, leasing, and
+      retail services.
+    # Source
+    # https://www.gsa.gov/real-estate/real-estate-services/businesses-seeking-opportunities-in-real-estate
   - name: Telecommunications and network services
     id: communications
     desc: |-
-      TODO
+      The GSA connects businesses to federal, state, local, and tribal
+      governments in need of secure communications, telecommunications
+      equipment, and networking solutions.
   - name: Multiple Award Schedules (MAS)
     id: mas
     desc: |-
       Under the MAS Program, GSA issues long-term government-wide contracts
       that provide federal, state, and local government buyers access to
       commercial products, services, and solutions at pre-negotiated pricing.
+    # SOURCE
+    # https://www.gsa.gov/technology/technology-purchasing-programs/telecommunications-and-network-services
   - name: Multiple Award Schedules IT (MAS IT)
     id: masit
     desc: |-
-      TODO
-  - name: FAStlane
-    id: fastlane
-    desc: |-
-      TODO
+      The MAS IT program is a long-term government-wide contract that provides
+      government buyers access to IT products and services at pre-negotiated
+      pricing. Over 80% of MAS IT suppliers are small businesses.
+    # SOURCE
+    # https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology/sell-through-mas-information-technology
   - name: Startup Springboard
     id: springboard
     desc: |-
-      TODO
+      Startup Springboard gets innovative IT companies with fewer than two
+      years of experience onto the Multiple Award Schedules program. You may
+      subsitute executive and key professional's experience and submit
+      financial documentation in place of MAS requirements.
+    # SOURCE
+    # https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology/sell-through-mas-information-technology/information-technology-category-startup-springboard
+  - name: FASt Lane
+    id: fastlane
+    desc: |-
+      With FASt Lane, eligible vendors get short processing times to support
+      federal customer requirements. To take part in FASt Lane, you must
+      already be a MAS holder and be part of a FASt Lane eligible initiative.
+    # SOURCE
+    # https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology/sell-through-mas-information-technology/fast-lane-making-it-easier
   - name: Government-wide Acquisition Contracts (GWAC)
     id: gwac
     desc: |-
-      GWACS are part of GSA's Federal Acqusition Service's (FAS) Integrated
+      GWACS are part of GSA's Federal Acquisition Service's (FAS) Integrated
       Technology Services (ITS), whose portfolio provides government agencies a
       full range of acquisition solutions for information technology and
       telecommunications goods and services.
