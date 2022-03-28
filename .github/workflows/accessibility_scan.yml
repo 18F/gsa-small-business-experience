@@ -1,11 +1,11 @@
-name: Build and test Jekyll USWDS
+name: Accessibility scan
 
 on:
   - pull_request
 
 jobs:
   build:
-    name: Install, build and test site with pa11y-ci
+    name: pa11y-ci
     runs-on: ubuntu-latest
     env:
       LANG: en_US.UTF-8

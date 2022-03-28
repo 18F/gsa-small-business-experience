@@ -1,11 +1,11 @@
-name: Build and test Jekyll USWDS
+name: Test web app display and logic
 
 on:
   - pull_request
 
 jobs:
   build:
-    name: Test site with rspec
+    name: rspec
     runs-on: ubuntu-latest
     env:
       LANG: en_US.UTF-8

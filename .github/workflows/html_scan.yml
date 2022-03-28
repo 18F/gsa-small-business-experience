@@ -1,11 +1,11 @@
-name: Build and test Jekyll USWDS
+name: Build and test HTML
 
 on:
   - pull_request
 
 jobs:
   build:
-    name: Install, build and test site with html-proofer
+    name: Test site with html-proofer
     runs-on: ubuntu-latest
     env:
       LANG: en_US.UTF-8
