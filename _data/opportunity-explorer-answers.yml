@@ -1,0 +1,57 @@
+programs:
+  - name: Multiple Award Schedules (MAS)
+    desc: |-
+      Under the MAS Program, GSA issues long-term government-wide contracts
+      that provide federal, state, and local government buyers access to
+      commercial products, services, and solutions at pre-negotiated pricing.
+    link: "javascript:void(0)"
+  - name: Government-wide Acquisition Contracts (GWAC)
+    desc: |-
+      GWACS are part of GSA's Federal Acqusition Service's (FAS) Integrated
+      Technology Services (ITS), whose portfolio provides government agencies a
+      full range of acquisition solutions for information technology and
+      telecommunications goods and services.
+    link: "javascript:void(0)"
+setasides:
+  - name: Women-Owned Small Businesses (WOSB)
+    id: wosb
+    qualifications:
+      - |-
+        51% or more of my business is owned, controlled, and primarily
+        managed by one or more woman who are U.S. citizens
+    link: "javascript:void(0)"
+  - name: Small Disadvantaged Businesses 8(a)
+    id: sdb8a
+    qualifications:
+      # TODO how many criteria do we want to list on this page?
+      - |-
+        51% of more of my business is owned, controlled, and primarily managed
+        by one or more U.S. citizens who are economically and socially disadvantaged
+      - |-
+        My business is owned by someone whose averaged adjusted gross income for
+        three years is $250,000 or less
+      - My business is owned by someone with $4 million or less in assets
+      - |-
+        My business is currently participating in or has not previously
+        participated in the 8(a) program
+    link: "javascript:void(0)"
+  - name: Historically Underutilized Business Zones (HUBZone)
+    id: hubzone
+    qualifications:
+      - |-
+        51% or more of my business is owned, controlled, and primarily managed
+        by one or more U.S. citizens, a Community Development Corporation, an
+        agricultural cooperative, a Native Hawaiian organization, or an Indian
+        tribe
+      - My business's principal office is located in a HUBZone
+      - At least 35% of my business's employees live in a HUBZone
+    link: "javascript:void(0)"
+  - name: Service-Disabled Veteran-Owned Business
+    id: sdvob
+    qualifications:
+      # TODO how many criteria do we want to list on this page?
+      - |-
+        51% or more of my business is owned, controlled, and primarily
+        managed by one or more service-disabled veterans or caregivers
+      - A service-disabled veteran holds the highest officer position in my business
+    link: "javascript:void(0)"

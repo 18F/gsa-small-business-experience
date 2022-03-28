@@ -79,3 +79,55 @@ h3 {
     padding-inline-start: 0;
   }
 }
+
+.usa-button--base {
+  // overridding for WCAG AAA
+  background-color: color($theme-color-primary-dark);
+}
+
+// OPPORTUNITY EXPLORER
+
+.question-circle {
+  background: #DCDEE0;
+  border-radius: 50%;
+  height: 45px;
+  padding-left: 0;
+  // TODO come back to this
+  padding: 11px !important;
+  text-align: center;
+  width: 45px;
+}
+
+.usa-form--large, .usa-label, .usa-legend {
+  max-width: 100%;
+}
+
+#opportunity-explorer {
+  input {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .usa-select {
+    max-width: 75%;
+  }
+}
+
+// OPPORTUNITY EXPLORER RESULTS
+
+h2.opp-exp-results {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+}
+
+.text-placeholder {
+  background-color: #C4C4C4;
+  height: 37px;
+  margin-bottom: 7px;
+  width: 100%;
+}
+
+.usa-link {
+  // for WCAG AAA
+  color: #005b9e;
+}

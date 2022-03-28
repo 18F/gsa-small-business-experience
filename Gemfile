@@ -15,9 +15,11 @@ group :jekyll_plugins do
 end
 
 group :development, :test do
-  gem "rack"
-  gem "capybara"
   gem "rspec"
+  gem "selenium-webdriver"
+  gem "capybara"
+  gem "rack-jekyll"
+  gem "puma"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

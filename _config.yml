@@ -154,18 +154,19 @@ pagination:
   indexpage: "index.html"
 
 exclude:
+  - CONTRIBUTING.md
+  - degit.json
+  - docker-compose.yml
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - node_modules
   - package.json
   - package-lock.json
   - README.md
-  - CONTRIBUTING.md
-  - LICENSE.md
-  - degit.json
+  - spec
   - vendor
-  - node_modules
-  - Gemfile
-  - Gemfile.lock
-  - docker-compose.yml
-  - Dockerfile
 
 assets:
   autoprefixer:

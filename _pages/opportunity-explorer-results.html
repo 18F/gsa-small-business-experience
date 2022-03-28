@@ -1,0 +1,83 @@
+---
+title: Small Business Opportunity Explorer Results
+layout: page
+permalink: /opportunity-explorer-results/
+---
+
+<h1>Your results</h1>
+
+<p>Based on the answers you provided here are a list of possible opportunities for you.</p>
+
+<section class="usa-section padding-top-0">
+  <div class="grid-row grid-gap">
+    <div class="tablet:grid-col-7">
+      <h2 class="font-heading-sm opp-exp-results">Programs</h2>
+
+      {% for program in site.data.opportunity-explorer-answers.programs %}
+        <h3>{{ program.name }}</h3>
+
+        <p>{{ program.desc }}</p>
+
+        <p><a class="usa-link" href="{{ program.link }}">Learn more about {{ program.name }}</a></p>
+
+      {% endfor %}
+    </div>
+    <div class="tablet:grid-col-5">
+      <h2 class="font-heading-sm opp-exp-results">Set-Aside Opportunities</h2>
+
+      <a href="javascript:void(0)" class="usa-link">See all set-aside opportunities</a>
+
+      <div id="setasides">
+        {% for setaside in site.data.opportunity-explorer-answers.setasides %}
+          <div id="{{ setaside.id }}" class="setaside">
+            <h3>{{ setaside.name }}</h3>
+
+            <p>You may qualify for this set-aside if:</p>
+            <ul>
+              {% for item in setaside.qualifications %}
+                <li>{{ item }}</li>
+              {% endfor %}
+              <li>My business is "small" in its primary industry in accordance with Small Business Administration (SBA) size standards for that industry</li>
+            </ul>
+            <p><a class="usa-link" href="{{ setaside.link }}">Learn more about certification</a></p>
+          </div>
+        {% endfor %}
+      </div>
+
+      <h2 class="font-heading-sm opp-exp-results margin-top-8">Other opportunities</h2>
+      <p><a href="javascript:void(0)" class="usa-link">Subcontracting & Partnerships</a></p>
+      <p><a href="javascript:void(0)" class="usa-link">Open Market Opportunities</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="usa-section margin-top-4">
+  <h1>Explore Contracts & Complete Market Analysis</h1>
+  <div class="grid-row grid-gap">
+    <div class="tablet:grid-col-5">
+      <div class="image-placeholder"></div>
+      <p>You'll need a solid Federal marketing plan to compete as a small business in the Federal marketplace. Start your path in Government procurement with knowledge of the market's demand for your products and services.</p>
+
+      <p><a href="javascript:void(0)" class="usa-link">Guided Market Analysis ></a></p>
+    </div>
+    <div class="tablet:grid-col-7">
+      <h2 class="font-heading-sm">Explore Current & Past Contracts</h2>
+
+      <p>Explore contracts and contract data at sam.gov</p>
+      <div class="text-placeholder"></div>
+      <div class="text-placeholder"></div>
+      <div class="text-placeholder"></div>
+      <p><a href="javascript:void(0)" class="usa-link">Explore more at sam.gov ></a></p>
+
+      <h2 class="font-heading-sm margin-top-5">Forecasting of Contract Opportunities</h2>
+
+      <p>The goal of this tool is to provide a nationwide dashboard of upcoming federal contracting opportunities.</p>
+      <div class="text-placeholder"></div>
+      <div class="text-placeholder"></div>
+      <div class="text-placeholder"></div>
+      <p><a href="javascript:void(0)" class="usa-link">Explore more with the Forecast Tool ></a></p>
+    </div>
+  </div>
+</section>
+
+{% asset opportunity-explorer.js %}
