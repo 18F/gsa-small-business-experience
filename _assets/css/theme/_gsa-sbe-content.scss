@@ -36,6 +36,10 @@ h3 {
 }
 
 #explore-contracts {
+  // Note: cannot use HTML class for padding because it's
+  // overridden by section styling
+  @include u-padding-bottom(3);
+
   a {
     color: #1A4480;
   }
@@ -64,12 +68,15 @@ h3 {
   background-color: #E5E5E5;
 }
 
-.upcoming-events {
-  th, td {
-    background-color: transparent;
-    border-top: none;
-    border-bottom: none;
+#upcoming-events {
+  .grid-row {
+    margin-bottom: 1.5em;
+    margin-left: 1em;
   }
+  .event-date {
+    border-right: solid 2px #DCDEE0;
+  }
+
 }
 
 .usa-hero {
