@@ -14,6 +14,17 @@ h3 {
   @include u-font("sans", "lg");
 }
 
+.question-circle {
+  background: #DCDEE0;
+  border-radius: 50%;
+  height: 45px;
+  padding-left: 0;
+  // TODO come back to this
+  padding: 11px !important;
+  text-align: center;
+  width: 45px;
+}
+
 .usa-button--base {
   // overridding for WCAG AAA
   background-color: color($theme-color-primary-dark);
@@ -105,7 +116,8 @@ h3 {
   }
 }
 
-#ways-to-work {
+
+#wtw-intro {
   background-color: #DCDEE0;
 
   // TODO make this look nicer on mobile
@@ -113,6 +125,45 @@ h3 {
     position: absolute;
     top: 40%;
     left: 40%;
+  }
+}
+
+#wtw-nav {
+  button {
+    // override default button styles
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    // custom button styles
+    border-bottom: solid 9px #F3F3F3;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .active {
+    border-bottom-color: #005EA2;
+  }
+}
+
+#wtw-schedule {
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+
+  .question-circle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#wtw-subcontracts {
+  // TODO come back and fix this
+  iframe {
+    width: auto;
+    height: auto;
   }
 }
 
@@ -132,17 +183,6 @@ h3 {
 }
 
 // OPPORTUNITY EXPLORER
-
-.question-circle {
-  background: #DCDEE0;
-  border-radius: 50%;
-  height: 45px;
-  padding-left: 0;
-  // TODO come back to this
-  padding: 11px !important;
-  text-align: center;
-  width: 45px;
-}
 
 .usa-form--large, .usa-label, .usa-legend {
   max-width: 100%;
