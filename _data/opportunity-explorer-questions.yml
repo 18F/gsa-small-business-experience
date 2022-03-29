@@ -5,22 +5,42 @@
   label: Industry category
   id: industry
   values:
+    - label: All industries
+      value: all
+    - label: Architecture
+      value: architecture
+    - label: Construction
+      value: construction
+    - label: Facility services, building maintenance & operations
+      value: facilities
+    - label: Furniture & furnishings
+      value: furniture
+    - label: Human management and training
+      value: human
+    - label: Industrial products & services
+      value: industrial
+    - label: Interior design
+      value: interior
     - label: "IT: general"
       value: it
     - label: "IT: communications and satellite"
       value: itsatcom
-    - label: "IT: emerging technology"
-      value: itemerging
-    - label: Building maintenance and operations
-      value: building
+    - label: Office management
+      value: office
     - label: Professional services
       value: prof
-    - label: Human management and training
-      value: human
+    - label: Scientific management & solutions
+      value: science
+    - label: Transportation & logistics services
+      value: transport
+    - label: Security & protection
+      value: security
+    - label: Travel
+      value: travel
+    # - label: Real estate
+    #   value: realestate
     - label: Other
       value: other
-    - label: All of the above
-      value: all
 
 - type: checklist
   question: |

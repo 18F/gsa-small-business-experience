@@ -44,7 +44,7 @@ npm test will run the following scanners:
 - [woke](https://github.com/get-woke/woke): identifies non-inclusive language ([CI action](https://github.com/marketplace/actions/run-woke))
 - [htmlproofer](https://github.com/gjtorikian/html-proofer): checks for valid HTML, broken links, etc
 - [pa11y-ci](https://github.com/pa11y/pa11y-ci): accessibility (config `.pa11yci`)
-- [rspec](https://rspec.info/) + [capybara](https://github.com/teamcapybara/capybara): checks content of HTML for presence of elements and behavior
+- [rspec](https://rspec.info/) + [capybara](https://github.com/teamcapybara/capybara): spins up with puma, checks content of HTML for presence of elements and behavior
 
 `woke` will not scan anything appearing in your `.gitignore` file by default.
 You may also configure `woke` to ignore additional paths by modifying the
@@ -65,80 +65,6 @@ locally before pushing, as well as `npm run build` in order to confirm that
 your branch is working since the scanners and deployment may not get a chance
 to run in GitHub when the building step fails.
 
-You may adjust the functionality of
-
-
-## Key Functionality
-
-The following has been copied from the [federalist-uswds-jekyll](https://github.com/18F/federalist-uswds-jekyll) documentation for quick reference:
-
-✅ Publish single one-off pages. Instead of creating lots of folders throughout the root directory, you should put single pages in `_pages` folder and change the `permalink` at the top of each page. Use sub-folders only when you really need to.
-
-✅  Publish data (for example: job listings, links, references), you can use the template `_layouts/data.html`. Just create a file in you `_pages` folder with the following options:
-
-```
----
-title: Collections Page
-layout: data
-permalink: /collections
-datafile: collections
----
-```
-
-The reference to `datafile` referers to the name of the file in `_data/collections.yml` and loops through the values. Feel free to modify this as needed.
-
-✅  You may use `pages` which use the page layout.
-
-```
----
-title: Document
-layout: page
-permalink: /document-url
----
-```
-
-✅ [Search.gov](https://search.gov) integration - Once you have registered and configured Search.gov for your site by following [these instructions](https://federalist.18f.gov/documentation/search/), add your "affiliate" and "access key" to `_config.yml`. Ex.
-
-```
-searchgov:
-
-  # You should not change this.
-  endpoint: https://search.usa.gov
-
-  # replace this with your search.gov account
-  affiliate: federalist-uswds-example
-
-  # replace with your access key
-  access_key: xX1gtb2RcnLbIYkHAcB6IaTRr4ZfN-p16ofcyUebeko=
-
-  # this renders the results within the page instead of sending to user to search.gov
-  inline: true
-```
-
-The logic for using Search.gov can be found in `_includes/searchgov/form.html` and supports displaying the results inline or sending the user to Search.gov the view the results. This setting defaults to "inline" but can be changed by setting
-```
-searchgov:
-  inline: false
-```
-in `_config.yml`.
-
-✅ [Digital Analytics Program (DAP)](https://digital.gov/services/dap/) integration - Once you have registered your site with DAP add your "agency" and optionally, `subagency` to `_config.yml` and uncomment the appropriate lines. Ex.
-
-```
-dap:
-  # agency: your-agency
-
-  # Optional
-  # subagency: your-subagency
-```
-
-✅ [Google Analytics](https://analytics.google.com/analytics/web/) integration - If you have a Google Analytics account to use, add your "ua" to `_config.yml` and uncomment the appropriate lines. Ex.
-
-```
-ga:
-  # ua: your-ua
-```
-
 ## Technologies you should be familiarize yourself with
 
 - [Jekyll](https://jekyllrb.com/docs/) - The primary site engine that builds your code and content.
@@ -146,9 +72,14 @@ ga:
 - [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov)
 
 ## How to edit
-- Non-developers should focus on editing markdown content in the `_pages` folder
+
+### Configuration
 
 - We try to keep configuration options to a minimum so you can easily change functionality. You should review `_config.yml` to see the options that are available to you. There are a few values on top that you **need** to change. They refer to the agency name and contact information. The rest of `_config.yml` has a range of more advanced options.
+
+- `search/index.html` is used by search.gov.
+
+### Assets
 
 - The contents inside `assets/` folder store your Javascript, SCSS/CSS, images, and other media assets are managed by  [jekyll-assets](https://github.com/envygeeks/jekyll-assets).  Assets are combined, compressed, and automatically available in your theme
 
@@ -156,18 +87,29 @@ ga:
 
 - To edit the look and feel of the site, you need to edit files in `_includes/` folder, which render key components, like the menu, side navigation, and logos.
 
-- `index.html` may not require much editing, depending on how you customize `hero.html` and `highlights.html`.
-
 - `_layouts/` may require the least amount of editing of all the files since they are primarily responsible for printing the content.
 
-- `search/index.html` is used by search.gov.
+### Customizing opportunity explorer quiz and results
 
-## For developers
+The questions and answers for the opportunity explorer are found in:
 
-Add SVGs from USWDS with:
+- `_data/opportunity-explorer-questions.yml`
+- `_data/opportunity-explorer-answers.yml`
 
-```
-{% asset img/material-icons/[name].svg %}
+The logic for selecting which programs and set-asides to display is in `_assets/js/opportunity-explorer.js`.
+
+Programs are agnostic of set-aside types (although we recognize there are GWACs created for specific socio-economic small businesses). Each rule for program display defines the relevant industries, if the company is well-established (>2 years old, $25K income), and if their products / services are above the micro-purchase threshold.
+
+`true` means a selection of "Yes" for that question is required to display the program, `false` means "No" is required, and `null` indicates that the question is irrelevant for that particular program.
+
+For example, the "Telecommunications and network services" IDIQ program will be displayed if the user selects either "all industries" or "IT: Satellite Communications" as their industry, and indicates that they are selling above the micro-purchase threshold. Their answer about the age of their business and profits is not considered, as it is `null`.
+
+```json
+"communications" : {
+  "industry" : ["all", "itsatcom"],
+  "revenue" : null,
+  "purchase" : false,
+}
 ```
 
 ## Public domain

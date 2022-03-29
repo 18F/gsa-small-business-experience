@@ -13,17 +13,23 @@ permalink: /opportunity-explorer-results/
     <div class="tablet:grid-col-7">
       <h2 class="font-heading-sm opp-exp-results">Programs</h2>
 
-      {% for program in site.data.opportunity-explorer-answers.programs %}
-        <h3>{{ program.name }}</h3>
-
-        <p>{{ program.desc }}</p>
-
-        <p><a class="usa-link" href="{{ program.link }}">Learn more about {{ program.name }}</a></p>
-
-      {% endfor %}
+      <div id="programs">
+        {% for program in site.data.opportunity-explorer-answers.programs %}
+          <div id="{{ program.id }}" class="program">
+            <h3>{{ program.name }}</h3>
+            <p>{{ program.desc }}</p>
+            <p><a class="usa-link" href="javascript:void(0)">Learn more about {{ program.name }}</a></p>
+          </div>
+        {% endfor %}
+      </div>
     </div>
+
     <div class="tablet:grid-col-5">
-      <h2 class="font-heading-sm opp-exp-results">Set-Aside Opportunities</h2>
+      <h2 class="font-heading-sm opp-exp-results">Other opportunities</h2>
+      <p><a href="javascript:void(0)" class="usa-link">Subcontracting & Partnerships</a></p>
+      <p><a href="javascript:void(0)" class="usa-link">Open Market Opportunities</a></p>
+
+      <h2 class="font-heading-sm opp-exp-results margin-top-8">Set-Aside Opportunities</h2>
 
       <a href="javascript:void(0)" class="usa-link">See all set-aside opportunities</a>
 
@@ -39,14 +45,10 @@ permalink: /opportunity-explorer-results/
               {% endfor %}
               <li>My business is "small" in its primary industry in accordance with Small Business Administration (SBA) size standards for that industry</li>
             </ul>
-            <p><a class="usa-link" href="{{ setaside.link }}">Learn more about certification</a></p>
+            <p><a class="usa-link" href="javascript:void(0)">Learn more about certification</a></p>
           </div>
         {% endfor %}
       </div>
-
-      <h2 class="font-heading-sm opp-exp-results margin-top-8">Other opportunities</h2>
-      <p><a href="javascript:void(0)" class="usa-link">Subcontracting & Partnerships</a></p>
-      <p><a href="javascript:void(0)" class="usa-link">Open Market Opportunities</a></p>
     </div>
   </div>
 </section>
