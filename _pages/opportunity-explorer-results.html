@@ -18,6 +18,17 @@ permalink: /opportunity-explorer-results/
           <div id="{{ program.id }}" class="program">
             <h3>{{ program.name }}</h3>
             <p>{{ program.desc }}</p>
+            <div class="program-missing">
+              {% for label in program.missingLabels %}
+                <div class="usa-alert usa-alert--info usa-alert--slim" id="{{program.id}}-{{ label.name }}">
+                  <div class="usa-alert__body">
+                    <p class="usa-alert__text">
+                      {{ label.desc }}
+                    </p>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
             <p><a class="usa-link" href="javascript:void(0)">Learn more about {{ program.name }}</a></p>
           </div>
         {% endfor %}
