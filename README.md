@@ -50,7 +50,9 @@ npm test will run the following scanners:
 You may also configure `woke` to ignore additional paths by modifying the
 `.wokeignore` file.
 
-`pa11y-ci` may be configured with `.pa11yci`
+`pa11y-ci` may be configured with `.pa11yci`. Although you may choose to run this with
+the `:sitemap` option, results appear to be better when relying on a list of URLs in
+`.pa11yci`.
 
 The `rspec` tests are available in the `/spec` directory
 

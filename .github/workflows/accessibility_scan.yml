@@ -24,4 +24,4 @@ jobs:
         run: npm run build && npm run start-detached
 
       - name: Run pa11y-ci.
-        run: npm run pa11y-ci:sitemap
+        run: npm run pa11y-ci
