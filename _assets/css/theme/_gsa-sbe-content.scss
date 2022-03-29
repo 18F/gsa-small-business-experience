@@ -53,6 +53,20 @@ h3 {
   }
 }
 
+iframe {
+  // calculated as ratio of 560x315 at different screen sizes
+  width: 100%;
+  height: 245px;
+
+  @media screen and (max-width: 740px) {
+    height: 200px;
+  }
+
+  @media screen and (max-width: 640px) {
+    height: 287px;
+  }
+}
+
 .image-placeholder {
   background-color: #F9F9F9;
   height: 200px;
@@ -164,20 +178,6 @@ h3 {
 #wtw-schedule-tab .question-circle {
   margin-left: auto;
   margin-right: auto;
-#wtw-schedule-tab {
-  iframe {
-    height: 100%;
-    width: 100%;
-  }
-
-}
-
-#wtw-subcontracts {
-  // TODO come back and fix this
-  iframe {
-    width: auto;
-    height: auto;
-  }
 }
 
 .vendor-spotlight {
