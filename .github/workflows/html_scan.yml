@@ -1,11 +1,11 @@
-name: Build and test Jekyll USWDS
+name: Build and test HTML
 
 on:
   - pull_request
 
 jobs:
   build:
-    name: Install, build and test site with html-proofer
+    name: html-proofer
     runs-on: ubuntu-latest
     env:
       LANG: en_US.UTF-8
@@ -16,25 +16,9 @@ jobs:
       - name: Checkout source.
         uses: actions/checkout@v2
 
-      - name: Setup ruby env.
-        run: |
-          sudo apt-get update;
-          sudo apt-get install --reinstall -y locales;
-          sudo sed -i 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen;
-          sudo locale-gen en_US.UTF-8;
+      - uses: ./.github/actions/setup-ruby
 
-      - name: Install ruby.
-        uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
-
-      - name: Install node.js.
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-
-      - name: Install NPM dependencies.
-        run: npm install
+      - uses: ./.github/actions/setup-js
 
       - name: Build and start up jekyll server.
         run: npm run build && npm run start-detached

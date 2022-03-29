@@ -1,9 +1,9 @@
-name: woke
+name: Inclusion scan
 on:
   - pull_request
 jobs:
   woke:
-    name: woke inclusion scan
+    name: woke
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
