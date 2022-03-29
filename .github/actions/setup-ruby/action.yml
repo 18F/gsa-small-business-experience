@@ -4,6 +4,7 @@ runs:
   using: composite
   steps:
     - name: Setup ruby env.
+      shell: bash
       run: |
         sudo apt-get update;
         sudo apt-get install --reinstall -y locales;
