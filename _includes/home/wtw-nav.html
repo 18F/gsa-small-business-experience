@@ -1,18 +1,16 @@
-<div class="grid-container-widescreen">
-  <div class="grid-row text-center" id="wtw-nav" role="tablist">
-    <button type="button" role="tab" aria-selected="true" aria-controls="wtw-schedule-tab" class="tablet:grid-col-4 active" id="wtw-schedule" tabindex="0">
-      <h3 class="margin-bottom-0">Contract Schedule</h3>
-    </button>
-    <button type="button" role="tab" aria-selected="false" aria-controls="wtw-opportunities-tab" class="tablet:grid-col-4" id="wtw-opportunities" tabindex="0">
-      <h3 class="margin-bottom-0">Open Market Opportunities</h3>
-    </button>
-    <button type="button" role="tab" aria-selected="false" aria-controls="wtw-subcontracts-tab" class="tablet:grid-col-4" id="wtw-subcontracts" tabindex="0">
-      <h3 class="margin-bottom-0">Subcontract & Partnerships</h3>
-    </button>
-  </div>
+<div class="grid-row text-center" id="wtw-nav" role="tablist">
+  <button type="button" role="tab" aria-selected="true" aria-controls="wtw-schedule-tab" class="tablet:grid-col-4 active" id="wtw-schedule" tabindex="0">
+    <h3 class="margin-bottom-0">Contract Schedule</h3>
+  </button>
+  <button type="button" role="tab" aria-selected="false" aria-controls="wtw-opportunities-tab" class="tablet:grid-col-4" id="wtw-opportunities" tabindex="0">
+    <h3 class="margin-bottom-0">Open Market Opportunities</h3>
+  </button>
+  <button type="button" role="tab" aria-selected="false" aria-controls="wtw-subcontracts-tab" class="tablet:grid-col-4" id="wtw-subcontracts" tabindex="0">
+    <h3 class="margin-bottom-0">Subcontract & Partnerships</h3>
+  </button>
 </div>
 
-<div class="grid-container margin-top-2" id="wtw-tab-panels">
+<div class="grid-container margin-top-2 margin-bottom-4" id="wtw-tab-panels">
   <div id="wtw-schedule-tab" class="panel" role="tabpanel" aria-labelledby="wtw-schedule">
     {% include home/wtw-schedule.html %}
   </div>

@@ -76,7 +76,7 @@ h3 {
 }
 
 .section-bg-gray {
-  background-color: #E5E5E5;
+  background-color: #F9F9F9;
 }
 
 #upcoming-events {
@@ -116,6 +116,15 @@ h3 {
   }
 }
 
+#wtw {
+  h4 {
+    @include u-font('heading', 'lg');
+  }
+
+  h5 {
+    @include u-font('heading', 'md');
+  }
+}
 
 #wtw-intro {
   background-color: #DCDEE0;
@@ -124,7 +133,7 @@ h3 {
   .btn-centered {
     position: absolute;
     top: 40%;
-    left: 40%;
+    width: 80%;
   }
 }
 
@@ -138,16 +147,24 @@ h3 {
 
     // custom button styles
     border-bottom: solid 9px #F3F3F3;
-    color: #000;
+    color: #71767A;
     text-decoration: none;
+
+    &:hover, &:focus {
+      // TODO incorporate mixin or function for bg-primary-light
+      border-bottom-color: #73b3e7;
+      color: #000;
+      cursor: pointer;
+    }
   }
 
-  .active {
+  .active, .active:hover, .active:focus {
     border-bottom-color: #005EA2;
+    color: #000;
   }
 }
 
-#wtw-schedule {
+#wtw-schedule-tab {
   iframe {
     height: 100%;
     width: 100%;
