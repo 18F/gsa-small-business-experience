@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   const rules = {
     "construction" : {
+      "alwaysDisplay" : false,
       "industry" : [
         "all",
         "architecture",
@@ -41,11 +42,13 @@ document.addEventListener("DOMContentLoaded", function(){
       "purchase" : false,
     },
     "communications" : {
+      "alwaysDisplay" : false,
       "industry" : ["all", "itsatcom"],
       "revenue" : null,
       "purchase" : false,
     },
     "gwac" : {
+      "alwaysDisplay" : false,
       "industry" : ["all", "it", "itsatcom"],
       // TODO does it matter how much revenue / past performance your business has
       // to apply to a GWAC?
@@ -53,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function(){
       "purchase" : false,
     },
     "mas" : {
+      "alwaysDisplay" : true,
       // Note: this list drawn from the 12 MAS categories
       // https://www.gsa.gov/buying-selling/purchasing-programs/gsa-multiple-award-schedule/gsa-schedule-offerings/mas-categories
       "industry" : [
@@ -77,17 +81,20 @@ document.addEventListener("DOMContentLoaded", function(){
       "purchase" : false
     },
     "masit" : {
+      "alwaysDisplay" : false,
       "industry" : ["all", "it", "itsatcom"],
       "revenue" : true,
       "purchase" : false
     },
     "fastlane" : {
+      "alwaysDisplay" : false,
       "industry" : ["all", "it", "itsatcom"],
       // TODO is past performance required for FAStlane?
       "revenue" : null,
       "purchase" : false,
     },
     "springboard" : {
+      "alwaysDisplay" : false,
       "industry" : ["all", "it", "itsatcom"],
       "revenue" : false,
       "purchase" : false,
@@ -98,18 +105,29 @@ document.addEventListener("DOMContentLoaded", function(){
 
   for (let program of programDivs) {
     let programRules = rules[program.id];
+    let alwaysDisplay = programRules["alwaysDisplay"]
 
     let industryMatch = programRules["industry"].includes(industry);
     let revenueMatch = checkRule(programRules["revenue"], revenue);
     let purchaseMatch = checkRule(programRules["purchase"], purchase);
 
-    if (!industryMatch || !revenueMatch || !purchaseMatch) {
-      program.style.display = "none";
+    if (alwaysDisplay) {
+      // if the program is being displayed, check if its individual criteria
+      // for revenue and purchase have been met and if so, hide those warnings
+      if (revenueMatch) { hideWarning("revenue", program.id); }
+      if (purchaseMatch) { hideWarning("purchase", program.id); }
+    } else if (!industryMatch || !revenueMatch || !purchaseMatch) {
+      program.classList.add("display-none");
     }
   }
 
   function checkRule(rule, param) {
     // if the rule is null then this particular question does not apply
     return (rule == null) ? true : (rule == param)
+  }
+
+  function hideWarning(type, programId) {
+    let warning = document.getElementById(programId + "-" + type);
+    if (warning) { warning.classList.add("display-none"); }
   }
 });
