@@ -39,21 +39,11 @@ h3 {
 
 // HOME PAGE
 
-.section-arrow-down {
-  width: 100px;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 40px solid #DCDEE0;
-}
-
 #explore-contracts {
   // Note: cannot use HTML class for padding because it's
   // overridden by section styling
   @include u-padding-bottom(3);
 
-  a {
-    color: #1A4480;
-  }
   .explore-logo {
     max-width: 80%;
   }
@@ -73,6 +63,13 @@ h3 {
     position: relative;
     top: 40%;
   }
+}
+
+.section-arrow-down {
+  width: 100px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 40px solid #DCDEE0;
 }
 
 .section-bg-gray {
@@ -164,16 +161,15 @@ h3 {
   }
 }
 
+#wtw-schedule-tab .question-circle {
+  margin-left: auto;
+  margin-right: auto;
 #wtw-schedule-tab {
   iframe {
     height: 100%;
     width: 100%;
   }
 
-  .question-circle {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 #wtw-subcontracts {
@@ -228,9 +224,4 @@ h2.opp-exp-results {
   height: 37px;
   margin-bottom: 7px;
   width: 100%;
-}
-
-.usa-link {
-  // for WCAG AAA
-  color: #004c85;
 }
