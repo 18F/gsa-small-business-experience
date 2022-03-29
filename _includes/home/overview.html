@@ -30,7 +30,7 @@
       {% asset img/material-icons/image.svg alt="image placeholder icon" class="grid-col-6" %}
     </div>
     <label class="usa-label" for="options">Find Your Local Small Business Advocate</label>
-    <select class="usa-select" name="options" id="options">
+    <select class="usa-select" name="options" id="options" disabled>
       <option value>- Select state or territory -</option>
       {% for state in site.data.us-states-territories %}
         <option value="state-{{ forloop.index }}">{{ state }}</option>
