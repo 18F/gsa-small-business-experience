@@ -1,0 +1,41 @@
+<h2 class="tablet:margin-top-0 tablet:margin-bottom-0">We connect small businesses to federal buyers</h2>
+<div class="grid-row grid-gap">
+  <div class="tablet:grid-col-7">
+    <p>GSA manages contracts and programs that let small businesses sell products and services to federal agencies.</p>
+
+    <h3 class="text-normal">Benefits of working with us</h3>
+
+    <ul class="usa-list">
+      <li>Can sell to all federal agencies and some state and local</li>
+      <li>Shorter, simplified process to sell directly to goverment agencies</li>
+      <li>Competitive advantage in the federal market</li>
+      <li>Contracts set aside for certain business categories like:</li>
+        <ul>
+          <li>Small businesses</li>
+          <li>Woman-owned businesses</li>
+          <li>Service-disabled veteran-owned businesses</li>
+          <li>Small disadvantaged businesses 8(a)</li>
+          <li>HUBZone businesses</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="tablet:grid-col-5">
+    <h3 class="text-normal tablet:margin-top-0">Vendor case studies</h3>
+    <div class="vendor-spotlight margin-bottom-1 grid-row">
+      <h4 class="grid-col-6">Contract Schedule</h4>
+      {% asset img/material-icons/image.svg alt="image placeholder icon" class="grid-col-6" %}
+    </div>
+    <div class="vendor-spotlight grid-row">
+      <h4 class="grid-col-6">Subcontract</h4>
+      {% asset img/material-icons/image.svg alt="image placeholder icon" class="grid-col-6" %}
+    </div>
+    <label class="usa-label" for="options">Find Your Local Small Business Advocate</label>
+    <select class="usa-select" name="options" id="options" disabled>
+      <option value>- Select state or territory -</option>
+      {% for state in site.data.us-states-territories %}
+        <option value="state-{{ forloop.index }}">{{ state }}</option>
+      {% endfor %}
+    </select>
+  </div>
+</div>

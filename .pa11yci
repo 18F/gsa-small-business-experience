@@ -1,7 +1,12 @@
 {
   "defaults": {
     "concurrency": 4,
-    "standard": "WCAG2AAA",
+    "standard": "WCAG2AA",
     "runners": ["htmlcs"]
-  }
+  },
+  "urls": [
+    "http://localhost:4000/",
+    "http://localhost:4000/opportunity-explorer/",
+    "http://localhost:4000/opportunity-explorer-results/"
+  ]
 }

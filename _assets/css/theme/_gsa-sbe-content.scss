@@ -14,18 +14,58 @@ h3 {
   @include u-font("sans", "lg");
 }
 
+.question-circle {
+  background: #DCDEE0;
+  border-radius: 50%;
+  height: 45px;
+  padding-left: 0;
+  // TODO come back to this
+  padding: 11px !important;
+  text-align: center;
+  width: 45px;
+}
+
 .usa-button--base {
   // overridding for WCAG AAA
   background-color: color($theme-color-primary-dark);
 }
 
 .usa-section {
-  @include u-padding-bottom(0);
+  @include u-padding-bottom(2);
   @include u-padding-left(3);
   @include u-padding-right(3);
+  @include u-padding-top(2);
 }
 
 // HOME PAGE
+
+#explore-contracts {
+  // Note: cannot use HTML class for padding because it's
+  // overridden by section styling
+  @include u-padding-bottom(3);
+
+  .explore-logo {
+    max-width: 80%;
+  }
+  .link-icon {
+    max-height: 16px;
+    vertical-align: middle;
+  }
+}
+
+iframe {
+  // calculated as ratio of 560x315 at different screen sizes
+  width: 100%;
+  height: 245px;
+
+  @media screen and (max-width: 740px) {
+    height: 200px;
+  }
+
+  @media screen and (max-width: 640px) {
+    height: 287px;
+  }
+}
 
 .image-placeholder {
   background-color: #F9F9F9;
@@ -37,6 +77,28 @@ h3 {
     position: relative;
     top: 40%;
   }
+}
+
+.section-arrow-down {
+  width: 100px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 40px solid #DCDEE0;
+}
+
+.section-bg-gray {
+  background-color: #F9F9F9;
+}
+
+#upcoming-events {
+  .grid-row {
+    margin-bottom: 1.5em;
+    margin-left: 1em;
+  }
+  .event-date {
+    border-right: solid 2px #DCDEE0;
+  }
+
 }
 
 .usa-hero {
@@ -65,18 +127,66 @@ h3 {
   }
 }
 
+#wtw {
+  h4 {
+    @include u-font('heading', 'lg');
+  }
+
+  h5 {
+    @include u-font('heading', 'md');
+  }
+}
+
+#wtw-intro {
+  background-color: #DCDEE0;
+
+  // TODO make this look nicer on mobile
+  .btn-centered {
+    position: absolute;
+    top: 40%;
+    width: 80%;
+  }
+}
+
+#wtw-nav {
+  button {
+    // override default button styles
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    // custom button styles
+    border-bottom: solid 9px #F3F3F3;
+    color: #71767A;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      // TODO incorporate mixin or function for bg-primary-light
+      border-bottom-color: #73b3e7;
+      color: #000;
+      cursor: pointer;
+    }
+  }
+
+  .active, .active:hover, .active:focus {
+    border-bottom-color: #005EA2;
+    color: #000;
+  }
+}
+
+#wtw-schedule-tab .question-circle {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .vendor-spotlight {
-  @include u-font("sans", "sm");
-  @include u-line-height("body", 2);
-  @include u-padding(2);
-  @include u-text("bold");
-
   background-color: #F9F9F9;
+  height: 8em;
+  @include u-padding-left(2);
 
-  ul {
-    list-style-type: none;
-    margin-block-start: 0;
-    padding-inline-start: 0;
+  img {
+    width: 30px;
   }
 }
 
@@ -86,17 +196,6 @@ h3 {
 }
 
 // OPPORTUNITY EXPLORER
-
-.question-circle {
-  background: #DCDEE0;
-  border-radius: 50%;
-  height: 45px;
-  padding-left: 0;
-  // TODO come back to this
-  padding: 11px !important;
-  text-align: center;
-  width: 45px;
-}
 
 .usa-form--large, .usa-label, .usa-legend {
   max-width: 100%;
@@ -125,9 +224,4 @@ h2.opp-exp-results {
   height: 37px;
   margin-bottom: 7px;
   width: 100%;
-}
-
-.usa-link {
-  // for WCAG AAA
-  color: #005b9e;
 }

@@ -4,48 +4,30 @@ layout: wide
 title: Small Business
 ---
 
-{% include hero.html %}
+{% include home/hero.html %}
 
 <section class="usa-section grid-container-widescreen">
-  <div class="grid-row grid-gap">
-    <div class="tablet:grid-col-8">
-      <h2 class="margin-top-0">GSA connects small businesses to federal buyers</h2>
-      <p>GSA manages contracts and programs that let small businesses sell products and services to federal agencies.</p>
-
-      <h3 class="text-normal">Benefits of working with the GSA</h3>
-
-      <ul>
-        <li>Access to federal buyers</li>
-        <li>Access to contracts up to 20 years long</li>
-        <li>Contracts set aside for certain business categories like:
-          <ul>
-            <li>Small businesses</li>
-            <li>Woman-owned businesses</li>
-            <li>Service-disabled veteran-owned businesses</li>
-            <li>Small disadvantaged businesses 8(a)</li>
-            <li>HUBZone businesses</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="tablet:grid-col-4">
-      <h3 class="text-normal margin-top-0">Vendor spotlights</h3>
-      <div class="vendor-spotlight margin-bottom-1">
-        <p>Name</p>
-        <ul>
-          <li>Industry</li>
-          <li>Location</li>
-          <li>Type of business</li>
-        </ul>
-      </div>
-      <div class="vendor-spotlight">
-        <p>Name</p>
-        <ul>
-          <li>Industry</li>
-          <li>Location</li>
-          <li>Type of business</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  {% include home/overview.html %}
 </section>
+
+<section class="usa-section section-bg-gray" id="explore-contracts">
+  {% include home/explore.html %}
+</section>
+
+<section class="usa-section" id="wtw-intro">
+  {% include home/wtw-intro.html %}
+</section>
+
+<div class="grid-container">
+  <div class="section-arrow-down"></div>
+</div>
+
+<section class="usa-section" id="wtw">
+  {% include home/wtw-nav.html %}
+</section>
+
+<section class="usa-section section-bg-gray">
+  {% include home/resources.html %}
+</section>
+
+{% asset home.js %}
