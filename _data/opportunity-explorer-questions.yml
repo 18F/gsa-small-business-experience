@@ -70,13 +70,3 @@
       value: 1
     - label: "No"
       value: 0
-
-- type: radio
-  question: Are you interested in contracts less than $10K?
-  label: ""
-  id: purchase
-  values:
-    - label: "Yes"
-      value: 1
-    - label: "No"
-      value: 0

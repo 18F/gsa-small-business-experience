@@ -26,8 +26,6 @@ programs:
         desc: |-
           You must be in business for 2 years and show $25,000 in revenue to
           become a MAS vendor
-      - name: purchase
-        desc: The MAS program focuses on sales which exceed $10K per purchase
     # SOURCE
     # https://www.gsa.gov/technology/technology-purchasing-programs/telecommunications-and-network-services
   - name: Multiple Award Schedules IT (MAS IT)

@@ -39,13 +39,11 @@ document.addEventListener("DOMContentLoaded", function(){
         "interior",
       ],
       "revenue" : null,
-      "purchase" : false,
     },
     "communications" : {
       "alwaysDisplay" : false,
       "industry" : ["all", "itsatcom"],
       "revenue" : null,
-      "purchase" : false,
     },
     "gwac" : {
       "alwaysDisplay" : false,
@@ -53,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function(){
       // TODO does it matter how much revenue / past performance your business has
       // to apply to a GWAC?
       "revenue" : null,
-      "purchase" : false,
     },
     "mas" : {
       "alwaysDisplay" : true,
@@ -78,26 +75,22 @@ document.addEventListener("DOMContentLoaded", function(){
         "travel"
       ],
       "revenue" : true,
-      "purchase" : false
     },
     "masit" : {
       "alwaysDisplay" : false,
       "industry" : ["all", "it", "itsatcom"],
       "revenue" : true,
-      "purchase" : false
     },
     "fastlane" : {
       "alwaysDisplay" : false,
       "industry" : ["all", "it", "itsatcom"],
       // TODO is past performance required for FAStlane?
       "revenue" : null,
-      "purchase" : false,
     },
     "springboard" : {
       "alwaysDisplay" : false,
       "industry" : ["all", "it", "itsatcom"],
       "revenue" : false,
-      "purchase" : false,
     }
   }
 
@@ -109,14 +102,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let industryMatch = programRules["industry"].includes(industry);
     let revenueMatch = checkRule(programRules["revenue"], revenue);
-    let purchaseMatch = checkRule(programRules["purchase"], purchase);
 
     if (alwaysDisplay) {
       // if the program is being displayed, check if its individual criteria
       // for revenue and purchase have been met and if so, hide those warnings
       if (revenueMatch) { hideWarning("revenue", program.id); }
-      if (purchaseMatch) { hideWarning("purchase", program.id); }
-    } else if (!industryMatch || !revenueMatch || !purchaseMatch) {
+    } else if (!industryMatch || !revenueMatch) {
       program.classList.add("display-none");
     }
   }
