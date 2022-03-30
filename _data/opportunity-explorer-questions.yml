@@ -72,7 +72,7 @@
       value: 0
 
 - type: radio
-  question: Will all your sales be less than $10K per purchase?
+  question: Are you interested in contracts less than $10K?
   label: ""
   id: purchase
   values:
