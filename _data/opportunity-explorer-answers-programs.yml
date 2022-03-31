@@ -61,42 +61,68 @@ programs:
       full range of acquisition solutions for information technology and
       telecommunications goods and services.
 
-setasides:
-  - name: Women-Owned Small Businesses (WOSB)
-    id: wosb
-    qualifications:
-      - |-
-        51% or more of my business is owned, controlled, and primarily
-        managed by one or more woman who are U.S. citizens
-  - name: Small Disadvantaged Businesses 8(a)
-    id: sdb8a
-    qualifications:
-      # TODO how many criteria do we want to list on this page?
-      - |-
-        51% of more of my business is owned, controlled, and primarily managed
-        by one or more U.S. citizens who are economically and socially disadvantaged
-      - |-
-        My business is owned by someone whose averaged adjusted gross income for
-        three years is $250,000 or less
-      - My business is owned by someone with $4 million or less in assets
-      - |-
-        My business is currently participating in or has not previously
-        participated in the 8(a) program
-  - name: Historically Underutilized Business Zones (HUBZone)
-    id: hubzone
-    qualifications:
-      - |-
-        51% or more of my business is owned, controlled, and primarily managed
-        by one or more U.S. citizens, a Community Development Corporation, an
-        agricultural cooperative, a Native Hawaiian organization, or an Indian
-        tribe
-      - My business's principal office is located in a HUBZone
-      - At least 35% of my business's employees live in a HUBZone
-  - name: Service-Disabled Veteran-Owned Business
-    id: sdvob
-    qualifications:
-      # TODO how many criteria do we want to list on this page?
-      - |-
-        51% or more of my business is owned, controlled, and primarily
-        managed by one or more service-disabled veterans or caregivers
-      - A service-disabled veteran holds the highest officer position in my business
+rules:
+  construction:
+    alwaysDisplay: false
+    industry:
+      - all
+      - architecture
+      - construction
+      - facilities
+      - interior
+    revenue: null
+  communications:
+    alwaysDisplay: false
+    industry:
+      - all
+      - itsatcom
+    revenue: null
+  mas:
+    alwaysDisplay: true
+    industry:
+      - all
+      - facilities
+      - furniture
+      - human
+      - industrial
+      - interior
+      - it
+      - itsatcom
+      - office
+      - other # miscellaneous category
+      - prof
+      - realestate
+      - science
+      - security
+      - transport
+      - travel
+    revenue: true
+  masit:
+    alwaysDisplay: false
+    industry:
+      - all
+      - it
+      - itsatcom
+    revenue: true
+  springboard:
+    alwaysDisplay: false
+    industry:
+      - all
+      - it
+      - itsatcom
+    revenue: false
+  fastlane:
+    alwaysDisplay: false
+    industry:
+      - all
+      - it
+      - itsatcom
+    # TODO is past performance required for FASt Lane?
+    revenue: null
+  gwac:
+    alwaysDisplay: false
+    industry:
+      - all
+      - it
+      - itsatcom
+    revenue: null

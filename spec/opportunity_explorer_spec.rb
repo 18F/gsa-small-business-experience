@@ -17,7 +17,7 @@ describe "/opportunity-explorer" do
 
   it "built questions from the YAML file" do
     expect(page).to have_css("legend", count: 3)
-    expect(page).to have_css("#industry option", count: 18)
+    expect(page).to have_css("#industry option", count: 19)
     expect(page).to have_css("#sdvob")
     expect(page).to have_css("label", text: "Service-Disabled Veteran-Owned Business")
     expect(page).to have_button("Submit")
