@@ -32,7 +32,7 @@ permalink: /opportunity-explorer-results/
       <h2 class="font-heading-sm opp-exp-results">Programs</h2>
 
       <div id="programs">
-        {% for program in site.data.opportunity-explorer-answers.programs %}
+        {% for program in site.data.opportunity-explorer-answers-programs.programs %}
           <div id="{{ program.id }}" class="program">
             <h3>{{ program.name }}</h3>
             <p>{{ program.desc }}</p>
@@ -63,7 +63,7 @@ permalink: /opportunity-explorer-results/
       <a href="javascript:void(0)" class="usa-link">See all set-aside opportunities</a>
 
       <div id="setasides">
-        {% for setaside in site.data.opportunity-explorer-answers.setasides %}
+        {% for setaside in site.data.opportunity-explorer-answers-setasides %}
           <div id="{{ setaside.id }}" class="setaside">
             <h3>{{ setaside.name }}</h3>
 
@@ -110,5 +110,13 @@ permalink: /opportunity-explorer-results/
     </div>
   </div>
 </section>
+
+<script>
+  {% comment %}
+  There should be a way using Jekyll to recognize liquid tags and generate them
+  within a JS file, but it is not working so this is my current solution
+  {% endcomment %}
+const rules = {{ site.data.opportunity-explorer-answers-programs.rules | jsonify }}
+</script>
 
 {% asset opportunity-explorer.js %}
