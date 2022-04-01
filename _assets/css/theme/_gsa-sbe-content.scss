@@ -79,13 +79,6 @@ iframe {
   }
 }
 
-.section-arrow-down {
-  width: 100px;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 40px solid #DCDEE0;
-}
-
 .section-bg-gray {
   background-color: #F9F9F9;
 }
@@ -134,17 +127,6 @@ iframe {
 
   h5 {
     @include u-font('heading', 'md');
-  }
-}
-
-#wtw-intro {
-  background-color: #DCDEE0;
-
-  // TODO make this look nicer on mobile
-  .btn-centered {
-    position: absolute;
-    top: 40%;
-    width: 80%;
   }
 }
 
