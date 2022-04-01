@@ -131,29 +131,47 @@ iframe {
 }
 
 #wtw-nav {
+  $btn-tab-active-color: #1A4480;
+  $btn-tab-base-color: #F0F0F0;
+
+  border-bottom: solid 9px $btn-tab-active-color;
+
+  .active, .active:hover, .active:focus {
+    background-color: $btn-tab-active-color;
+    color: $btn-tab-base-color;
+  }
+
   button {
     // override default button styles
-    background-color: transparent;
-    border-top: none;
+    border-bottom: none;
     border-left: none;
     border-right: none;
+    border-top: none;
 
-    // custom button styles
-    border-bottom: solid 9px #F3F3F3;
-    color: #71767A;
-    text-decoration: none;
+    background-color: $btn-tab-base-color;
+    color: $btn-tab-active-color;
+
+    @media screen and (min-width: 640px) {
+      // when side by side, borders should be between buttons,
+      // not on the outside edges
+      &:not(:first-child) {
+        border-left: solid #FFF 4px;
+      }
+      &:not(:last-child) {
+        border-right: solid #FFF 4px;
+      }
+    }
 
     &:hover, &:focus {
-      // TODO incorporate mixin or function for bg-primary-light
-      border-bottom-color: #73b3e7;
+      background-color: #73b3e7;
       color: #000;
       cursor: pointer;
     }
-  }
 
-  .active, .active:hover, .active:focus {
-    border-bottom-color: #005EA2;
-    color: #000;
+    h3 {
+      @include u-margin-bottom(2);
+      @include u-text('normal');
+    }
   }
 }
 
