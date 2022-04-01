@@ -90,7 +90,7 @@ rules:
       - itsatcom
       - office
       - other # miscellaneous category
-      - prof
+      - professional
       - realestate
       - science
       - security

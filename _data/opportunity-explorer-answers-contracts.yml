@@ -1,0 +1,141 @@
+- industry: all
+  items:
+    - title: Web Site Hosting
+      agency: Congressional Budget Office
+    - title: Ink Toner Boxes
+      agency: VETERANS AFFAIRS, DEPT OF
+    - title: Hotel Accommodations/Lodging
+      agency: JUSTICE, DEPT OF
+
+- industry: architecture
+  items:
+    - title: Supplemental Architecture and Engineering Services for OK
+      agency: PUBLIC BUILDINGS SERVICE
+    - title: Design-Build Construction of Plant Biosence Research Facility, WA
+      agency: DEPT OF DEFENSE
+
+- industry: construction
+  items:
+    - title: Fort Hood Renovate and Repair Architectural Features IDIQ
+      agency: DEPT OF DEFENSE
+    - title: Harbor Refuge Dwelling Rehabilitation
+      agency: NATIONAL PARK SERVICE
+    - title: Blackfeet Reservation Apartment Complex
+      agency: INDIAN HEALTH SERVICE
+
+- industry: facilities
+  items:
+    - title: Mount Rushmore Custodial Services
+      agency: NATIONAL PARK SERVICE
+    - title: Vault Pumping Contract
+      agency: BUREAU OF LAND MANAGEMENT
+    - title: Grounds Maintenance Services, Ithaca NY
+      agency: DEPT OF DEFENSE
+
+- industry: furniture
+  items:
+    - title: Cardio Tilt Table
+      agency: VETERANS AFFAIRS, DEPT OF
+    - title: JFB, GSA D&C 5th to 18th Floor Furniture
+      agency: GENERAL SERVICES ADMINISTRATION
+
+- industry: human
+  items:
+    - title: FERS and FERS LEO Retirement Planning
+      agency: JUSTICE, DEPT OF
+    - title: J&A for Human Resources Specialist Support Services
+      agency: DEPT OF DEFENSE
+    - title: Human Resources (HR) Support Services
+      agency: NUCLEAR REGULATORY COMMISSION
+
+- industry: industrial
+  items:
+    - title: Radio Frequency (RF) Welder
+      agency: DEPT OF DEFENSE
+    - title: 300 MhZ Solid-State NMR Spectrometer Console
+      agency: COMMERCE, DEPT OF
+
+- industry: interior
+  items:
+    - title: Port of Entry Project - A/E Services
+      agency: GENERAL SERVICES ADMINISTRATION
+    - title: Relocate PHysical Medicine and Rehabilitation to 4th Floor
+      agency: VETERANS AFFAIRS, DEPT OF
+
+- industry: it
+  items:
+    - title: PM/CM Engineering Support for VACCHCS IAW
+      agency: VETERANS AFFAIRS, DEPT OF
+    - title: Purchase Software as a Service (SAAS) code and platforms
+      agency: SMALL BUSINESS ADMINISTRATION
+    - title: Web Site Hosting
+      agency: Congressional Budget Office
+
+- industry: itsatcom
+  items:
+    - title: Cellular telephone services
+      agency: STATE, DEPT OF
+    - title: Notice of Intent to Solicit and Award Contract for Beeper Services
+      agency: VETERANS AFFAIRS, DEPT OF
+    - title: Tactical Network Routers
+      agency: DEPT OF DEFENSE
+
+- industry: office
+  items:
+    - title: Ink Toner Boxes
+      agency: VETERANS AFFAIRS, DEPT OF
+    - title: Packing, packaging, preservation, and marking services
+      agency: GENERAL SERVICES ADMINISTRATION
+    - title: Large Format Production Printer
+      agency: DEPT OF DEFENSE
+
+- industry: professional
+  items:
+    - title: FY22 Full Service Contract for SPS Getinge Equipment
+      agency: VETERANS AFFAIRS, DEPT OF
+    - title: Surgical Instruments for Northport VA Medical System
+      agency: VETERANS AFFAIRS, DEPT OF
+
+- industry: realestate
+  items:
+    - title: Marketing, Brokerage Services, & Lease Management of US GSA Lamar Building
+      agency: GENERAL SERVICES ADMINISTRATION
+    - title: "Iowa Land Appraisals: Agricultural Conservation Easement Program"
+      agency: AGRICULTURE, DEPT OF
+
+- industry: science
+  items:
+    - title: Surgical Instruments for Northport VA Medical System
+      agency: VETERANS AFFAIRS, DEPT OF
+    - title: 300 MhZ Solid-State NMR Spectrometer Console
+      agency: COMMERCE, DEPT OF
+
+- industry: security
+  items:
+    - title: NP Aerospace Bomb Suits
+      agency: JUSTICE, DEPT OF
+    - title: Smithsonian Tropical Research Institute Guard Force and Control Room Operator Services
+      agency: SMITHSONIAN INSTITUTION
+
+- industry: transport
+  items:
+    - title: New 55 Ton Lowboy Trailer
+      agency: INTERIOR, DEPT OF THE
+    - title: Boat Trailer
+      agency: DEPT OF DEFENSE
+    - title: Hood River Ranger District Dirt Bike Purchase
+      agency: AGRICULTURE, DEPT OF
+
+- industry: travel
+  items:
+    - title: Hotel Accommodations/Lodging
+      agency: JUSTICE, DEPT OF
+    - title: DTMO Travel Management Company Services for Travel Area-3
+      agency: DEPT OF DEFENSE
+
+- industry: other
+  items:
+    - title: Horse Mountain Wildlife Water Catchment
+      agency: INTERIOR, DEPT OF THE
+    - title: 2027 Gershwin Prize IDIQ
+      agency: LIBRARY OF CONGRESS
