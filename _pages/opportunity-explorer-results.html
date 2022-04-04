@@ -95,9 +95,26 @@ permalink: /opportunity-explorer-results/
       <h2 class="font-heading-sm margin-top-0">Explore Current & Past Contracts</h2>
 
       <p>Explore contracts and contract data at SAM.gov</p>
-      <div class="text-placeholder"></div>
-      <div class="text-placeholder"></div>
-      <div class="text-placeholder"></div>
+
+      <table class="usa-table usa-table--borderless" id="contracts-table">
+        <thead>
+          <tr>
+            <th scope="col">Contract Title</th>
+            <th scope="col">Agency</th>
+          </tr>
+        </thead>
+        <tbody id="contracts">
+          {% for industry in site.data.opportunity-explorer-answers-contracts %}
+            {% for item in industry.items %}
+              <tr class="contract contract-{{industry.industry}}">
+                <th scope="row">{{ item.title }}</th>
+                <td>{{ item.agency }}</td>
+              </tr>
+            {% endfor %}
+          {% endfor %}
+        </tbody>
+      </table>
+
       <p><a href="javascript:void(0)" class="usa-link">Explore more at SAM.gov ></a></p>
 
       <h2 class="font-heading-sm margin-top-5">Forecasting of Contract Opportunities</h2>

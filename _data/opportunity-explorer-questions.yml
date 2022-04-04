@@ -28,7 +28,7 @@
     - label: Office management
       value: office
     - label: Professional services
-      value: prof
+      value: professional
     - label: Real Estate
       value: realestate
     - label: Scientific management & solutions
@@ -39,8 +39,6 @@
       value: security
     - label: Travel
       value: travel
-    # - label: Real estate
-    #   value: realestate
     - label: Other
       value: other
 

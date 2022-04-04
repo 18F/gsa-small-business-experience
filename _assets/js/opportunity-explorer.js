@@ -55,4 +55,20 @@ document.addEventListener("DOMContentLoaded", function(){
     let warning = document.getElementById(programId + "-" + type);
     if (warning) { warning.classList.add("display-none"); }
   }
+
+  // CONTRACT EXAMPLES
+
+  // Hide any contracts which are not from the selected industry
+  // If no industry is selected, hide all contracts
+
+  if (industry == "") {
+    document.getElementById("contracts-table").classList.add("display-none");
+  } else {
+    contractDivs = document.getElementById("contracts").children;
+    for (let row of contractDivs) {
+      if (!row.classList.contains("contract-" + industry)) {
+        row.classList.add("display-none");
+      }
+    }
+  }
 });
