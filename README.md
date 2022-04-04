@@ -9,7 +9,7 @@ experience of further resources in GSA.gov.
 
 This code uses the [Jekyll](https://jekyllrb.com) site engine and built with Ruby, and is based off of the [Federalist](https://federalist.18f.gov/) template [federalist-uswds-jekyll](https://github.com/18F/federalist-uswds-jekyll). It incorporates the [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov).
 
-This repository uses GitHub Actions to deploy via Federalist.
+This repository uses GitHub Actions to deploy via Federalist. [Check out the site preview](https://federalist-35400506-693f-4f4d-815c-e4fb7841233f.app.cloud.gov/site/18f/gsa-small-business-experience/).
 
 As we did not need blog functionality, posts / drafts / etc were removed from this code base.
 
