@@ -59,13 +59,16 @@ document.addEventListener("DOMContentLoaded", function(){
   // CONTRACT EXAMPLES
 
   // Hide any contracts which are not from the selected industry
+  // If no industry is selected, hide all contracts
 
-  // TODO what to display if no industry selected?
-  // TODO skip iterating through each and hide table if none selected?
-  contractDivs = document.getElementById("contracts").children;
-  for (let row of contractDivs) {
-    if (!row.classList.contains("contract-" + industry)) {
-      row.classList.add("display-none");
+  if (industry == "") {
+    document.getElementById("contracts-table").classList.add("display-none");
+  } else {
+    contractDivs = document.getElementById("contracts").children;
+    for (let row of contractDivs) {
+      if (!row.classList.contains("contract-" + industry)) {
+        row.classList.add("display-none");
+      }
     }
   }
 });
