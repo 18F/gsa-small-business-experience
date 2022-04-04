@@ -215,9 +215,12 @@ describe "/opportunity-explorer-results", type: :feature, js: true do
         visit "/opportunity-explorer-results/index.html?industry=all"
       end
       it "shows contracts from a range of disciplines" do
-        expect(page).to have_content("Web Site Hosting")
+        expect(page).to have_content("Diversity, Equity, Inclusion, and Accessibility Training")
+        expect(page).to have_content("LABOR, DEPT OF")
         expect(page).to have_content("Ink Toner Boxes")
+        expect(page).to have_content("VETERANS AFFAIRS, DEPT OF")
         expect(page).to have_content("Hotel Accommodations/Lodging")
+        expect(page).to have_content("JUSTICE, DEPT OF")
       end
       it "does not show those contracts that should be hidden" do
         expect(page).not_to have_content("Mount Rushmore Custodial Services")

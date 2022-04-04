@@ -1,7 +1,7 @@
 - industry: all
   items:
-    - title: Web Site Hosting
-      agency: Congressional Budget Office
+    - title: Diversity, Equity, Inclusion, and Accessibility Training
+      agency: LABOR, DEPT OF
     - title: Ink Toner Boxes
       agency: VETERANS AFFAIRS, DEPT OF
     - title: Hotel Accommodations/Lodging
@@ -41,10 +41,10 @@
 
 - industry: human
   items:
-    - title: FERS and FERS LEO Retirement Planning
-      agency: JUSTICE, DEPT OF
-    - title: J&A for Human Resources Specialist Support Services
+    - title: AF Band Diversity and Inclusion Training
       agency: DEPT OF DEFENSE
+    - title: Diversity, Equity, Inclusion, and Accessibility Training
+      agency: LABOR, DEPT OF
     - title: Human Resources (HR) Support Services
       agency: NUCLEAR REGULATORY COMMISSION
 
