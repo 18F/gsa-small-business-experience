@@ -18,7 +18,7 @@ group :development, :test do
   gem "rspec"
   gem "selenium-webdriver"
   gem "capybara"
-  gem "rack-jekyll"
+  gem "rack-jekyll", "0.3.5"
   gem "puma"
   gem "html-proofer", "~> 3.18"
 end
