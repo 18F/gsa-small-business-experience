@@ -30,6 +30,16 @@ h3 {
   background-color: color($theme-color-primary-dark);
 }
 
+.usa-breadcrumb__link {
+  // overriding for WCAG AAA
+  color: #005B9E;
+}
+
+.usa-link {
+  // overriding for WCAG AAA
+  color: #005898;
+}
+
 .usa-section {
   @include u-padding-bottom(2);
   @include u-padding-left(3);
