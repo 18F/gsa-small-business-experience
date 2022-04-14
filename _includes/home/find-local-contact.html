@@ -1,0 +1,14 @@
+<h3>Find your GSA small business contact</h3>
+<ul class="usa-button-group">
+  <li class="usa-button-group__item">
+    <select class="usa-select" name="state-options" aria-label="select state or territory" disabled>
+      <option value>- Select state or territory -</option>
+      {% for state in site.data.us-states-territories %}
+        <option value="state-{{ forloop.index }}">{{ state }}</option>
+      {% endfor %}
+    </select>
+  </li>
+  <li class="usa-button-group__item">
+    <button class="usa-button" disabled>Search</button>
+  </li>
+</ul>

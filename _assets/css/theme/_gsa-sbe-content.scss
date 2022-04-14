@@ -12,6 +12,7 @@ h2 {
 
 h3 {
   @include u-font("sans", "lg");
+  @include u-text("normal");
 }
 
 .question-circle {
@@ -101,7 +102,10 @@ iframe {
   .event-date {
     border-right: solid 2px #DCDEE0;
   }
+}
 
+.usa-button-group {
+  align-items: baseline;
 }
 
 .usa-hero {
@@ -130,15 +134,8 @@ iframe {
   }
 }
 
-#wtw {
-  h4 {
-    border-bottom: solid 1px lightgray;
-    @include u-font('heading', 'lg');
-  }
-
-  h5 {
-    @include u-font('heading', 'md');
-  }
+#wtw h5 {
+  @include u-font('heading', 'sm');
 }
 
 #wtw-nav {
@@ -189,16 +186,6 @@ iframe {
 #wtw-schedule-tab .question-circle {
   margin-left: auto;
   margin-right: auto;
-}
-
-.vendor-spotlight {
-  background-color: #F9F9F9;
-  height: 8em;
-  @include u-padding-left(2);
-
-  img {
-    width: 30px;
-  }
 }
 
 .usa-button--base {
