@@ -47,6 +47,7 @@ permalink: /opportunity-explorer-results/
   There should be a way using Jekyll to recognize liquid tags and generate them
   within a JS file, but it is not working so this is my current solution
   {% endcomment %}
+const industries = {{ site.data.opportunity-explorer-industries | jsonify }}
 const rules = {{ site.data.opportunity-explorer-answers-programs.rules | jsonify }}
 </script>
 

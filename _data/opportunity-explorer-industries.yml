@@ -1,0 +1,36 @@
+- label: All industries
+  value: all
+- label: Architecture
+  value: architecture
+- label: Construction
+  value: construction
+- label: Facility services, building maintenance & operations
+  value: facilities
+- label: Furniture & furnishings
+  value: furniture
+- label: Human management and training
+  value: human
+- label: Industrial products & services
+  value: industrial
+- label: Interior design
+  value: interior
+- label: "IT: general"
+  value: it
+- label: "IT: communications and satellite"
+  value: itsatcom
+- label: Office management
+  value: office
+- label: Professional services
+  value: professional
+- label: Real Estate
+  value: realestate
+- label: Scientific management & solutions
+  value: science
+- label: Transportation & logistics services
+  value: transport
+- label: Security & protection
+  value: security
+- label: Travel
+  value: travel
+- label: Other industries
+  value: other

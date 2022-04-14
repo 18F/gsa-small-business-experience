@@ -2,7 +2,23 @@ document.addEventListener("DOMContentLoaded", function(){
   const uri = new URL(window.location.href);
   const params = uri.searchParams;
 
+  // INDUSTRY
 
+  // fill in the industry label where required in the text based on the
+  // option selected in the quiz
+
+  const industry = params.get("industry");
+
+  // search industries list until finding value == industry
+  // select the label
+  // fill in the label where required in the HTML
+  const selectedIndustry = industries.find(item => item.value == industry)
+  if (selectedIndustry) {
+    let label = selectedIndustry.label;
+    document
+      .querySelectorAll(".industry-name")
+      .forEach(item => item.innerHTML = "for \"" + label + "\"");
+  }
   // start with all the options displayed, then hide non-relevant items
   // so that in the absence of JS users will be able to access the content
 
@@ -24,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function(){
   // Use combinations of parameters to evaluate whether to display a program
   // and hide all those that are not relevant to the selections
 
-  const industry = params.get("industry");
   const revenue = params.get("revenue") == "1";
   const purchase = params.get("purchase") == "1";
 
