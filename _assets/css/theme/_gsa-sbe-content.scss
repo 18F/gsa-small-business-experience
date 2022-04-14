@@ -212,19 +212,20 @@ iframe {
 
 // OPPORTUNITY EXPLORER RESULTS
 
+$data-placeholder: #F3F3F3;
+
 #contracts-table {
   td, th {
-    background-color: #F3F3F3;
+    background-color: $data-placeholder;
   }
 }
 
-h2.opp-exp-results {
-  border-bottom: 1px solid black;
-  padding-bottom: 1em;
+.results-section h3 {
+  border-bottom: black solid 1px;
 }
 
 .text-placeholder {
-  background-color: #C4C4C4;
+  background-color: $data-placeholder;
   height: 37px;
   margin-bottom: 7px;
   width: 100%;

@@ -1,0 +1,54 @@
+<div class="grid-row">
+  <div class="tablet:grid-col-7">
+    <p>No matter how you sel, you'll need to understand the federal market demand for your product and services. Get started by researching current and forecasted contracts to build your federal marketing plan.</p>
+  </div>
+</div>
+
+<div class="grid-row grid-gap">
+  <div class="tablet:grid-col-7">
+
+    <h3 class="margin-top-0">Contract examples</h3>
+
+    <p><strong>Current and past contracts for "TODO"</strong></p>
+
+    <table class="usa-table usa-table--borderless" id="contracts-table">
+      <thead>
+        <tr>
+          <th scope="col">Contract Title</th>
+          <th scope="col">Agency</th>
+        </tr>
+      </thead>
+      <tbody id="contracts">
+        {% for industry in site.data.opportunity-explorer-answers-contracts %}
+          {% for item in industry.items %}
+            <tr class="contract contract-{{industry.industry}}">
+              <th scope="row">{{ item.title }}</th>
+              <td>{{ item.agency }}</td>
+            </tr>
+          {% endfor %}
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <p><a href="javascript:void(0)" class="usa-link">Explore more at SAM.gov ></a></p>
+
+    <p><strong>Upcoming opportunities for "TODO"</strong></p>
+
+    <p>The goal of this tool is to provide a nationwide dashboard of upcoming federal contracting opportunities.</p>
+    <div class="text-placeholder"></div>
+    <div class="text-placeholder"></div>
+
+    <p><a href="javascript:void(0)" class="usa-link">Explore more with the Forecast Tool ></a></p>
+  </div>
+
+  <div class="tablet:grid-col-5">
+    <h3 class="margin-top-0">Creating a market research plan</h3>
+
+    <div class="text-placeholder"></div>
+    <div class="text-placeholder"></div>
+    <div class="text-placeholder"></div>
+
+    <p><a href="javascript:void(0)" class="usa-link">Guided Market Analysis ></a></p>
+  </div>
+
+</div>

@@ -33,7 +33,7 @@ describe "/opportunity-explorer-results", type: :feature, js: true do
 
     describe "programs" do
       it "does have a program header" do
-        expect(page).to have_content("Programs")
+        expect(page).to have_content("Become a GSA vendor")
       end
 
       it "does not have any programs except MAS" do
@@ -43,10 +43,14 @@ describe "/opportunity-explorer-results", type: :feature, js: true do
     end
 
     describe "consistent sections" do
-      it "does have other opportunities" do
-        expect(page).to have_content("Subcontracting & Partnerships")
-        expect(page).to have_content("Open Market Opportunities")
-        expect(page).to have_content("Explore Contracts & Complete Market Analysis")
+      it "has three steps" do
+        expect(page).to have_content("Step 1: Research contracts in your industry")
+        expect(page).to have_content("Step 2: Explore ways to sell as a small business")
+        expect(page).to have_content("Step 3: Connect with OSDBU")
+      end
+      it "has non-schedule opportunities" do
+        expect(page).to have_content("Become a subcontractor")
+        expect(page).to have_content("Explore open market opportunities")
       end
     end
   end
