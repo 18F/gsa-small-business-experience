@@ -20,22 +20,14 @@
       </li>
     </ul>
   </div>
+
   <div class="tablet:grid-col-5">
-    <h3 class="text-normal tablet:margin-top-0">Vendor case studies</h3>
-    <div class="vendor-spotlight margin-bottom-1 grid-row">
-      <p class="grid-col-6"><strong>Contract Schedule</strong></p>
-      {% asset img/material-icons/image.svg alt="image placeholder icon" class="grid-col-6" %}
-    </div>
-    <div class="vendor-spotlight grid-row">
-      <p class="grid-col-6"><strong>Subcontract</strong></p>
-      {% asset img/material-icons/image.svg alt="image placeholder icon" class="grid-col-6" %}
-    </div>
-    <label class="usa-label" for="options">Find Your Local Small Business Advocate</label>
-    <select class="usa-select" name="options" id="options" disabled>
-      <option value>- Select state or territory -</option>
-      {% for state in site.data.us-states-territories %}
-        <option value="state-{{ forloop.index }}">{{ state }}</option>
-      {% endfor %}
-    </select>
+    <h3>Explore GSA selling opportunities</h3>
+
+    <p>Tell us about your business, and we'll locate programs and opportunities for you to investigate.</p>
+
+    <a class="usa-button usa-button--base" href="{% link _pages/opportunity-explorer.html %}">Take the opportunity quiz</a>
+
+    {% include home/find-local-contact.html %}
   </div>
 </div>

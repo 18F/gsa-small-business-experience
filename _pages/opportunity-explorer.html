@@ -44,7 +44,7 @@ permalink: /opportunity-explorer/
             </label>
             <select class="usa-select" name="{{ question.id }}" id="{{ question.id }}">
               <option value>- Select -</option>
-              {% for item in question.values %}
+              {% for item in site.data.opportunity-explorer-industries %}
                 <option value="{{ item.value }}">{{ item.label }}</option>
               {% endfor %}
             </select>

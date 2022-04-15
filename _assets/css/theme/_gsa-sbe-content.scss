@@ -12,6 +12,7 @@ h2 {
 
 h3 {
   @include u-font("sans", "lg");
+  @include u-text("normal");
 }
 
 .question-circle {
@@ -101,7 +102,10 @@ iframe {
   .event-date {
     border-right: solid 2px #DCDEE0;
   }
+}
 
+.usa-button-group {
+  align-items: baseline;
 }
 
 .usa-hero {
@@ -130,15 +134,8 @@ iframe {
   }
 }
 
-#wtw {
-  h4 {
-    border-bottom: solid 1px lightgray;
-    @include u-font('heading', 'lg');
-  }
-
-  h5 {
-    @include u-font('heading', 'md');
-  }
+#wtw h5 {
+  @include u-font('heading', 'sm');
 }
 
 #wtw-nav {
@@ -191,16 +188,6 @@ iframe {
   margin-right: auto;
 }
 
-.vendor-spotlight {
-  background-color: #F9F9F9;
-  height: 8em;
-  @include u-padding-left(2);
-
-  img {
-    width: 30px;
-  }
-}
-
 .usa-button--base {
   // overridding for WCAG AAA
   background-color: color($theme-color-primary-dark);
@@ -225,19 +212,20 @@ iframe {
 
 // OPPORTUNITY EXPLORER RESULTS
 
+$data-placeholder: #F3F3F3;
+
 #contracts-table {
   td, th {
-    background-color: #F3F3F3;
+    background-color: $data-placeholder;
   }
 }
 
-h2.opp-exp-results {
-  border-bottom: 1px solid black;
-  padding-bottom: 1em;
+.results-section h3 {
+  border-bottom: black solid 1px;
 }
 
 .text-placeholder {
-  background-color: #C4C4C4;
+  background-color: $data-placeholder;
   height: 37px;
   margin-bottom: 7px;
   width: 100%;

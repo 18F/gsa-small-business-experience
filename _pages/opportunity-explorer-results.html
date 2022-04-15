@@ -22,110 +22,24 @@ permalink: /opportunity-explorer-results/
   </ol>
 </nav>
 
-<h1>Your results</h1>
-
-<p>Based on the answers you provided here are a list of possible opportunities for you.</p>
-
-<section class="usa-section padding-top-0">
-  <div class="grid-row grid-gap">
-    <div class="tablet:grid-col-7">
-      <h2 class="font-heading-sm opp-exp-results">Programs</h2>
-
-      <div id="programs">
-        {% for program in site.data.opportunity-explorer-answers-programs.programs %}
-          <div id="{{ program.id }}" class="program">
-            <h3>{{ program.name }}</h3>
-            <p>{{ program.desc }}</p>
-            <div class="program-missing">
-              {% for label in program.missingLabels %}
-                <div class="usa-alert usa-alert--info usa-alert--slim" id="{{program.id}}-{{ label.name }}">
-                  <div class="usa-alert__body">
-                    <p class="usa-alert__text">
-                      {{ label.desc }}
-                    </p>
-                  </div>
-                </div>
-              {% endfor %}
-            </div>
-            <p><a class="usa-link" href="javascript:void(0)">Learn more about {{ program.name }}</a></p>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-
-    <div class="tablet:grid-col-5">
-      <h2 class="font-heading-sm opp-exp-results">Other opportunities</h2>
-      <p><a href="javascript:void(0)" class="usa-link">Subcontracting & Partnerships</a></p>
-      <p><a href="javascript:void(0)" class="usa-link">Open Market Opportunities</a></p>
-
-      <h2 class="font-heading-sm opp-exp-results margin-top-8">Set-Aside Opportunities</h2>
-
-      <a href="javascript:void(0)" class="usa-link">See all set-aside opportunities</a>
-
-      <div id="setasides">
-        {% for setaside in site.data.opportunity-explorer-answers-setasides %}
-          <div id="{{ setaside.id }}" class="setaside">
-            <h3>{{ setaside.name }}</h3>
-
-            <p>You may qualify for this set-aside if:</p>
-            <ul>
-              {% for item in setaside.qualifications %}
-                <li>{{ item }}</li>
-              {% endfor %}
-              <li>My business is "small" in its primary industry in accordance with Small Business Administration (SBA) size standards for that industry</li>
-            </ul>
-            <p><a class="usa-link" href="javascript:void(0)">Learn more about certification</a></p>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
+<section class="usa-section">
+  <h1>Your results</h1>
+  <p>Based on the answers you provided here are a list of possible opportunities for you!</p>
 </section>
 
-<section class="usa-section margin-top-4">
-  <h1>Explore Contracts & Complete Market Analysis</h1>
-  <div class="grid-row grid-gap">
-    <div class="tablet:grid-col-5">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dhwAgQqZigs" title="YouTube video player: Doing Business with GSA - Introduction to GSA" frameborder="0" allowfullscreen></iframe>
-      <p>You'll need a solid Federal marketing plan to compete as a small business in the Federal marketplace. Start your path in Government procurement with knowledge of the market's demand for your products and services.</p>
+<section class="usa-section padding-top-0 results-section">
+  <h2 class="margin-top-0">Step 1: Research contracts in your industry</h2>
+  {% include opp-explorer/contracts.html %}
+</section>
 
-      <p><a href="javascript:void(0)" class="usa-link">Guided Market Analysis ></a></p>
-    </div>
-    <div class="tablet:grid-col-7">
-      <h2 class="font-heading-sm margin-top-0">Explore Current & Past Contracts</h2>
+<section class="usa-section results-section">
+  <h2>Step 2: Explore ways to sell as a small business</h2>
+  {% include opp-explorer/programs.html %}
+</section>
 
-      <p>Explore contracts and contract data at SAM.gov</p>
-
-      <table class="usa-table usa-table--borderless" id="contracts-table">
-        <thead>
-          <tr>
-            <th scope="col">Contract Title</th>
-            <th scope="col">Agency</th>
-          </tr>
-        </thead>
-        <tbody id="contracts">
-          {% for industry in site.data.opportunity-explorer-answers-contracts %}
-            {% for item in industry.items %}
-              <tr class="contract contract-{{industry.industry}}">
-                <th scope="row">{{ item.title }}</th>
-                <td>{{ item.agency }}</td>
-              </tr>
-            {% endfor %}
-          {% endfor %}
-        </tbody>
-      </table>
-
-      <p><a href="javascript:void(0)" class="usa-link">Explore more at SAM.gov ></a></p>
-
-      <h2 class="font-heading-sm margin-top-5">Forecasting of Contract Opportunities</h2>
-
-      <p>The goal of this tool is to provide a nationwide dashboard of upcoming federal contracting opportunities.</p>
-      <div class="text-placeholder"></div>
-      <div class="text-placeholder"></div>
-      <div class="text-placeholder"></div>
-      <p><a href="javascript:void(0)" class="usa-link">Explore more with the Forecast Tool ></a></p>
-    </div>
-  </div>
+<section class="usa-section results-section margin-bottom-9">
+  <h2>Step 3: Connect with OSDBU</h2>
+  {% include opp-explorer/osdbu.html %}
 </section>
 
 <script>
@@ -133,6 +47,7 @@ permalink: /opportunity-explorer-results/
   There should be a way using Jekyll to recognize liquid tags and generate them
   within a JS file, but it is not working so this is my current solution
   {% endcomment %}
+const industries = {{ site.data.opportunity-explorer-industries | jsonify }}
 const rules = {{ site.data.opportunity-explorer-answers-programs.rules | jsonify }}
 </script>
 

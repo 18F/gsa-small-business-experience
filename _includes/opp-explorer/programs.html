@@ -1,0 +1,62 @@
+<div class="grid-row grid-gap">
+  <div class="tablet:grid-col-7">
+    <h3>Become a GSA vendor</h3>
+
+    <p>Becoming a GSA vendor by "getting on schedule" takes time, but gives businesses the opportunity to sell directly to federal agencies through long term contracts. Here are programs we recommend for you:</p>
+
+    <div id="programs">
+      {% for program in site.data.opportunity-explorer-answers-programs.programs %}
+        <div id="{{ program.id }}" class="program">
+          <h4>{{ program.name }}</h4>
+          <p>{{ program.desc }}</p>
+          <div class="program-missing">
+            {% for label in program.missingLabels %}
+              <div class="usa-alert usa-alert--info usa-alert--slim" id="{{program.id}}-{{ label.name }}">
+                <div class="usa-alert__body">
+                  <p class="usa-alert__text">
+                    {{ label.desc }}
+                  </p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <p><a class="usa-link" href="javascript:void(0)">Learn more about {{ program.name }}</a></p>
+        </div>
+      {% endfor %}
+    </div>
+
+    <h3>Become a subcontractor</h3>
+    <p>Subcontracting allows small businesses to sell to the government by partnering with a large business prime contractor.</p>
+
+    <p><a href="javascript:void(0)" class="usa-link">Subcontracting & partnerships</a></p>
+
+    <h3>Explore open market opportunities</h3>
+
+    <p>These contracts are often for building design and construction, architecture, engingeering acquisitions, and some professional service engagements.</p>
+
+    <p><a href="javascript:void(0)" class="usa-link">Open market opportunities</a></p>
+  </div>
+
+  <div class="tablet:grid-col-5">
+    <h3>Get your set-aside certifications</h3>
+
+    <a href="javascript:void(0)" class="usa-link">See all set-aside opportunities</a>
+
+    <div id="setasides">
+      {% for setaside in site.data.opportunity-explorer-answers-setasides %}
+        <div id="{{ setaside.id }}" class="setaside">
+          <h4>{{ setaside.name }}</h4>
+
+          <p>You may qualify for this set-aside if:</p>
+          <ul>
+            {% for item in setaside.qualifications %}
+              <li>{{ item }}</li>
+            {% endfor %}
+            <li>My business is "small" in its primary industry in accordance with Small Business Administration (SBA) size standards for that industry</li>
+          </ul>
+          <p><a class="usa-link" href="javascript:void(0)">Learn more about certification</a></p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
