@@ -22,6 +22,8 @@
       id: hubzone
     - label: Service-Disabled Veteran-Owned Business
       id: sdvob
+    - label: I don't know if I qualify as a special interest group or set-aside categories
+      id: unknown
 
 - type: radio
   question: |
