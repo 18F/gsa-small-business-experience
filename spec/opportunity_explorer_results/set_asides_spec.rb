@@ -5,7 +5,7 @@ describe "/opportunity-explorer-results", type: :feature, js: true do
     context "when different setasides have been selected" do
       context "when all are selected" do
         before :each do
-          visit "/opportunity-explorer-results/index.html?setasides=wosb&setasides=sdb8a&setasides=hubzone&setasides=sdvob"
+          visit "/opportunity-explorer-results/index.html?setasides=wosb&setasides=sdb8a&setasides=hubzone&setasides=sdvob&setasides=unknown"
         end
 
         it "renders" do
@@ -17,6 +17,7 @@ describe "/opportunity-explorer-results", type: :feature, js: true do
           expect(page).to have_content("Historically Underutilized Business Zones (HUBZone)")
           expect(page).to have_content("Service-Disabled Veteran-Owned Business")
           expect(page).to have_content("Small Disadvantaged Businesses 8(a)")
+          expect(page).to have_content("Learn about set-aside opportunities")
         end
       end
 
@@ -34,6 +35,7 @@ describe "/opportunity-explorer-results", type: :feature, js: true do
           expect(page).not_to have_content("Historically Underutilized Business Zones (HUBZone)")
           expect(page).not_to have_content("Service-Disabled Veteran-Owned Business")
           expect(page).not_to have_content("Small Disadvantaged Businesses 8(a)")
+          expect(page).not_to have_content("Learn about set-aside opportunities")
         end
       end
 
@@ -51,12 +53,13 @@ describe "/opportunity-explorer-results", type: :feature, js: true do
           expect(page).not_to have_content("Historically Underutilized Business Zones (HUBZone)")
           expect(page).to have_content("Service-Disabled Veteran-Owned Business")
           expect(page).not_to have_content("Small Disadvantaged Businesses 8(a)")
+          expect(page).not_to have_content("Learn about set-aside opportunities")
         end
       end
 
       context "when three are selected" do
         before :each do
-          visit "/opportunity-explorer-results/index.html?setasides=wosb&setasides=sdb8a&setasides=hubzone"
+          visit "/opportunity-explorer-results/index.html?setasides=wosb&setasides=sdb8a&setasides=unknown"
         end
 
         it "renders" do
@@ -65,9 +68,10 @@ describe "/opportunity-explorer-results", type: :feature, js: true do
 
         it "shows the three selected set-asides" do
           expect(page).to have_content("Women-Owned Small Businesses")
-          expect(page).to have_content("Historically Underutilized Business Zones (HUBZone)")
+          expect(page).not_to have_content("Historically Underutilized Business Zones (HUBZone)")
           expect(page).not_to have_content("Service-Disabled Veteran-Owned Business")
           expect(page).to have_content("Small Disadvantaged Businesses 8(a)")
+          expect(page).to have_content("Learn about set-aside opportunities")
         end
       end
     end
