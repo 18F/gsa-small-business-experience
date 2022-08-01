@@ -20,7 +20,7 @@ group :development, :test do
   gem "capybara"
   gem "rack-jekyll", "0.3.5"
   gem "puma"
-  gem "html-proofer", "~> 3.18"
+  gem "html-proofer", "~> 4.3"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
